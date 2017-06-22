@@ -2,9 +2,9 @@
 
 [![Github Issues](https://img.shields.io/github/issues/fvcproductions/apprenticeships.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships/issues) [![GitHub  Pull-Requests](https://img.shields.io/github/issues-pr/fvcproductions/apprenticeships.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships/pulls) [![MIT License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square)](http://paypal.me/fvcproductions)
 
-Back in the good old days of the Renaissance, apprenticeships were quite common and acted as legal contracts between the apprentice and master (typically in creative fields). This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
+Back in the good old days of the Renaissance, apprenticeships were quite common and acted as legal contracts between the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
 
-Even though the formal university route became more popular over time, there has been a noteworthy trend in the software industry where the idea of an intensive period of training with masters (e.g. [coding bootcamps](http://coursereport.com) and apprenticeships) has started to become a popular option once again.
+Even though the formal university route became more popular over time, there has been a noteworthy trend in the software industry where the idea of an intensive period of training with masters (e.g. [coding bootcamps](http://coursereport.com)) has started to become a popular option once again.
 
 So without further ago, here's a list of developer & design apprenticeship opportunities! 🔧
 
@@ -25,6 +25,7 @@ So without further ago, here's a list of developer & design apprenticeship oppor
 - [IQ Foundry](http://www.iqfoundry.com/careers)
 - [LaunchCode](https://www.launchcode.org/)
 - [LinkedIn Reach](https://careers.linkedin.com/reach)
+- [MAXX Potential](https://maxxpotential.com/)
 - [Moove-it](https://moove-it.com/web-development-apprenticeship)
 - [Pillar Technology](http://pillartechnology.com/careers)
 - [RoleModel](http://www.craftsmanshipacademy.com/)

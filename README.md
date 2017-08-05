@@ -12,6 +12,7 @@ So without further ago, here's a list of developer & design apprenticeship oppor
 
 - [8th Light](https://8thlight.com/apprenticeship/)
 - [A100](http://indie-soft.com/a100/)
+- [Adobe Digital Academy](http://www.adobe.com/corporate-responsibility/education/digital-academy.html)
 - [Atomic](https://atomicobject.com/careers/accelerator)
 - [Clique Studios](https://cliquestudios.com/clique-university/apprenticeships/)
 - [CoverMyMeds](https://www.covermymeds.com/main/careers/tech-positions/)
@@ -21,6 +22,7 @@ So without further ago, here's a list of developer & design apprenticeship oppor
 - [Gaslight](https://teamgaslight.com/careers/developer-apprenticeship)
 - [Greater Sum](https://www.greatersum.com/software-apprenticeship/)
 - [HashRocket](https://hashrocket.com/careers/apprentice)
+- [IFTTT](https://ifttt.com/apprenticeship)
 - [Intrepid Pursuits](http://team.intrepid.io/careers)
 - [IQ Foundry](http://www.iqfoundry.com/careers)
 - [LaunchCode](https://www.launchcode.org/)

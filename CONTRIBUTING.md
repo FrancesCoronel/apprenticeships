@@ -27,6 +27,6 @@ Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issu
 - Check your spelling and grammar.
 - Make sure your text editor is set to remove trailing whitespace.
 - Suggestions (apprenticeship or further resource) should be sorted **alphabetically**.
-    + You can use something similar to Sublime Text's built in [Sort Lines](https://www.abeautifulsite.net/sorting-lines-of-text-alphabetically-with-sublime-text-3) shortcut to make this easy.
+    - You can use something similar to Sublime Text's built in [Sort Lines](https://www.abeautifulsite.net/sorting-lines-of-text-alphabetically-with-sublime-text-3) shortcut to make this easy.
 - Suggestions should be categorized by the right country and also sorted alphabetically with the United States showing first.
-    + e.g. United States, England, Portugal, etc.
+    - e.g. United States, England, Portugal, etc.

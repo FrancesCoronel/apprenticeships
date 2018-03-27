@@ -8,61 +8,66 @@ Even though the formal university route became more popular over time, there has
 
 So without further ago, here's a list of developer & design apprenticeship opportunities! 🔧
 
+> Note that most of these companies don't **always** have applications to their apprenticeship programs open - it's usually seasonal.
+
 ## United States
 
-- [8th Light](https://8thlight.com/apprenticeship/)
-- [A100](http://indie-soft.com/a100/)
-- [Adobe Digital Academy](http://www.adobe.com/corporate-responsibility/education/digital-academy.html)
-- [Atomic](https://atomicobject.com/careers/accelerator)
-- [Clique Studios](https://cliquestudios.com/clique-university/apprenticeships/)
-- [CoverMyMeds](https://www.covermymeds.com/main/careers/tech-positions/)
-- [Detroit Labs](https://www.detroitlabs.com/apprenticeships/)
-- [DevMynd](https://www.devmynd.com/culture/careers/)
-- [Fresh Tilled Soil](http://www.freshtilledsoil.com/aux/)
-- [Gaslight](https://teamgaslight.com/careers/developer-apprenticeship)
-- [Greater Sum](https://www.greatersum.com/software-apprenticeship/)
-- [HashRocket](https://hashrocket.com/careers/apprentice)
-- [IFTTT](https://ifttt.com/apprenticeship)
-- [Intrepid Pursuits](http://team.intrepid.io/careers)
-- [IQ Foundry](http://www.iqfoundry.com/careers)
-- [LaunchCode](https://www.launchcode.org/)
-- [LinkedIn Reach](https://careers.linkedin.com/reach)
-- [MAXX Potential](https://maxxpotential.com/)
-- [Moove-it](https://moove-it.com/web-development-apprenticeship)
-- [Pillar Technology](http://pillartechnology.com/careers)
-- [RoleModel](http://www.craftsmanshipacademy.com/)
-- [Sparkbox](http://apprentices.seesparkbox.com)
-- [Thoughtbot](http://www.apprentice.io/)
-- [Upstatement](https://upstatement.com/jobs/)
+* [8th Light](https://8thlight.com/apprenticeship/)
+* [A100](http://indie-soft.com/a100/)
+* [Adobe Digital Academy](http://www.adobe.com/corporate-responsibility/education/digital-academy.html)
+* [Atomic](https://atomicobject.com/careers/accelerator)
+* [Clique Studios](https://cliquestudios.com/clique-university/apprenticeships/)
+* [CoverMyMeds](https://www.covermymeds.com/main/careers/tech-positions/)
+* [Detroit Labs](https://www.detroitlabs.com/apprenticeships/)
+* [DevMynd](https://www.devmynd.com/culture/careers/)
+* [Fresh Tilled Soil](http://www.freshtilledsoil.com/aux/)
+* [Gaslight](https://teamgaslight.com/careers/developer-apprenticeship)
+* [Greater Sum](https://www.greatersum.com/software-apprenticeship/)
+* [HashRocket](https://hashrocket.com/careers/apprentice)
+* [IFTTT](https://ifttt.com/apprenticeship)
+* [Intrepid Pursuits](http://team.intrepid.io/careers)
+* [IQ Foundry](http://www.iqfoundry.com/careers)
+* [LaunchCode](https://www.launchcode.org/)
+* [LinkedIn Reach](https://careers.linkedin.com/reach)
+* [MAXX Potential](https://maxxpotential.com/)
+* [Moove-it](https://moove-it.com/web-development-apprenticeship)
+* [Pillar Technology](http://pillartechnology.com/careers)
+* [Pinterest](https://careers.pinterest.com/careers/)
+* [RoleModel](http://www.craftsmanshipacademy.com/)
+* [Sparkbox](http://apprentices.seesparkbox.com)
+* [Spotify](https://ttp.nyc/spotifyfellowship/)
+* [Thoughtbot](http://apprentice.thoughtbot.com/)
+* [Twilio Hatch](https://www.twilio.com/company/jobs)
+* [Upstatement](https://upstatement.com/jobs/)
 
 ## England
 
-- [NeoMam Studios](http://neomam.com/jobs/)
-- [Sainsbury's](http://early.careersatsainsburys.com/Home/Apprenticeships)
+* [NeoMam Studios](http://neomam.com/jobs/)
+* [Sainsbury's](http://early.careersatsainsburys.com/Home/Apprenticeships)
 
 ## Portugal
 
-- [Subvisual](https://subvisual.co/apprenticeship/)
+* [Subvisual](https://subvisual.co/apprenticeship/)
 
 ### Further Resources
 
-- [Apprentice.at](https://apprentice.at/)
-    + A directory of apprenticeships provided by Sparkbox
-- [CodingApprenticeships.com](http://codingapprenticeships.com/apprentice.php)
-    + A list of coding apprenticeships
+* [Apprentice.at](https://apprentice.at/)
+  * A directory of apprenticeships provided by Sparkbox
+* [CodingApprenticeships.com](http://codingapprenticeships.com/apprentice.php)
+  * A list of coding apprenticeships
 
 ### Contributing
 
 > To get started...
 
-- 🍴 Fork this repo [here](https://github.com/fvcproductions/apprenticeships#fork-destination-box)
-- 🔨 [Read through the contributing guidelines](CONTRIBUTING.md) and add an apprenticeship
-- 👥 Add yourself as a contributor under credits
-- 🔧 Make a pull request [here](https://github.com/fvcproductions/apprenticeships/compare)
-- 🎉 Get your pull request approved - success!
+* 🍴 Fork this repo [here](https://github.com/fvcproductions/apprenticeships#fork-destination-box)
+* 🔨 [Read through the contributing guidelines](CONTRIBUTING.md) and add an apprenticeship
+* 👥 Add yourself as a contributor under credits
+* 🔧 Make a pull request [here](https://github.com/fvcproductions/apprenticeships/compare)
+* 🎉 Get your pull request approved - success!
 
 Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issues) - any little bit of help counts! 😊
 
 ## Credits
 
-- [FVCproductions](http://github.com/fvcproductions) 🍓🍫
+* [FVCproductions](http://github.com/fvcproductions) 🍓🍫

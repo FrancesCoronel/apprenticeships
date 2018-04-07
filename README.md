@@ -4,7 +4,7 @@
 
 Back in the good old days of the Renaissance, [apprenticeships](https://www.wikiwand.com/en/Apprenticeship) were quite common and acted as legal contracts between the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
 
-Even though the formal university route became more popular over time, there has been a noteworthy trend in the software industry where the idea of an intensive period of training with masters (e.g. [coding bootcamps](http://coursereport.com)) has started to become a popular option once again.
+Even though the formal university route became more popular over time, there has been a noteworthy trend in the software industry where the idea of an intensive period of training with masters (e.g. [coding bootcamps](https://www.wikiwand.com/en/Coding_bootcamp)) has started to become a popular option once again.
 
 So without further ago, here's a list of developer & design apprenticeship opportunities! 🔧
 

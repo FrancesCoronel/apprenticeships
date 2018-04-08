@@ -76,3 +76,4 @@ Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issu
 ## Credits
 
 * [FVCproductions](http://github.com/fvcproductions) 🍓🍫
+* [Leilani Raranga](http://linkedin.com/in/leilanir)

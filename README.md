@@ -44,6 +44,7 @@ So without further ago, here's a list of developer & design apprenticeship oppor
 * [Thoughtbot](http://apprentice.thoughtbot.com/)
 * [Twilio Hatch](https://www.twilio.com/company/jobs)
 * [Upstatement](https://upstatement.com/jobs/)
+* [Viget](https://www.viget.com/apprenticeship/)
 
 ## England
 
@@ -75,5 +76,6 @@ Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issu
 
 ## Credits
 
-* [FVCproductions](http://github.com/fvcproductions) 🍓🍫
-* [Leilani Raranga](http://linkedin.com/in/leilanir)
+* [FVCproductions](https://github.com/fvcproductions) 🍓🍫
+* [Benjamin Modayil](https://modayil.me)
+* [Leilani Raranga](https://linkedin.com/in/leilanir)

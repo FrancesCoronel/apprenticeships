@@ -29,6 +29,7 @@ So without further ago, here's a list of developer & design apprenticeship oppor
 * [Intrepid Pursuits](http://team.intrepid.io/careers)
 * [IQ Foundry](http://www.iqfoundry.com/careers)
 * [LaunchCode](https://www.launchcode.org/)
+* [LEAP](http://industryexplorers.com)
 * [LinkedIn Reach](https://careers.linkedin.com/reach)
 * [Lyft](https://betalist.com/jobs/186175-software-engineering-apprenticeship-at-lyft)
 * [MAXX Potential](https://maxxpotential.com/)
@@ -75,5 +76,6 @@ Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issu
 
 ## Credits
 
-* [FVCproductions](http://github.com/fvcproductions) 🍓🍫
+* [FVCproductions](https://github.com/fvcproductions) 🍓🍫
 * [Benjamin Modayil](https://modayil.me)
+* [Leilani Raranga](https://linkedin.com/in/leilanir)

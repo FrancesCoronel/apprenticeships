@@ -1,6 +1,6 @@
 # apprenticeships
 
-[![Github Issues](https://img.shields.io/github/issues/fvcproductions/apprenticeships.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships/issues) [![GitHub  Pull-Requests](https://img.shields.io/github/issues-pr/fvcproductions/apprenticeships.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships/pulls) [![MIT License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square)](http://paypal.me/fvcproductions)
+[![GitHub Issues](https://img.shields.io/github/issues/fvcproductions/apprenticeships.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fvcproductions/apprenticeships.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships/pulls) [![MIT License](https://img.shields.io/github/license/fvcproductions/apprenticeships.svg?style=flat-square)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square)](http://paypal.me/fvcproductions) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg?style=flat-square)](https://www.patreon.com/fvcproductions)
 
 Back in the good old days of the Renaissance, [apprenticeships](https://www.wikiwand.com/en/Apprenticeship) were quite common and acted as legal contracts between the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
 
@@ -54,7 +54,7 @@ So without further ago, here's a list of developer & design apprenticeship oppor
 
 * [Subvisual](https://subvisual.co/apprenticeship/)
 
-### Further Resources
+## Further Resources
 
 * [Apprentice.at](https://apprentice.at/)
   * A directory of apprenticeships
@@ -63,17 +63,23 @@ So without further ago, here's a list of developer & design apprenticeship oppor
 * [CodingApprenticeships.com](http://codingapprenticeships.com/apprentice.php)
   * A list of coding apprenticeships
 
-### Contributing
+## Contributing
 
 > To get started...
 
-* 🍴 Fork this repo [here](https://github.com/fvcproductions/apprenticeships#fork-destination-box)
-* 🔨 [Read through the contributing guidelines](CONTRIBUTING.md) and add an apprenticeship
-* 👥 Add yourself as a contributor under credits
-* 🔧 Make a pull request [here](https://github.com/fvcproductions/apprenticeships/compare)
-* 🎉 Get your pull request approved - success!
+1.  🍴 [Fork this repo](https://github.com/fvcproductions/apprenticeships#fork-destination-box)
+2.  🔨 View the contributing guidelines at [CONTRIBUTING.md](CONTRIBUTING.md)
+3.  👥 Add yourself as a contributor under the credits section
+4.  🔧 [Open a new pull request](https://github.com/fvcproductions/apprenticeships/compare)
+5.  🎉 Get your pull request approved - success!
 
-Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issues) - any little bit of help counts! 😊
+Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issues/new) - any little bit of help counts! 😊
+
+## Code of Conduct
+
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+
+More details can be found at this project's [code of conduct](.github/CODE_OF_CONDUCT.md).
 
 ## Credits
 

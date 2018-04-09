@@ -57,7 +57,9 @@ So without further ago, here's a list of developer & design apprenticeship oppor
 ### Further Resources
 
 * [Apprentice.at](https://apprentice.at/)
-  * A directory of apprenticeships provided by Sparkbox
+  * A directory of apprenticeships
+* [Apprentice.io](http://apprentice.thoughtbot.com/)
+  * Community resources for software apprenticeships
 * [CodingApprenticeships.com](http://codingapprenticeships.com/apprentice.php)
   * A list of coding apprenticeships
 

@@ -31,7 +31,6 @@ So without further ago, here's a list of developer & design apprenticeship oppor
 * [LaunchCode](https://www.launchcode.org/)
 * [LEAP](http://industryexplorers.com)
 * [LinkedIn Reach](https://careers.linkedin.com/reach)
-* [Lyft](https://betalist.com/jobs/186175-software-engineering-apprenticeship-at-lyft)
 * [MAXX Potential](https://maxxpotential.com/)
 * [Moove-it](https://moove-it.com/web-development-apprenticeship)
 * [Pillar Technology](http://pillartechnology.com/careers)
@@ -79,3 +78,4 @@ Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issu
 * [FVCproductions](https://github.com/fvcproductions) 🍓🍫
 * [Benjamin Modayil](https://modayil.me)
 * [Leilani Raranga](https://linkedin.com/in/leilanir)
+* [Colton Hurst](https://www.coltonhurst.com)

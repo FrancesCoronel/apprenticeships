@@ -6,7 +6,7 @@ Back in the good old days of the Renaissance, [apprenticeships](https://www.wiki
 
 Even though the formal university route became more popular over time, there has been a noteworthy trend in the software industry where the idea of an intensive period of training with masters (e.g. [coding bootcamps](https://www.wikiwand.com/en/Coding_bootcamp)) has started to become a popular option once again.
 
-So without further ago, here's a list of developer & design apprenticeship opportunities! 🔧
+So, without further ado, here's a list of developer & design apprenticeship opportunities! 🔧
 
 > Note that most of these companies don't **always** have applications to their apprenticeship programs open - it's usually seasonal.
 

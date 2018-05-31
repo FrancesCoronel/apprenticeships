@@ -37,6 +37,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Pinterest](https://careers.pinterest.com/careers/)
 * [Praxis](https://discoverpraxis.com/)
 * [RoleModel](http://www.craftsmanshipacademy.com/)
+* [Social Tables](https://socialtables.com)
 * [Sparkbox](http://apprentices.seesparkbox.com)
 * [Spotify](https://ttp.nyc/spotifyfellowship/)
 * [Techtonica](https://techtonica.org/)
@@ -87,3 +88,4 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 * [Benjamin Modayil](https://modayil.me)
 * [Leilani Raranga](https://linkedin.com/in/leilanir)
 * [Colton Hurst](https://www.coltonhurst.com)
+* [Julia Schultz](https://github.com/jschultz21)

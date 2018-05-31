@@ -84,7 +84,7 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 
 ## Credits
 
-* [FVCproductions](https://github.com/fvcproductions) 🍓🍫
+* [FVCproductions](https://github.com/fvcproductions) 🍫🍓
 * [Benjamin Modayil](https://modayil.me)
 * [Leilani Raranga](https://linkedin.com/in/leilanir)
 * [Colton Hurst](https://www.coltonhurst.com)

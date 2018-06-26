@@ -48,6 +48,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 
 ## England
 
+* [Accenture](https://www.accenture.com/gb-en/Careers/apprenticeships)
 * [NeoMam Studios](http://neomam.com/jobs/)
 * [Sainsbury's](http://early.careersatsainsburys.com/Home/Apprenticeships)
 
@@ -63,6 +64,8 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
   * Community resources for software apprenticeships
 * [CodingApprenticeships.com](http://codingapprenticeships.com/apprentice.php)
   * A list of coding apprenticeships
+* [Chicago Apprenticeships](http://chicagoapprenticeships.com/)
+  * A list of apprentice software developer jobs in Chicago.
 
 ## Contributing
 

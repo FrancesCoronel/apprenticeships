@@ -40,6 +40,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Social Tables](https://socialtables.com)
 * [Sparkbox](http://apprentices.seesparkbox.com)
 * [Spotify](https://ttp.nyc/spotifyfellowship/)
+* [Table XI](https://www.tablexi.com/careers/)
 * [Techtonica](https://techtonica.org/)
 * [Thoughtbot](http://apprentice.thoughtbot.com/)
 * [Twilio Hatch](https://www.twilio.com/company/jobs)

@@ -48,13 +48,17 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Upstatement](https://upstatement.com/jobs/)
 * [Viget](https://www.viget.com/apprenticeship/)
 
-## England
+## Europe
+
+- [HolidayCheck](https://apprenticeship.holidaycheck.com/)
+
+### England
 
 * [Accenture](https://www.accenture.com/gb-en/Careers/apprenticeships)
 * [NeoMam Studios](http://neomam.com/jobs/)
 * [Sainsbury's](http://early.careersatsainsburys.com/Home/Apprenticeships)
 
-## Portugal
+### Portugal
 
 * [Subvisual](https://subvisual.co/apprenticeship/)
 

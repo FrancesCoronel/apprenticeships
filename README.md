@@ -23,6 +23,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [DevMynd](https://www.devmynd.com/culture/careers/)
 * [Fresh Tilled Soil](http://www.freshtilledsoil.com/aux/)
 * [Gaslight](https://teamgaslight.com/careers/developer-apprenticeship)
+* [GitHub Octoprenticeships](https://github.com/about/careers)
 * [Greater Sum](https://www.greatersum.com/software-apprenticeship/)
 * [HashRocket](https://hashrocket.com/careers/apprentice)
 * [IFTTT](https://ifttt.com/apprenticeship)

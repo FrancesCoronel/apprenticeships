@@ -51,6 +51,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 ## Europe
 
 ### England
+
 * [8th Light](https://8thlight.com/apprenticeship/) | London, UK | 8th Light is a software consultancy that is passionate about crafting beautiful and durable software products.
 * [Accenture](https://www.accenture.com/gb-en/Careers/apprenticeships) | London, UK; Newcastle, UK; Warwick, UK | Accenture is a global professional services company providing a range of strategy, consulting, digital, technology & operations services and solutions.
 * [NeoMam Studios](http://neomam.com/jobs/) | Manchester, UK | NeoMam Studios is a content marketing agency that creates stunning visual content for its clients.
@@ -62,13 +63,16 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Subvisual](https://subvisual.co/apprenticeship/) | Braga, PT | Subvisual is a  web design and development firm that offers a ten week program with design or developement tracks. 
 
 ### Switzerland
+
 * [HolidayCheck](https://apprenticeship.holidaycheck.com/) |  Bottighofe, CH | HolidayCheck's apprenticeship targets people with little professional experience and teams them up with an experienced Software Crafter for a period of six months.  
 
 ## Further Resources
 
 * [Apprentice.at](https://apprentice.at/)
   * A directory of apprenticeships
-* [Apprentice.io](http://apprentice.thoughtbot.com/)
+* [Apprentice.io](https://www.apprenticeship.io/)
+  * Largest community of U.S. based software engineering apprenticeships
+* [Apprentice.thoughtbot.com](http://apprentice.thoughtbot.com/)
   * Community resources for software apprenticeships
 * [CodingApprenticeships.com](http://codingapprenticeships.com/apprentice.php)
   * A list of coding apprenticeships

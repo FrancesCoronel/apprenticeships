@@ -17,10 +17,12 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Ada Developers Academy](https://www.adadevelopersacademy.org/) | Seattle, WA | Ada Developers Academy is a training program for women and gender diverse people who want to become software developers.
 * [Adobe Digital Academy](http://www.adobe.com/corporate-responsibility/education/digital-academy.html) | San Francisco, CA; Salt Lake City, UT | Adobe Digital Academy offers nontraditional candidates the education and, contingent upon technical performance, the experience they need to launch successful careers in web development.
 * [Atomic](https://atomicobject.com/careers/accelerator) | Grand Rapids, MI; Ann Arbor, MI | Atomic Accelerator is a professional development program for recent computer science grads.
+* [Apprenti](https://apprenticareers.org/) | Seattle, WA; Detroit, MI; Bend, OR; Eugene, OR; Columbus, OH; Herndon, VA | Apprenti provides a proven, reliable pipeline for underrepresented groups such as minorities, women and veterans to gain training, certification and placement within the talent-hungry tech industry.
 * [Clique Studios](https://cliquestudios.com/clique-university/apprenticeships/) | Chicago, IL | Clique Studios is a design and engineering agency whose program trains apprentices with the skills necessary to get a role as a junior full-stack engineer at a small company or agency.
 * [CoverMyMeds](https://www.covermymeds.com/main/careers/tech-positions/) | Columbus, OH | CoverMyMeds is a healthcare software company that enables providers, pharmacists and their staff to fill out prior authorization (PA) requests electronically.
 * [Detroit Labs](https://www.detroitlabs.com/apprenticeships/) | Detroit, MI | The Detroit Labs Apprenticeship Program is a three-month immersive training experience in software development, mobile development, and quality assurance engineering.
 * [DevMynd](https://www.devmynd.com/culture/careers/) | Chicago, IL; San Francisco, CA | DevMynd is a software development and user experience consultancy with a passion for crafting quality solutions.
+* [Dropbox IGNITE](https://www.dropbox.com/jobs/all-jobs) | San Francisco, CA | Dropbox IGNITE is an apprenticeship program geared towards professionals with non-traditional software engineering backgrounds who are looking to start or re-start their professional career.
 * [Fresh Tilled Soil](http://www.freshtilledsoil.com/aux/) | Watertown, MA  | Fresh Tilled Soil's apprentices are taught UX fundamentals and given a chance to specialize in one of three areas: UI design, front-end development, or strategy.
 * [Gaslight](https://teamgaslight.com/careers/developer-apprenticeship) | Cincinnati, Ohio | Gaslight's DevBuilders apprentice program is designed to match client companies looking to build a development team with enthusiastic, high aptitude beginning developers.
 * [GitHub Octoprenticeships](https://github.com/about/careers) | Remote | Octoprenticeships are six-month career development programs for people with non-traditional technical backgrounds from underrepresented groups in tech
@@ -36,7 +38,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Moove-it](https://moove-it.com/web-development-apprenticeship) | Austin, TX | Moove-it is a software consultancy whose program comprises extensive hands-on activities led by a Moove-it developer.
 * [Pillar Technology](http://pillartechnology.com/careers) | Ann Arbor, MI | Pillar is a technology consulting whose apprenticeship program is deisgn to create high-performing consultants and leaders for Pillar.
 * [Pinterest](https://careers.pinterest.com/careers/) | San Francisco, CA | Pinterest's apprentice program focuses on hiring engineers from non-traditional backgrounds who are comfortable with basic programming principles.
-* [Praxis](https://discoverpraxis.com/) | Atlanta, GA | Praxis is an intensive 12-month apprenticeship program for those who are entrepreneurial young people that want real-world career experience and a rigorous, self-directed educational experience.
+* [Praxis](https://discoverpraxis.com/) | Austin, TX; Atlanta, GA; Phoenix, AZ; Charleston, SC; Pittsburgh, PA; Chicago, IL; Salt Lake City, UT | Praxis is an intensive 12-month apprenticeship program for those who are entrepreneurial young people that want real-world career experience and a rigorous, self-directed educational experience.
 * [RoleModel](http://www.craftsmanshipacademy.com/) | Holly Springs, NC | The RoleModel program is a year-long apprenticeship designed to turn bootcamp and college grads into solid developers.
 * [Social Tables](https://socialtables.com) | Washington, DC | Social Tables is a global SaaS company whose 3 month paid program with the potential of a full time offer to join their Engineering team accepts new developers without on the job work experience.
 * [Sparkbox](http://apprentices.seesparkbox.com) | Dayton, OH | Sparkbox is a web design and development firm with a focus on creating web experiences that embody response web design principles.
@@ -100,4 +102,4 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 * [Leilani Raranga](https://linkedin.com/in/leilanir)
 * [Colton Hurst](https://www.coltonhurst.com)
 * [Julia Schultz](https://github.com/jschultz21)
-* [Brittany Hill](https://github.com/balexhill)
+* [Brittany Hill](https://github.com/ibrittanyhill)

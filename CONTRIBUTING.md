@@ -19,11 +19,12 @@ Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issu
 ### Formatting
 
 ```markdown
-* [Name of apprenticeship](link to website explaining details of apprenticeship)
+* [Company/Apprenticeship Name](link) | City/Cities | Description of company/apprenticeship
+
 ```
 
 * The link should not be to a direct link to the application page.
-* Use [title-casing](http://titlecapitalization.com).
+* Use [title-casing](https://capitalizemytitle.com/).
 * Check your spelling and grammar.
 * Make sure your text editor is set to remove trailing whitespace.
 * Suggestions (apprenticeship or further resource) should be sorted **alphabetically**.

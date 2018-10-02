@@ -80,6 +80,8 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
   * A list of coding apprenticeships
 * [Chicago Apprenticeships](http://chicagoapprenticeships.com/)
   * A list of apprentice software developer jobs in Chicago.
+* [TechHire Oakland Apprenticeships](https://www.techhireoakland.org/paid-job-based-learning/)
+  * A list of emerging tech apprenticeships in the Bay Area.
 
 ## Contributing
 

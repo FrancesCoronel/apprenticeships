@@ -111,3 +111,4 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 * [Colton Hurst](https://www.coltonhurst.com)
 * [Julia Schultz](https://github.com/jschultz21)
 * [Brittany Hill](https://github.com/ibrittanyhill)
+* [Chris Miller](https://www.linkedin.com/in/chris-miller-6470751/)

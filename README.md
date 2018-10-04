@@ -109,8 +109,5 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 * [Colton Hurst](https://www.coltonhurst.com)
 * [Julia Schultz](https://github.com/jschultz21)
 * [Brittany Hill](https://github.com/ibrittanyhill)
-<<<<<<< .merge_file_a19520
 * [Chris Miller](https://www.linkedin.com/in/chris-miller-6470751/)
-=======
 * [Mark Arce](https://github.com/markarce)
->>>>>>> .merge_file_a02976

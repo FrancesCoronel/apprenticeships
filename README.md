@@ -78,8 +78,6 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
   * Largest community of U.S. based software engineering apprenticeships
 * [Apprentice.thoughtbot.com](http://apprentice.thoughtbot.com/)
   * Community resources for software apprenticeships
-* [CodingApprenticeships.com](http://codingapprenticeships.com/apprentice.php)
-  * A list of coding apprenticeships
 * [Chicago Apprenticeships](http://chicagoapprenticeships.com/)
   * A list of apprentice software developer jobs in Chicago.
 * [TechHire Oakland Apprenticeships](https://www.techhireoakland.org/paid-job-based-learning/)
@@ -111,4 +109,8 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 * [Colton Hurst](https://www.coltonhurst.com)
 * [Julia Schultz](https://github.com/jschultz21)
 * [Brittany Hill](https://github.com/ibrittanyhill)
+<<<<<<< .merge_file_a19520
 * [Chris Miller](https://www.linkedin.com/in/chris-miller-6470751/)
+=======
+* [Mark Arce](https://github.com/markarce)
+>>>>>>> .merge_file_a02976

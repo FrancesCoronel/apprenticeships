@@ -111,3 +111,4 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 * [Brittany Hill](https://github.com/ibrittanyhill)
 * [Chris Miller](https://www.linkedin.com/in/chris-miller-6470751/)
 * [Mark Arce](https://github.com/markarce)
+* [Amy Frieson](https://github.com/amyyf)

@@ -30,7 +30,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Greater Sum](https://www.greatersum.com/software-apprenticeship/) | Atlanta, GA | Greater Sumer is a software consultancy whose program accepts individuals with a wide range of experience.
 * [HashRocket](https://hashrocket.com/careers/apprentice) | Chicago, IL; Jacksonville Beach, FL | The Hashrocket apprenticeship is a six–month salaried program designed to take candidates with some professional software development experience and turn them into software consultants.
 * [IFTTT](https://ifttt.com/apprenticeship) | San Francisco, CA | If This Then That, also known as IFTTT, is a free web-based service to connect all your apps and devices into one "applet".
-* [Intrepid Pursuits](http://www.intrepid.io/apprentice) | Cambridge, MA; New York, NY | Intrepid’s Apprentice Program is an immersive, full-time 12-week training program that spans several disciplines: Project Management, Experience Design, iOS, Android and Web development.
+* [Intrepid Pursuits](http://info.intrepid.io/apprentice) | Cambridge, MA; New York, NY | Intrepid’s Apprentice Program is an immersive, full-time 12-week training program that spans several disciplines: Project Management, Experience Design, iOS, Android and Web development.
 * [Intuit](https://careers.intuit.com/) | San Diego, CA | Intuit's Apprenticeship program was launched to help diversify talent and create a pathway for those with untraditional backgrounds.
 * [IQ Foundry](http://www.iqfoundry.com/careers) | Madison, WI | IQ Foundry is a marketing agency that designs and develops digital media including custom apps and feature-rich websites.
 * [LaunchCode](https://www.launchcode.org/) | St. Louis, Missouri | LaunchCode is a non-profit organization that works with hundreds of companies to set up paid apprenticeships in technology for talented people who lack traditional credentials.
@@ -111,3 +111,4 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 * [Brittany Hill](https://github.com/ibrittanyhill)
 * [Chris Miller](https://www.linkedin.com/in/chris-miller-6470751/)
 * [Mark Arce](https://github.com/markarce)
+* [Amy Frieson](https://github.com/amyyf)

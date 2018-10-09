@@ -30,11 +30,11 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Greater Sum](https://www.greatersum.com/software-apprenticeship/) | Atlanta, GA | Greater Sumer is a software consultancy whose program accepts individuals with a wide range of experience.
 * [HashRocket](https://hashrocket.com/careers/apprentice) | Chicago, IL; Jacksonville Beach, FL | The Hashrocket apprenticeship is a six–month salaried program designed to take candidates with some professional software development experience and turn them into software consultants.
 * [IFTTT](https://ifttt.com/apprenticeship) | San Francisco, CA | If This Then That, also known as IFTTT, is a free web-based service to connect all your apps and devices into one "applet".
-* [Intrepid Pursuits](http://www.intrepid.io/apprentice) | Cambridge, MA; New York, NY | Intrepid’s Apprentice Program is an immersive, full-time 12-week training program that spans several disciplines: Project Management, Experience Design, iOS, Android and Web development.
+* [Intrepid Pursuits](http://info.intrepid.io/apprentice) | Cambridge, MA; New York, NY | Intrepid’s Apprentice Program is an immersive, full-time 12-week training program that spans several disciplines: Project Management, Experience Design, iOS, Android and Web development.
 * [Intuit](https://careers.intuit.com/) | San Diego, CA | Intuit's Apprenticeship program was launched to help diversify talent and create a pathway for those with untraditional backgrounds.
 * [IQ Foundry](http://www.iqfoundry.com/careers) | Madison, WI | IQ Foundry is a marketing agency that designs and develops digital media including custom apps and feature-rich websites.
 * [LaunchCode](https://www.launchcode.org/) | St. Louis, Missouri | LaunchCode is a non-profit organization that works with hundreds of companies to set up paid apprenticeships in technology for talented people who lack traditional credentials.
-* [LEAP](http://industryexplorers.com) | Redmond, WA | LEAP Engineering Acceleration Program (LEAP) is an immersive, 16-week program providing real-world experience through development and project management for individuals with non-traditional backgrounds or are returning to the workforce. 
+* [LEAP](http://industryexplorers.com) | Redmond, WA | LEAP Engineering Acceleration Program (LEAP) is an immersive, 16-week program providing real-world experience through development and project management for individuals with non-traditional backgrounds or are returning to the workforce.
 * [LinkedIn Reach](https://careers.linkedin.com/reach) | Sunnyvale, CA | REACH is a multi-year, rotational program where individuals with non-traditional backgrounds rotate through various levels of technical roles at the company.
 * [MAXX Potential](https://maxxpotential.com/apprentice/) | Richmond, VA | MAXX Potential is a technology consulting firm that focuses on finding a growing tech talent.
 * [Moove-it](https://moove-it.com/web-development-apprenticeship) | Austin, TX | Moove-it is a software consultancy whose program comprises extensive hands-on activities led by a Moove-it developer.
@@ -45,7 +45,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Social Tables](https://socialtables.com) | Washington, DC | Social Tables is a global SaaS company whose 3 month paid program with the potential of a full time offer to join their Engineering team accepts new developers without on the job work experience.
 * [Sparkbox](http://apprentices.seesparkbox.com) | Dayton, OH | Sparkbox is a web design and development firm with a focus on creating web experiences that embody response web design principles.
 * [Spotify](https://ttp.nyc/spotifyfellowship/) | New York, NY | The Spotify NYC Technology Fellowship is aimed at helping engineers just starting their careers in tech and provides an opportunity to work within a team and build upon current skills.
-* [Table XI](https://www.tablexi.com/careers/) | Chicago, IL | Table XI is a digital design and development consulting firm that uses software consulting to power positive change. 
+* [Table XI](https://www.tablexi.com/careers/) | Chicago, IL | Table XI is a digital design and development consulting firm that uses software consulting to power positive change.
 * [Techtonica](https://techtonica.org/) | San Francisco, CA | Techtonica offers six-month tech apprenticeships with living stipends and laptops to women and non-binary adults with low incomes, then place graduates with sponsor companies for at least three months of full-time work.
 * [Thoughtbot](http://apprentice.thoughtbot.com/) | Austin, TX; Boston, MA; New York, NY; Raleigh, NC; San Francisco, CA | Thoughtbot offers a 3-12 month apprenticeship for product designers or software engineers to be trained by mentors in order to become permanent employees at the organization by the end of the apprenticeship.
 * [Twilio Hatch](https://www.twilio.com/company/jobs) | San Francisco, CA | The apprenticeship, known as Hatch, is a six-month program which aims to equip individuals having non-traditional technical backgrounds with industry experience in designing, developing, and delivering production-ready software systems.
@@ -64,7 +64,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 
 ### Portugal
 
-* [Subvisual](https://subvisual.co/apprenticeship/) | Braga, PT | Subvisual is a  web design and development firm that offers a ten week program with design or developement tracks. 
+* [Subvisual](https://subvisual.co/apprenticeship/) | Braga, PT | Subvisual is a  web design and development firm that offers a ten week program with design or developement tracks.
 
 ### Switzerland
 

@@ -19,15 +19,14 @@ Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issu
 ### Formatting
 
 ```markdown
-* [Company/Apprenticeship Name](link) | City/Cities | Description of company/apprenticeship
-
+* [Company/Apprenticeship Name](link to website with more information or overview) | City/Cities | Description of company/apprenticeship
 ```
 
-* The link should not be to a direct link to the application page.
+* The link should not be to a direct link to the application page unless that's all that is available.
 * Use [title-casing](https://capitalizemytitle.com/).
-* Check your spelling and grammar.
+* Check your spelling and grammar using a tool like [Grammarly](https://grammarly.com).
 * Make sure your text editor is set to remove trailing whitespace.
-* Suggestions (apprenticeship or further resource) should be sorted **alphabetically**.
+* Suggestions (apprenticeships or further resources) should be sorted **alphabetically**.
   * Most text editors have a built in sort function that makes this super easy.
-* Suggestions should be categorized by the right country and also sorted alphabetically with the United States showing first.
+* Suggestions should be categorized by the right country and also sorted alphabetically but with the United States showing first.
   * e.g. United States, England, Portugal, etc.

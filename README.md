@@ -18,7 +18,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [Adobe Digital Academy](http://www.adobe.com/corporate-responsibility/education/digital-academy.html) | San Francisco, CA; Salt Lake City, UT | Adobe Digital Academy offers nontraditional candidates the education and, contingent upon technical performance, the experience they need to launch successful careers in web development.
 * [Apprentice Brigade](https://www.apprenticebrigade.com/) | Santa Cruz, CA | Apprentice Brigade operates a registered technology apprenticeship program covering IT and software development, curating quality talent on the Central Coast of California.
 * [Atomic](https://atomicobject.com/careers/accelerator) | Grand Rapids, MI; Ann Arbor, MI | Atomic Accelerator is a professional development program for recent computer science grads.
-* [Apprenti](https://apprenticareers.org/) | Seattle, WA; Detroit, MI; Bend, OR; Eugene, OR; Columbus, OH; Herndon, VA | Apprenti provides a proven, reliable pipeline for underrepresented groups such as minorities, women and veterans to gain training, certification and placement within the talent-hungry tech industry.
+* [Apprenti](https://apprenticareers.org/) | Seattle, WA; Detroit, MI; Bend, OR; Eugene, OR; Columbus, OH; Herndon, VA | Apprenti provides a proven, reliable pipeline for underrepresented groups such as minorities, women, and veterans to gain training, certification, and placement within the talent-hungry tech industry.
 * [Clique Studios](https://cliquestudios.com/clique-university/apprenticeships/) | Chicago, IL | Clique Studios is a design and engineering agency whose program trains apprentices with the skills necessary to get a role as a junior full-stack engineer at a small company or agency.
 * [CoverMyMeds](https://www.covermymeds.com/main/careers/tech-positions/) | Columbus, OH | CoverMyMeds is a healthcare software company that enables providers, pharmacists and their staff to fill out prior authorization (PA) requests electronically.
 * [Detroit Labs](https://www.detroitlabs.com/apprenticeships/) | Detroit, MI | The Detroit Labs Apprenticeship Program is a three-month immersive training experience in software development, mobile development, and quality assurance engineering.
@@ -38,11 +38,11 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [LinkedIn Reach](https://careers.linkedin.com/reach) | Sunnyvale, CA | REACH is a multi-year, rotational program where individuals with non-traditional backgrounds rotate through various levels of technical roles at the company.
 * [MAXX Potential](https://maxxpotential.com/apprentice/) | Richmond, VA | MAXX Potential is a technology consulting firm that focuses on finding a growing tech talent.
 * [Moove-it](https://moove-it.com/web-development-apprenticeship) | Austin, TX | Moove-it is a software consultancy whose program comprises extensive hands-on activities led by a Moove-it developer.
-* [Pillar Technology](http://pillartechnology.com/careers) | Ann Arbor, MI | Pillar is a technology consulting whose apprenticeship program is deisgn to create high-performing consultants and leaders for Pillar.
+* [Pillar Technology](http://pillartechnology.com/careers) | Ann Arbor, MI | Pillar is a technology consulting whose apprenticeship program is designed to create high-performing consultants and leaders for Pillar.
 * [Pinterest](https://careers.pinterest.com/careers/) | San Francisco, CA | Pinterest's apprentice program focuses on hiring engineers from non-traditional backgrounds who are comfortable with basic programming principles.
 * [Praxis](https://discoverpraxis.com/) | Austin, TX; Atlanta, GA; Phoenix, AZ; Charleston, SC; Pittsburgh, PA; Chicago, IL; Salt Lake City, UT | Praxis is an intensive 12-month apprenticeship program for those who are entrepreneurial young people that want real-world career experience and a rigorous, self-directed educational experience.
 * [RoleModel](http://www.craftsmanshipacademy.com/) | Holly Springs, NC | The RoleModel program is a year-long apprenticeship designed to turn bootcamp and college grads into solid developers.
-* [Social Tables](https://socialtables.com) | Washington, DC | Social Tables is a global SaaS company whose 3 month paid program with the potential of a full time offer to join their Engineering team accepts new developers without on the job work experience.
+* [Social Tables](https://socialtables.com) | Washington, DC | Social Tables is a global SaaS company offering a 3-month paid program targeting new developers without on the job work experience with the potential of a full-time offer to join the engineering team.
 * [Sparkbox](http://apprentices.seesparkbox.com) | Dayton, OH | Sparkbox is a web design and development firm with a focus on creating web experiences that embody response web design principles.
 * [Spotify](https://ttp.nyc/spotifyfellowship/) | New York, NY | The Spotify NYC Technology Fellowship is aimed at helping engineers just starting their careers in tech and provides an opportunity to work within a team and build upon current skills.
 * [Table XI](https://www.tablexi.com/careers/) | Chicago, IL | Table XI is a digital design and development consulting firm that uses software consulting to power positive change.
@@ -59,12 +59,12 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 * [8th Light](https://8thlight.com/apprenticeship/) | London, UK | 8th Light is a software consultancy that is passionate about crafting beautiful and durable software products.
 * [Accenture](https://www.accenture.com/gb-en/Careers/apprenticeships) | London, UK; Newcastle, UK; Warwick, UK | Accenture is a global professional services company providing a range of strategy, consulting, digital, technology & operations services and solutions.
 * [NeoMam Studios](http://neomam.com/jobs/) | Manchester, UK | NeoMam Studios is a content marketing agency that creates stunning visual content for its clients.
-* [Sainsbury's](http://early.careersatsainsburys.com/Home/Apprenticeships) | London, UK | Sainsbury's offers a two year structured apprenticeship programme for individuals who love the idea of working in the fast paced retail world.
+* [Sainsbury's](http://early.careersatsainsburys.com/Home/Apprenticeships) | London, UK | Sainsbury's offers a two-year structured apprenticeship programme for individuals who love the idea of working in the fast-paced retail world.
 * [Thoughtbot](http://apprentice.thoughtbot.com/) | London, UK | Thoughtbot offers a 3-12 month apprenticeship for product designers or software engineers to be trained by mentors in order to become permanent employees at the organization by the end of the apprenticeship.
 
 ### Portugal
 
-* [Subvisual](https://subvisual.co/apprenticeship/) | Braga, PT | Subvisual is a  web design and development firm that offers a ten week program with design or developement tracks.
+* [Subvisual](https://subvisual.co/apprenticeship/) | Braga, PT | Subvisual is a  web design and development firm that offers a ten-week program with design or development tracks.
 
 ### Switzerland
 
@@ -89,7 +89,7 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
 
 1.  🍴 [Fork this repo](https://github.com/fvcproductions/apprenticeships#fork-destination-box)
 2.  🔨 View the contributing guidelines at [CONTRIBUTING.md](CONTRIBUTING.md)
-3.  👥 Add yourself as a contributor under the credits section
+3.  👥 Add yourself as a contributor in the credits section
 4.  🔧 [Open a new pull request](https://github.com/fvcproductions/apprenticeships/compare)
 5.  🎉 Get your pull request approved - success!
 

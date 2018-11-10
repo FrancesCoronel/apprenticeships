@@ -81,6 +81,8 @@ So, without further ado, here's a list of developer & design apprenticeship oppo
   * Community resources for software apprenticeships
 * [Chicago Apprenticeships](http://chicagoapprenticeships.com/)
   * A list of apprentice software developer jobs in Chicago.
+* [TalentPath by Treehouse](https://teamtreehouse.com/go/talentpath)
+  * TalentPath by Treehouse aims to help companies scale their engineering teams, find new talent, and achieve their business goals by training apprentices with their online courses.
 * [TechHire Oakland Apprenticeships](https://www.techhireoakland.org/paid-job-based-learning/)
   * A list of emerging tech apprenticeships in the Bay Area.
 

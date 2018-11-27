@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Apprenticeships</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+    <link rel="stylesheet" href="/vendor.css">
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <ul>
-      {{ range .Site.Pages }}
-        {{ if .Params.location }}
-          <li>
-            <h2><a href="{{.Params.link}}">{{ .Params.company }}</a></h2>
-            <p>{{ .Params.location }}</p>
-            <p>{{ .Params.description }}</p>
-            
-          </li>
+    <div class="search">
+      <div id="search__box">
+        <!-- SearchBox widget will appear here -->
+    </div>
+    </div>
+      
+      <ul id="hits">
+        {{ range .Site.Pages }}
+          {{ if .Params.location }}
+            <li>
+              <a class="post post-entry" href="{{.Params.link}}" target="_blank">
+                <h2 class="post-header">{{ .Params.company }}</h2>
+                <p>{{ .Params.location }}</p>
+                <p>{{ .Params.description }}</p>
+              </a>
+            </li>
+          {{end}}
         {{end}}
-      {{end}}
-    </ul>
+      </ul>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+    <script src="/search.js"></script>
   </body>
 </html>

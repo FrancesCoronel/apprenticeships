@@ -9,7 +9,7 @@ const search = instantsearch({
   }
 })
 
-// initialize hits widge
+// initialize hits widget
 search.addWidget(
   instantsearch.widgets.hits({
     container: '#hits',

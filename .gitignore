@@ -112,6 +112,7 @@ Icon
 .env
 .cache
 public
+dist
 
 # Dependencies
 node_modules

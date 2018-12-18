@@ -14,7 +14,7 @@
   "scripts": {
     "algolia": "atomic-algolia",
     "server": "hugo; concurrently \"hugo -w\" \"parcel serve public/index.html\"",
-    "build": "parcel build public/*.html",
+    "build": "hugo; parcel build public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

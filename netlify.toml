@@ -1,0 +1,22 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+[context.production.environment]
+  HUGO_VERSION = "0.48"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.48"
+
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://apprenticeships.netlify.com/*"
+  to = "/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://apprenticeships.fvcproductions.com/*"
+  to = "/:splat"
+  status = 301

@@ -4,7 +4,7 @@ const search = instantsearch({
   indexName: 'apprenticeships',
   routing: true,
   searchableAttributes: ["company", "description", "location"],
-  searchFunction: function(helper) {
+  searchFunction: function (helper) {
     helper.search();
   }
 })
@@ -27,7 +27,7 @@ search.addWidget(
           {{/hits}}
         </ul>
     `,
-    empty: 'No results for {{query}}'
+      empty: 'No results for {{query}}'
     },
   })
 );

@@ -1,7 +1,7 @@
 ---
 company: "Accenture"
 link: "https://www.accenture.com/gb-en/Careers/apprenticeships"
-location: 
+location:
   - "London, UK"
   - "Newcastle, UK"
   - "Warwick, UK"

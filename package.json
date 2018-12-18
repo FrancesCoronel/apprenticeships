@@ -11,7 +11,8 @@
     "concurrently": "^4.1.0",
     "eslint": "^5.10.0",
     "eslint-config-google": "^0.11.0",
-    "parcel-bundler": "^1.10.3"
+    "parcel-bundler": "^1.10.3",
+    "prettier": "1.15.3"
   },
   "scripts": {
     "algolia": "atomic-algolia",

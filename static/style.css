@@ -9,7 +9,8 @@
   font-style: italic;
 }
 
-#search__box, .ais-search-box {
+#search__box,
+.ais-search-box {
   max-width: 1000px;
   width: 100%;
 }
@@ -32,6 +33,7 @@
 .ais-hits {
   width: 100%;
 }
+
 ul {
   display: flex;
   flex-wrap: wrap;

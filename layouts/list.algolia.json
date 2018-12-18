@@ -1,8 +1,35 @@
-{{- $.Scratch.Add "index" slice -}}
-{{- $section := $.Site.GetPage "section" .Section }}
-{{- range .Site.AllPages -}}
-  {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
-    {{- $.Scratch.Add "index" (dict "objectID" .UniqueID "company" .Date.UTC.Unix "description" .Description "company" .Params.company "location" .Params.location  "link" .Params.Link)}}
-  {{- end -}}
-{{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
+{
+  {
+    -$.Scratch.Add "index"
+    slice -
+  }
+} {
+  {
+    -$section: = $.Site.GetPage "section".Section
+  }
+} {
+  {
+    -range.Site.AllPages -
+  }
+} {
+  {
+    -
+    if or(and(.IsDescendant $section)(and(not.Draft)(not.Params.private))) $section.IsHome -
+  }
+} {
+  {
+    -$.Scratch.Add "index"(dict "objectID".UniqueID "company".Date.UTC.Unix "description".Description "company".Params.company "location".Params.location "link".Params.Link)
+  }
+} {
+  {
+    -end -
+  }
+} {
+  {
+    -end -
+  }
+} {
+  {
+    -$.Scratch.Get "index" | jsonify -
+  }
+}

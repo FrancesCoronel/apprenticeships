@@ -1,7 +1,7 @@
 ---
 company: "Viget"
 link: "https://www.viget.com/apprenticeship/"
-location: 
+location:
   - "Washington, DC"
   - "Durham, NC"
   - "Boulder, CO"

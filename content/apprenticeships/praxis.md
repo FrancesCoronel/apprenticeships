@@ -1,7 +1,7 @@
 ---
 company: "Praxis"
 link: "https://discoverpraxis.com/"
-location: 
+location:
   - "Austin, TX"
   - "Atlanta, GA"
   - "Phoenix, AZ"

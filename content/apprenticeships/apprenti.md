@@ -1,7 +1,7 @@
 ---
 company: "Apprenti"
 link: "https://apprenticareers.org/"
-location: 
+location:
   - "Seattle, WA"
   - "Detroit, MI"
   - "Bend, OR"

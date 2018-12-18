@@ -9,12 +9,14 @@
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
+    "eslint": "^5.10.0",
+    "eslint-config-google": "^0.11.0",
     "parcel-bundler": "^1.10.3"
   },
   "scripts": {
     "algolia": "atomic-algolia",
-    "server": "hugo; concurrently \"hugo -w\" \"parcel serve public/index.html\"",
-    "build": "hugo; parcel build public/*.html",
+    "server": "hugo; concurrently \"hugo -w\" \"parcel serve ./public/index.html\"",
+    "build": "hugo; parcel build ./public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

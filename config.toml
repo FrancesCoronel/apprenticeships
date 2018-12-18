@@ -1,0 +1,16 @@
+baseURL = "https://apprenticeships.fvcproductions.com/"
+languageCode = "en-us"
+title = "Apprenticeships"
+
+[outputFormats.Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.algolia]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["company", "link", "location", "description", "draft"]
+
+[outputs]
+home = ["HTML", "Algolia"]

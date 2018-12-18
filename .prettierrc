@@ -1,0 +1,17 @@
+{
+  "jsxBracketSameLine": false,
+  "noSemi": true,
+  "parser": "babylon",
+  "printWidth": 80,
+  "rcVerbose": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "none",
+  "useTabs": false,
+  "overrides": [{
+    "files": "*.md",
+    "options": {
+      "parser": "markdown"
+    }
+  }]
+}

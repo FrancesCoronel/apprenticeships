@@ -109,7 +109,11 @@ $RECYCLE.BIN/
 #####################
 Icon^M^M
 Icon
-
-# Misc #
-#####################
+.env
+.cache
 public
+dist
+
+# Dependencies
+node_modules
+website/dist

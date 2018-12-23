@@ -5,9 +5,18 @@
   "main": "index.js",
   "dependencies": {
     "atomic-algolia": "^0.3.15",
-    "instantsearch.js": "^3.0.0"
+    "cssnano": "^4.1.7",
+    "instantsearch.js": "^3.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.1.1",
+    "postcss-partial-process": "^1.0.0",
+    "postcss-prepend-selector": "^0.3.1",
+    "tailwindcss": "^0.7.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "concurrently": "4.1.0",
     "eslint": "5.10.0",
     "eslint-config-google": "0.11.0",
@@ -16,7 +25,8 @@
   },
   "scripts": {
     "algolia": "atomic-algolia",
-    "server": "hugo; concurrently \"hugo -w\" \"parcel serve ./public/index.html\"",
+    "build:css": "tailwind build static/style.css -c ./tailwind.config.js -o ./public/generated.css",
+    "server": "concurrently  \"hugo -w\"  \"tailwind build static/style.css -c ./tailwind.config.js -o ./public/generated.css -w\" \"parcel  ./public/index.html\" ",
     "build": "hugo; parcel build ./public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

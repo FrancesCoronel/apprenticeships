@@ -1,3 +1,7 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
 .search {
   align-items: center;
   display: flex;
@@ -32,30 +36,4 @@
 
 .ais-hits {
   width: 100%;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  max-width: 1000px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-li {
-  list-style: none;
-  width: 100%;
-}
-
-li a {
-  display: block;
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  li {
-    margin: 0 0;
-    width: 50%;
-  }
 }

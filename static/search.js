@@ -1,23 +1,25 @@
-const search = instantsearch({
+var instantsearch = require("instantsearch.js");
+
+var search = instantsearch({
   appId: process.env.ALGOLIA_APP_ID,
   apiKey: process.env.ALGOLIA_ADMIN_KEY,
-  indexName: 'apprenticeships',
+  indexName: "apprenticeships",
   routing: true,
   searchableAttributes: ["company", "description", "location"],
-  searchFunction: function (helper) {
+  searchFunction: function(helper) {
     helper.search();
   }
-})
+});
 
 // initialize hits widget
 search.addWidget(
   instantsearch.widgets.hits({
-    container: '#hits',
+    container: "#hits",
     templates: {
       allItems: `
-        <ul>
+        <ul class="list-reset flex justify-between flex-wrap">
           {{#hits}}
-            <li>
+            <li class="w-1-2">
               <a class="post post-entry" href="{{{link}}}" target="_blank">
                 <h2 class="post-header">{{{company}}}</h2>
                 <p class="post__location">{{{location}}}</p>
@@ -27,16 +29,16 @@ search.addWidget(
           {{/hits}}
         </ul>
     `,
-      empty: 'No results for {{query}}'
-    },
+      empty: "No results for {{query}}"
+    }
   })
 );
 
 search.addWidget(
   instantsearch.widgets.searchBox({
-    container: '#search__box',
-    placeholder: 'Search for apprenticeships'
+    container: "#search__box",
+    placeholder: "Search for apprenticeships"
   })
 );
 
-search.start()
+search.start();

@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "concurrently": "4.1.0",
-    "eslint": "5.10.0",
+    "eslint": "5.11.0",
     "eslint-config-google": "0.11.0",
     "parcel-bundler": "1.11.0",
     "prettier": "1.15.3"

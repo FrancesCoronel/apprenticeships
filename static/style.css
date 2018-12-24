@@ -1,6 +1,5 @@
 @tailwind preflight;
 @tailwind components;
-@tailwind utilities;
 
 .search {
   align-items: center;
@@ -37,3 +36,14 @@
 .ais-hits {
   width: 100%;
 }
+
+.center-fixed-item {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav--sticky {
+  position: sticky;
+}
+
+@tailwind utilities;

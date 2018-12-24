@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Apprenticeships</title>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+
   <link rel="stylesheet" href="/vendor.css">
   <link rel="stylesheet" href="/generated.css">
 </head>
@@ -23,11 +26,10 @@
     </div>
   </nav>
 
-  <div class="w-1-6 flex justify-center">
-    <nav class="bg-pink-lightest fixed p-6 rounded-lg shadow z-50">
+  <div class="fixed w-1-6 flex justify-center">
+    <nav class="bg-pink-lightest p-6 rounded-lg shadow z-50 ">
       <ul class="list-reset font-bold text-base">
-        <li class="mb-4"><a class="font-bold text-black-light hover-text-black transition" href="">What is an
-            apprenticeship?</a></li>
+        <li class="mb-4"><a class="font-bold text-black-light hover-text-black transition" href="">What is an apprenticeship?</a></li>
         <li class="mb-4"><a class="font-bold text-black-light hover-text-black transition" href="">Listings</a></li>
         <li class="mb-4"><a class="font-bold text-black-light hover-text-black transition" href="">Contributors</a></li>
         <li class="mb-4"><a class="font-bold text-black-light hover-text-black transition" href="">Resources</a></li>
@@ -47,8 +49,8 @@
       <img src="/images/section-one.svg" alt="">
       <div class="max-w-smxs">
         <h2 class="border-b-2 border-pink text-2xl inline-block mb-8">What is an apprenticeship?</h2>
-        <p class="text-base leading-normal">Back in the good old days of the Renaissance, apprenticeships were quite common and acted as legal contracts
-          between
+        <p class="text-base leading-normal">
+          Back in the good old days of the Renaissance, apprenticeships were quite common and acted as legal contracts between
           the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and
           eventually become masters themselves.</p>
       </div>
@@ -56,10 +58,10 @@
   </section>
 
   <section>
-    <div class="max-w-lgxl w-5-6 mx-auto">
+    <div class="max-w-lgxl w-5-6 mx-auto mt-32">
       <h2 class="border-b-2 border-pink text-2xl inline-block mb-8">Find an apprenticeship</h2>
       <div class="search">
-        <div id="search__box" class="w-full">
+        <div id="search__box" class="w-full mb-8">
           <!-- SearchBox widget will appear here -->
         </div>
       </div>
@@ -80,54 +82,54 @@
       </ul>
     </div>
   </section>
-  <section>
-    <div>
+  <section class="bg-pink-lightest mt-32 py-8 flex">
+    <div class="w-5-6 max-w-lgxl mx-auto">
       <h2 class="border-b-2 border-pink text-2xl inline-block mb-8">Related resources</h2>
-      <ul>
-        <li>
+      <ul class="list-reset">
+        <li class="mb-6">
           <a href="">
-            <h3>Apprentice.at</h3>
+            <h3 class="text-pink text-lg font-bold">Apprentice.at</h3>
           </a>
-          <p>A directory of apprenticeships</p>
+          <p class="text-base mt-2">A directory of apprenticeships</p>
         </li>
-        <li>
+        <li class="mb-6">
           <a href="">
-            <h3>Apprentice.io</h3>
+            <h3 class="text-pink text-lg font-bold">Apprentice.io</h3>
           </a>
-          <p>Largest community of U.S. based software engineering apprenticeships</p>
+          <p class="text-base mt-2">Largest community of U.S. based software engineering apprenticeships</p>
         </li>
-        <li>
+        <li class="mb-6">
           <a href="">
-            <h3>Apprentice.thoughtbot.com</h3>
+            <h3 class="text-pink text-lg font-bold">Apprentice.thoughtbot.com</h3>
           </a>
-          <p>Community resources for software apprenticeships</p>
+          <p class="text-base mt-2">Community resources for software apprenticeships</p>
         </li>
       
-        <li>
+        <li class="mb-6">
           <a href="">
-            <h3>Community resources for software apprenticeships</h3>
+            <h3 class="text-pink text-lg font-bold">Community resources for software apprenticeships</h3>
           </a>
-          <p>A list of apprentice software developer jobs in Chicago.</p>
+          <p class="text-base mt-2">A list of apprentice software developer jobs in Chicago.</p>
         </li>
-        <li>
+        <li class="mb-6">
           <a href="">
-            <h3>TalentPath by Treehouse</h3>
+            <h3 class="text-pink text-lg font-bold">TalentPath by Treehouse</h3>
           </a>
-          <p>TalentPath by Treehouse aims to help companies scale their engineering teams, find new talent, and achieve their
+          <p class="text-base mt-2">TalentPath by Treehouse aims to help companies scale their engineering teams, find new talent, and achieve their
           business goals by training apprentices with their online courses.</p>
         </li>
-        <li>
+        <li class="mb-6">
           <a href="">
-            <h3>TechHire Oakland Apprenticeships</h3>
+            <h3 class="text-pink text-lg font-bold">TechHire Oakland Apprenticeships</h3>
           </a>
-          <p>A list of emerging tech apprenticeships in the Bay Area.</p>
+          <p class="text-base mt-2">A list of emerging tech apprenticeships in the Bay Area.</p>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="flex justify-center flex-col text-center">
-    <div class="w-5-6 self-end flex justify-center">
+  <section class="flex justify-center flex-col text-center mt-32">
+    <div class="w-5-6 mx-auto flex justify-center">
       <div class="max-w-sm w-full flex flex-col items-center">
         <h2 class="border-b-2 border-pink text-2xl inline-block mb-8 max-w-sm self-center">
           Contributors to Apprenticeships.me
@@ -143,10 +145,11 @@
 
   <footer class="mt-48">
     <div class="flex bg-pink justify-end">
-      <p class="w-5-6 text-center text-white font-normal py-2">Copyright (CHECK REPO ISSUE FOR DETAILS)</p>
+      <p class="w-5-6 mx-auto text-center text-white font-normal py-2">Copyright (CHECK REPO ISSUE FOR DETAILS)</p>
     </div>
   </footer>
-  <script src="/search.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
+  <script src="./index.js"></script>
 
 </body>
 

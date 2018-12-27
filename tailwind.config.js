@@ -551,6 +551,7 @@ module.exports = {
     "156": "54rem",
     "270": "93.75rem",
     full: "100%",
+    half: "50vh",
     screen: "100vh"
   },
 

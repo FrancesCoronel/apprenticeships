@@ -1,6 +1,12 @@
 @tailwind preflight;
 @tailwind components;
 
+
+h2 {
+  font-size: responsive 24px 36px;
+  font-range: 1440px 3660px;
+}
+
 .search {
   align-items: center;
   display: flex;
@@ -46,4 +52,16 @@
   position: sticky;
 }
 
+.text-black-light.active {
+  color: #070707 !important;
+}
+
+.fixed-nav {
+  position: absolute;
+  top: 25vh;
+  transform: translateY(-50%);
+}
+
 @tailwind utilities;
+
+

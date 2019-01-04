@@ -12,39 +12,39 @@
   </head>
 
   <body class="font-primary text-black relative">
-    <nav class="flex justify-between items-center max-w-5xl mx-auto w-full py-6">
-      <a href="/" class="font-bold text-2xl">Apprenticeships.me</a>
+    <nav class="flex flex-col lg-flex-row justify-between items-center max-w-5xl mx-auto w-full lg-px-4 py-6">
+      <a href="/" class="font-bold text-2xl mb-6 lg-mb-0">Apprenticeships.me</a>
       <div class="text-base font-bold flex justify-between">
-        <a href="#" class="bg-white text-black flex justify-between items-center px-4 py-2 rounded">
+        <a href="https://github.com/fvcproductions/apprenticeships/" target="_blank" class="bg-white text-black flex justify-between items-center px-4 py-2 rounded hover-underline transition">
           <img src="/images/github-black.svg" alt="">
           <span class="ml-2">Visit on Github</span>
         </a>
-        <a href="#" class="bg-green text-white px-6 py-2 rounded ml-8 self-center">Contribute</a>
+        <a href="https://github.com/fvcproductions/apprenticeships/issues/new" target="_blank" class="bg-green text-white px-6 py-2 rounded ml-8 self-center hover-bg-green-dark transition">Contribute</a>
       </div>
     </nav>
 
-    <div class="fixed w-1-6 flex justify-center min-h-half">
+    <div class="lg-fixed w-full lg-w-1-6 flex justify-center lg-min-h-half">
       <nav class="fixed-nav bg-pink-lightest p-6 rounded-lg shadow z-50">
         <ul class="list-reset font-bold text-base">
-          <li class="mb-4"><a class="scroll-nav__link font-bold text-black-light hover-text-black transition" href="#one">What is an apprenticeship?</a></li>
-          <li class="mb-4"><a class="scroll-nav__link font-bold text-black-light hover-text-black transition" href="#two">Listings</a></li>
-          <li class="mb-4"><a class="scroll-nav__link font-bold text-black-light hover-text-black transition" href="#three">Resources</a></li>
-          <li class="mb-4"><a class="scroll-nav__link font-bold text-black-light hover-text-black transition" href="#four">Contributors</a></li>
+          <li class="mb-4"><a class="scroll-nav__link font-bold text-black-light lg-hover-text-black transition" href="#one">What is an apprenticeship?</a></li>
+          <li class="mb-4"><a class="scroll-nav__link font-bold text-black-light lg-hover-text-black transition" href="#two">Listings</a></li>
+          <li class="mb-4"><a class="scroll-nav__link font-bold text-black-light lg-hover-text-black transition" href="#three">Resources</a></li>
+          <li class="mb-4"><a class="scroll-nav__link font-bold text-black-light lg-hover-text-black transition" href="#four">Contributors</a></li>
         </ul>
       </nav>
     </div>
 
-    <header class="mb-32 min-h-half flex items-center">
-      <div class="w-5-6 flex justify-between max-w-lgxl w-full relative mx-auto">
-        <h1 class="text-4xl w-96 relative z-40">Find a new career learning from the industry itself.</h1>
-        <img class="absolute pin-r pin-t -mt-32 z-20" src="/images/header.svg" alt="">
+    <header class="mb-32 mt-32 lg-mt-0 min-h-half flex items-center">
+      <div class="w-full lg-w-5-6 flex flex-col lg-flex-row justify-between max-w-lgxl relative mx-auto">
+        <h1 class="text-4xl text-center lg-text-left w-full max-w-sm lg-max-w-md mx-auto lg-mx-0 lg-w-96 relative z-40">Find a new career learning from the industry itself.</h1>
+        <img class="lg-absolute pin-r pin-t mt-16 lg--mt-32 z-20" src="/images/header.svg" alt="">
       </div>
     </header>
 
     <section id="one" class="bg-pink-lightest py-32 min-h-half flex items-center">
-      <div class="flex justify-between max-w-lgxl w-5-6 mx-auto">
-        <img src="/images/section-one.svg" alt="">
-        <div class="max-w-smxs">
+      <div class="flex flex-col lg-flex-row justify-between items-center max-w-lgxl w-full lg-w-5-6 mx-auto">
+        <img class="mb-16 lg-mb-0" src="/images/section-one.svg" alt="">
+        <div class="max-w-smxs text-center lg-text-left">
           <h2 class="border-b-2 border-pink inline-block mb-8">What is an apprenticeship?</h2>
           <p class="text-base leading-normal">
             Back in the good old days of the Renaissance, apprenticeships were quite common and acted as legal contracts between
@@ -77,11 +77,11 @@
             {{end}}
           {{end}}
         </ul>
-        <div id="pagination-container"></div>
+        <div id="pagination-container" class="flex justify-center mt-8 mb-16"></div>
       </div>
     </section>
 
-    <section id="three" class="bg-pink-lightest pt-32 py-8 flex min-h-half">
+    <section id="three" class="bg-pink-lightest py-32 py-8 flex min-h-half">
       <div class="w-5-6 max-w-lgxl mx-auto">
         <h2 class="border-b-2 border-pink inline-block mb-8">Related resources</h2>
         <ul class="list-reset">
@@ -137,14 +137,14 @@
             This site and the listings are all available because of people like you and the contributors below. If you’re looking to contribute to any of the listings or to this site, take a look at the contriubuting guidelines in the repository below.
           </p>
           <ul id="contributor-list" class="list-reset flex flex-wrap justify-between max-w-md w-full"></ul>
-          <a href="" class="bg-black text-white mt-8 px-4 py-3 rounded-lg flex justify-between items-center w-48 text-center font-bold text-base"><img src="/images/github-white.svg" alt="">Visit on Github</a>
+          <a href="https://github.com/fvcproductions/apprenticeships" target="_blank" class="bg-black text-white mt-8 px-4 py-3 rounded-lg flex justify-between items-center w-48 text-center font-bold text-base hover-bg-black-light transition"><img src="/images/github-white.svg" alt="">Visit on Github</a>
         </div>
       </div>
     </section>
 
     <footer class="">
       <div class="flex bg-pink justify-end">
-        <p class="w-5-6 mx-auto text-center text-white font-normal py-2">&copy; Copyright
+        <p class="w-5-6 mx-auto text-center text-white font-normal py-2 text-sm">&copy; Copyright
           <script language="JavaScript" type="text/javascript">
             now = new Date
             theYear = now.getYear()

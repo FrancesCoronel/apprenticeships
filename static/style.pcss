@@ -27,7 +27,7 @@ h2 {
 .ais-search-box--magnifier-wrapper {
   position: absolute;
   right: 50px;
-  top: 12px;
+  top: 21px;
 }
 
 .ais-search-box--reset-wrapper {
@@ -52,14 +52,36 @@ h2 {
   position: sticky;
 }
 
-.text-black-light.active {
+.scroll-nav__link.active {
   color: #070707 !important;
 }
 
-.fixed-nav {
-  position: absolute;
-  top: 25vh;
-  transform: translateY(-50%);
+.ais-pagination--item__active {
+  background-color: #FF8284;
+}
+
+.ais-pagination--item {
+  transition: all 0.3s ease;
+
+  &:hover, &:focus {
+    background-color: #FFF3F3;
+
+    .ais-pagination--link {
+      color: #000000;
+    }
+  }
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 992px) {
+  .fixed-nav {
+    position: absolute;
+    top: 25vh;
+    transform: translateY(-50%);
+  }
 }
 
 @tailwind utilities;

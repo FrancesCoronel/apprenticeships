@@ -15,18 +15,13 @@ search.addWidget(
     hitsPerPage: 10,
     templates: {
       allItems: `
-        <ul class="list-reset flex justify-between flex-wrap -mx-2">
+        <ul class="list-reset flex flex-col md-flex-row justify-between flex-wrap -mx-2">
           {{#hits}}
-            <li class="w-1-2 px-2 mb-8 flex">
-              <a class="bg-white block shadow px-4 pt-2 pb-4 flex flex-col flex-grow" href="{{{link}}}" target="_blank">
+            <li class="w-full md-w-1-2 px-2 mb-8 flex">
+              <a class="bg-white block shadow hover-shadow-md transition px-4 pt-2 pb-8 flex flex-col flex-grow" href="{{{link}}}" target="_blank">
                 <span class="text-xs italic block self-end">{{{location}}}</span>
                 <h2 class="post-header text-base font-bold mb-2">{{{company}}}</h2>
                 <p class="leading-normal text-sm">{{{description}}}</p>
-                <ul class="list-reset flex mt-4">
-                  <li class="bg-pink-lightest text-sm mr-2 py-1 px-2 rounded-lg">#front-end</li>
-                  <li class="bg-pink-lightest text-sm mr-2 py-1 px-2 rounded-lg">#back-end</li>
-                  <li class="bg-pink-lightest text-sm mr-2 py-1 px-2 rounded-lg">#ux design</li>
-                </ul>
               </a>
             </li>
           {{/hits}}

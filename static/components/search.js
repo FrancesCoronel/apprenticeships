@@ -12,14 +12,13 @@ const search = instantsearch({
 search.addWidget(
   instantsearch.widgets.hits({
     container: "#hits",
-    hitsPerPage: 12,
+    hitsPerPage: 15,
     templates: {
       allItems: `
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap -mx-2 mt-6">
           {{#hits}}
-            <a class="w-full sm-w-1-2 md-w-1-3 mb-4 shadow hover-shadow-lg transition" href="{{{link}}}" target="_blank" rel="noopener noreferrer">
-              <div class="max-w-sm rounded overflow-hidden">
-                <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+            <a class="my-4 px-2 w-full md-w-1-2 lg-w-1-3" href="{{{link}}}" target="_blank" rel="noopener noreferrer">
+              <div class="max-w-sm rounded overflow-hidden shadow-md hover-shadow-lg transition min-h-full">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">{{{company}}}</div>
                   <p class="text-grey-darker text-base">{{{description}}}</p>

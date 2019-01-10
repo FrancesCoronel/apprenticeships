@@ -1,0 +1,89 @@
+@tailwind preflight;
+@tailwind components;
+
+
+h2 {
+  font-size: responsive 24px 36px;
+  font-range: 1440px 3660px;
+}
+
+.search {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.post__location {
+  font-size: 16px;
+  font-style: italic;
+}
+
+#search__box,
+.ais-search-box {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.ais-search-box--magnifier-wrapper {
+  position: absolute;
+  right: 50px;
+  top: 21px;
+}
+
+.ais-search-box--reset-wrapper {
+  display: block;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  width: 20px;
+  top: 10px;
+}
+
+.ais-hits {
+  width: 100%;
+}
+
+.center-fixed-item {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav--sticky {
+  position: sticky;
+}
+
+.scroll-nav__link.active {
+  color: #070707 !important;
+}
+
+.ais-pagination--item__active {
+  background-color: #FF8284;
+}
+
+.ais-pagination--item {
+  transition: all 0.3s ease;
+
+  &:hover, &:focus {
+    background-color: #FFF3F3;
+
+    .ais-pagination--link {
+      color: #000000;
+    }
+  }
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 992px) {
+  .fixed-nav {
+    position: absolute;
+    top: 25vh;
+    transform: translateY(-50%);
+  }
+}
+
+@tailwind utilities;
+
+

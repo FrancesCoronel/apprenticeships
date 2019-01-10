@@ -1,0 +1,33 @@
+{{ with .Site.Social.facebook }}<meta property="article:author" content="https://www.facebook.com/{{ . }}">{{ end }}
+{{ with .Site.Social.facebook }}<meta property="article:publisher" content="https://www.facebook.com/{{ . }}">{{ end }}
+{{ with .Site.Social.twitter }}<meta name="twitter:creator" content="@{{ . }}">{{ end }}
+{{ with .Site.Social.twitter }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
+<meta itemprop="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+<meta itemprop="image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}">
+<meta itemprop="name" content="{{ .Title }}">
+<meta itemprop="wordCount" content="{{ .WordCount }}">
+<meta name="application-name" content="{{ .Site.Title }}">
+<meta name="DC.creator" content="{{ .Site.Author.name }}">
+<meta name="DC.description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+<meta name="DC.publisher" content="{{ .Site.Author.name }}">
+<meta name="DC.title" content="{{ .Title }}">
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+<meta name="image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}">
+<meta name="msapplication-tooltip" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+<meta name="msapplication-window" content="width=device-width;height=device-height">
+<meta name="title" content="{{ .Title }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+<meta name="twitter:image:src" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}">
+<meta name="twitter:text:title" content="{{ .Title }}">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta property="article:section" content="{{ .Section }}">
+<meta property="dcterms:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+<meta property="dcterms:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+<meta property="og:image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}">
+<meta property="og:locale" content="{{ .Site.Params.locale }}">
+<meta property="og:site_name" content="{{ .Site.Params.title }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">

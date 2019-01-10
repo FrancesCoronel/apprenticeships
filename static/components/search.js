@@ -4,7 +4,7 @@ const search = instantsearch({
   indexName: "apprenticeships",
   routing: true,
   searchableAttributes: ["company", "description", "location"],
-  searchFunction: function(helper) {
+  searchFunction: function (helper) {
     helper.search();
   }
 });
@@ -12,20 +12,25 @@ const search = instantsearch({
 search.addWidget(
   instantsearch.widgets.hits({
     container: "#hits",
-    hitsPerPage: 10,
+    hitsPerPage: 12,
     templates: {
       allItems: `
-        <ul class="list-reset flex flex-col md-flex-row justify-between flex-wrap -mx-2">
+        <div class="flex flex-wrap">
           {{#hits}}
-            <li class="w-full md-w-1-2 px-2 mb-8 flex">
-              <a class="bg-white block shadow hover-shadow-md transition px-4 pt-2 pb-8 flex flex-col flex-grow" href="{{{link}}}" target="_blank">
-                <span class="text-xs italic block self-end">{{{location}}}</span>
-                <h2 class="post-header text-base font-bold mb-2">{{{company}}}</h2>
-                <p class="leading-normal text-sm">{{{description}}}</p>
-              </a>
-            </li>
+            <a class="w-full sm-w-1-2 md-w-1-3 mb-4 shadow hover-shadow-lg transition" href="{{{link}}}" target="_blank" rel="noopener noreferrer">
+              <div class="max-w-sm rounded overflow-hidden">
+                <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">{{{company}}}</div>
+                  <p class="text-grey-darker text-base">{{{description}}}</p>
+                </div>
+                <div class="px-6 py-4">
+                  {{#location}}<span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">{{ . }}</span>{{/location}}
+                </div>
+              </div>
+            </a>
           {{/hits}}
-        </ul>
+        </div>
     `,
       empty: "No results for {{query}}"
     }

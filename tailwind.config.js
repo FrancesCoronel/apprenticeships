@@ -41,33 +41,31 @@ let colors = {
   "pink-darkest": "#4D2728",
   "pink-darker": "#994E4F",
   "pink-dark": "#E67577",
-  pink: "#FF8284",
+  "pink": "#FF8284",
   "pink-light": "#FFA8A9",
   "pink-lighter": "#FFCDCE",
   "pink-lightest": "#FFF3F3",
-  "green-darkest": "#00412D",
-  "green-darker": "#008159",
-  "green-dark": "#00C286",
-  green: "#00D795",
-  "green-light": "#4DE3B5",
-  "green-lighter": "#99EFD5",
-  "green-lightest": "#E6FBF4",
+  "green-darkest": "#003300", // 50%
+  "green-darker": "#2B6609", // 40%
+  "green-dark": "#447F22", // 30%
+  "green": "#77B255",
+  "green-light": "#C4FFA2", // 30%
+  "green-lighter": "#DDFFBB", // 40%
+  "green-lightest": "#F6FFD4", // 50%
   "black-darkest": "#070707",
   "black-darker": "#0E0E0E",
   "black-dark": "#161616",
-  black: "#181818",
+  "black": "#181818",
   "black-light": "#5D5D5D",
   "black-lighter": "#A3A3A3",
   "black-lightest": "#E8E8E8",
   "white-darkest": "#4D4D4D",
   "white-darker": "#999999",
   "white-dark": "#E6E6E6",
-  white: "#FFFFFF",
+  "white": "#FFFFFF",
   "white-light": "#FFFFFF",
   "white-lighter": "#FFFFFF",
-  "white-lightest": "#FFFFFF",
-  blue: "blue",
-  brown: "pink"
+  "white-lightest": "#FFFFFF"
 };
 
 module.exports = {
@@ -130,45 +128,6 @@ module.exports = {
   | Class name: .font-{name}
   |
   */
-
-  fonts: {
-    primary: [
-      "Open Sans",
-      "system-ui",
-      "BlinkMacSystemFont",
-      "-apple-system",
-      "Segoe UI",
-      "Oxygen",
-      "Ubuntu",
-      "Cantarell",
-      "Fira Sans",
-      "Droid Sans",
-      "Helvetica Neue",
-      "sans-serif"
-    ],
-    secondary: [
-      "Open Sans",
-      "system-ui",
-      "BlinkMacSystemFont",
-      "-apple-system",
-      "Segoe UI",
-      "Oxygen",
-      "Ubuntu",
-      "Cantarell",
-      "Fira Sans",
-      "Droid Sans",
-      "Helvetica Neue",
-      "sans-serif"
-    ],
-    mono: [
-      "Menlo",
-      "Monaco",
-      "Consolas",
-      "Liberation Mono",
-      "Courier New",
-      "monospace"
-    ]
-  },
 
   /*
   |-----------------------------------------------------------------------------
@@ -352,7 +311,9 @@ module.exports = {
   |
   */
 
-  borderColors: global.Object.assign({ default: colors["grey-light"] }, colors),
+  borderColors: global.Object.assign({
+    default: colors["grey-light"]
+  }, colors),
 
   /*
   |-----------------------------------------------------------------------------
@@ -907,7 +868,9 @@ module.exports = {
   */
 
   plugins: [
-    function({ addUtilities }) {
+    function ({
+      addUtilities
+    }) {
       const newUtilities = {
         ".order-1": {
           order: "1"

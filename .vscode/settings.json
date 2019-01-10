@@ -1,0 +1,15 @@
+{
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "eslint.autoFixOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "markdown.extension.preview.autoShowPreviewToSide": false,
+  "prettier.eslintIntegration": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "search.exclude": {
+    "public": true,
+    "dist": true
+  }
+}

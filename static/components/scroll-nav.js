@@ -1,4 +1,5 @@
-import smoothscroll from "smoothscroll-polyfill";
+// import smoothscroll from "smoothscroll-polyfill";
+smoothscroll = require("smoothscroll-polyfill")
 require("intersection-observer");
 
 smoothscroll.polyfill();
@@ -43,7 +44,11 @@ let onClick = (e, i) => {
   e.preventDefault();
   let whereToScroll = document.querySelector(i.getAttribute("href"));
   whereToScroll = whereToScroll.getBoundingClientRect();
-  window.scrollBy({ top: whereToScroll.top, left: 0, behavior: "smooth" });
+  window.scrollBy({
+    top: whereToScroll.top,
+    left: 0,
+    behavior: "smooth"
+  });
 };
 
 sectionLinks.forEach((i) => {

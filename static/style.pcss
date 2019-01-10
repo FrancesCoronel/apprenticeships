@@ -1,9 +1,7 @@
 @tailwind preflight;
 @tailwind components;
 
-
 h2 {
-  font-size: responsive 24px 36px;
   font-range: 1440px 3660px;
 }
 
@@ -14,14 +12,16 @@ h2 {
 }
 
 .post__location {
-  font-size: 16px;
   font-style: italic;
 }
 
-#search__box,
 .ais-search-box {
-  max-width: 1000px;
-  width: 100%;
+  max-width: 100%;
+}
+
+.ais-search-box--input {
+   padding: 20px;
+   font-size: 1rem;
 }
 
 .ais-search-box--magnifier-wrapper {
@@ -30,13 +30,15 @@ h2 {
   top: 21px;
 }
 
+.ais-search-box--reset {
+  top: 0;
+}
+
 .ais-search-box--reset-wrapper {
   display: block;
   position: absolute;
-  right: 100px;
-  top: 0;
-  width: 20px;
-  top: 10px;
+  right: 50px;
+  top: 15px;
 }
 
 .ais-hits {
@@ -56,15 +58,21 @@ h2 {
   color: #070707 !important;
 }
 
+.ais-pagination {
+  padding: 1em;
+}
+
 .ais-pagination--item__active {
-  background-color: #FF8284;
+  background-color: #77B255;
 }
 
 .ais-pagination--item {
+  font-size: inherit;
   transition: all 0.3s ease;
+  margin: 0 1rem;
 
   &:hover, &:focus {
-    background-color: #FFF3F3;
+    background-color: #DDFFBB;
 
     .ais-pagination--link {
       color: #000000;

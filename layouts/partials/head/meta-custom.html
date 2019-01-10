@@ -1,0 +1,56 @@
+<!-- Check for valid date -->
+{{ if not .PublishDate.IsZero }}
+<meta itemprop="datePublished" content="{{ dateFormat "2006-01-02" .Date }}">
+<meta property="article:published_time" content="{{ dateFormat "2006-01-02" .Date }}">
+<meta property="og:updated_time" content="{{ dateFormat "2006-01-02" .Date }}">
+{{ end }}
+<!-- Categories & Tags Present -->
+{{ if or (.Params.Categories) (.Params.tags) }}
+<!-- Categories -->
+{{ if .Params.categories }}
+<meta name="twitter:label1" value="Categories 📂️">
+<meta name="twitter:data1" value="{{ delimit .Params.categories ", " }}">
+{{ end }}
+<!-- Twitter Labels -->
+{{ if .Params.tags }}
+<meta name="twitter:label2" value="Tags 📌️">
+<meta name="twitter:data2" value="{{ delimit .Params.tags ", " }}">
+{{ end }}
+{{ end }}
+<!-- Keywords -->
+{{ if or (.Params.categories) (.Params.tags) }}
+<meta itemprop="keywords" content="{{ if .Params.categories }}{{ delimit .Params.categories ", " }}{{ end }}{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}techqueria">
+<meta name="DC.subject" content="{{ if .Params.categories }}{{ delimit .Params.categories ", " }}{{ end }}{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}techqueria">
+{{ if .IsPage }}
+<meta name="news_keywords" content="{{ if .Params.categories }}{{ delimit .Params.categories ", " }}{{ end }}{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}techqueria">
+<meta property="article:tag" content="{{ if .Params.categories }}{{ delimit .Params.categories ", " }}{{ end }}{{ if .Params.tags }}{{ delimit .Params.tags ", " }}{{ end }}techqueria">
+{{ end }}
+{{ end }}
+<!-- Series -->
+<!-- Add prefetch and prerender on section pages. Works especially well for articles or blog posts in a series -->
+{{ if .IsPage }}
+<!-- Next Section -->
+{{ if .NextInSection }}
+<link rel="prefetch" href="{{ .NextInSection.Permalink }}">
+<link rel="prerender" href="{{ .NextInSection.Permalink }}">
+{{ end }}
+<!-- Previous Section -->
+{{ if .PrevInSection }}
+<link rel="prefetch" href="{{ .PrevInSection.Permalink }}">
+<link rel="prerender" href="{{ .PrevInSection.Permalink }}">
+{{ end }}
+{{ end }}
+<!-- RSS -->
+{{ if .RSSLink }}
+<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+{{ end }}
+<!-- Alternative Output -->
+{{ range .AlternativeOutputFormats -}}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{ end -}}
+<!-- Translations -->
+{{ if .IsTranslated }}
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+{{ end }}
+{{ end }}

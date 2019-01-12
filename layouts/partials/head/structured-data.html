@@ -1,3 +1,4 @@
+<!-- Homepage -->
 {{ if .IsHome -}}
 <script type="application/ld+json">
 {
@@ -8,6 +9,12 @@
     "name":             "{{ .Site.Title }}",
     "thumbnailUrl":     "{{ .Site.Params.logo }}",
     "url":              "{{ .Site.BaseURL }}",
+    {{ if .Site.author.name }}
+     "author":           {
+        "@type":        "Person",
+        "name":         "{{ .Site.Author.name }}"
+    },
+    {{ end }}
     "mainEntityOfPage": {
         "@type":        "WebPage",
         "@id":          "{{ .Site.BaseURL }}"
@@ -26,11 +33,15 @@
     ]
 }
 </script>
+<!-- Blog Posting -->
 {{- else if .IsPage -}}
 <script type="application/ld+json">
 {
     "@context":          "http://schema.org",
     "@type":             "BlogPosting",
+    {{ if .Site.author.name }}
+    "accountablePerson": "{{ .Site.Author.name }}",
+    {{ end }}
     "articleSection":    "{{ .Section }}",
     "copyrightHolder":   "{{ .Site.Author.name }}",
     "copyrightYear":     "{{ .Date.Format "2006" }}",
@@ -42,7 +53,7 @@
     "name":              "{{ .Title }}",
     "url":               "{{ .Permalink }}",
     "wordcount":         {{ .WordCount }},
-    "description":       "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "description":       "{{ if .Description }}{{ .Description | truncate 150 }}{{ else if .IsPage }}{{ .Summary | truncate 150 }}{{ else }}{{ .Site.Params.Description | truncate 150 }}{{ end }}",
     "mainEntityOfPage":  {
         "@type":         "WebPage",
         "@id":           "{{ .Permalink }}"
@@ -50,6 +61,12 @@
     "image":             [
         "{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}"
     ],
+    {{ if .Site.Author.name }}
+    "author":            {
+        "@type":         "Person",
+        "name":          "{{ .Site.Author.name }}"
+    },
+    {{ end }}
     "publisher":         {
         "@type":         "Organization",
         "name":          "{{ .Site.Title }}",
@@ -72,110 +89,6 @@
     {{- end }}
     {{ with .Lastmod -}}
     "dateModified":      "{{ .Lastmod.Format "2006-01-02" | safeHTML }}"
-    {{- end }}
-}
-</script>
-{{- end }}
-<!-- Breadcrumbs -->
-{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-{{ $.Scratch.Add "path" .Site.BaseURL }}
-{{ $.Scratch.Add "breadcrumb" (slice (dict "url" .Site.BaseURL "name" "home" "position" 1 )) }}
-{{ range $index, $element := split $url "/" }}
-{{ $.Scratch.Add "path" $element }}
-{{ $.Scratch.Add "path" "/" }}
-{{ if ne $element "" }}
-{{ $.Scratch.Add "breadcrumb" (slice (dict "url" ($.Scratch.Get "path") "name" . "position" (add $index 2))) }}
-{{ end }}
-{{ end }}
-<script type="application/ld+json">
-{
-  "@context":        "https://schema.org",
-  "@type":           "BreadcrumbList",
-  "itemListElement": [{{ range $.Scratch.Get "breadcrumb" }}{{ if ne .position 1 }},{{ end }}{
-        "@type":     "ListItem",
-        "position":  {{ .position }},
-        "item":      {
-          "@id":     "{{ .url }}",
-          "name":    "{{ .name }}"
-        }
-    }{{ end }}]
-}
-</script>
-{{ if .IsHome -}}
-<script type="application/ld+json">
-{
-    "@context":         "https://schema.org",
-    "@type":            "WebSite",
-    "image":            "{{ .Site.Params.og_image }}",
-    "license":          "{{ .Site.Params.copyright }}",
-    "name":             "{{ .Site.Title }}",
-    "thumbnailUrl":     "{{ .Site.Params.logo }}",
-    "url":              "{{ .Site.BaseURL }}",
-    "mainEntityOfPage": {
-        "@type":        "WebPage",
-        "@id":          "{{ .Site.BaseURL }}"
-    },
-    "potentialAction":  {
-        "@type":        "SearchAction",
-        "target":       "{{ .Site.Params.search_url }}",
-        "query-input":  "required name=search_term_string"
-    },
-    "sameAs":           [
-        {{ if .Site.Social.facebook }}"https://www.facebook.com/{{ .Site.Social.facebook }}",{{ end }}
-        {{ if .Site.Social.instagram }}"https://instagram.com/{{ .Site.Social.instagram }}",{{ end }}
-        {{ if .Site.Social.linkedin}}"https://www.linkedin.com/{{ .Site.Social.linkedin}}",{{ end }}
-        {{ if .Site.Social.google_plus }}"https://plus.google.com/{{ .Site.Social.google_plus }}",{{ end }}
-        {{ if .Site.Social.twitter }}"https://twitter.com/{{ .Site.Social.twitter }}",{{ end }}
-        {{ if .Site.Social.youtube }}"https://youtube.com/{{ .Site.Social.youtube }}"{{ end }}
-    ]
-}
-</script>
-{{- else if .IsPage -}}
-<script type="application/ld+json">
-{
-    "@context":          "http://schema.org",
-    "@type":             "BlogPosting",
-    "articleSection":    "{{ .Section }}",
-    "copyrightHolder":   "{{ .Site.Author.name }}",
-    "copyrightYear":     "{{ .Date.Format "2006" }}",
-    "creator":           "{{ .Site.Author.name }}",
-    "genre":             "{{ .Type }}",
-    "headline":          "{{ .Title }}",
-    "inLanguage":        "en-US",
-    "license":           "{{ .Site.Params.copyright }}",
-    "name":              "{{ .Title }}",
-    "url":               "{{ .Permalink }}",
-    "wordcount":         {{ .WordCount }},
-    "description":       "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
-    "mainEntityOfPage":  {
-        "@type":         "WebPage",
-        "@id":           "{{ .Permalink }}"
-    },
-    "image":             [
-        "{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}"
-    ],
-    "publisher":         {
-        "@type":         "Organization",
-        "name":          "{{ .Site.Title }}",
-        "logo":          {
-          "@type":       "ImageObject",
-          "url":         "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
-        }
-    },
-    {{ if or (.Params.categories) (.Params.tags) -}}
-    "keywords":          [
-      {{ if .Params.categories }}{{ delimit .Params.categories " , " }}{{ end }}
-      {{ if .Params.tags }}{{ delimit .Params.tags " , " }}{{ end }}
-      "techqueria"
-    ],
-    {{- end }}
-    {{ if not .PublishDate.IsZero -}}
-    "datePublished":     "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
-    {{- else if not .Date.IsZero -}}
-    "datePublished":     "{{ .Date.Format "2006-01-02" | safeHTML }}",
-    {{- end }}
-    {{ with .Lastmod -}}
-    "dateModified":      "{{ .Format "2006-01-02" | safeHTML }}"
     {{- end }}
 }
 </script>

@@ -36,7 +36,7 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
-let colors = {
+const colors = {
   transparent: "transparent",
   "pink-darkest": "#4D2728",
   "pink-darker": "#994E4F",
@@ -868,7 +868,7 @@ module.exports = {
   */
 
   plugins: [
-    function ({
+    function({
       addUtilities
     }) {
       const newUtilities = {

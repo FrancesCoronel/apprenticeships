@@ -4,7 +4,7 @@ const search = instantsearch({
   indexName: "apprenticeships",
   routing: true,
   searchableAttributes: ["company", "description", "location"],
-  searchFunction: function (helper) {
+  searchFunction: function(helper) {
     helper.search();
   }
 });

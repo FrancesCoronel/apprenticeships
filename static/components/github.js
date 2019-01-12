@@ -4,14 +4,14 @@ function unique(array, propertyName) {
   );
 }
 
-let commits = fetch(
+const commits = fetch(
     "https://api.github.com/repos/fvcproductions/apprenticeships/commits"
   )
   .then((i) => {
     return i.json();
   })
   .then((i) => {
-    let unorderedList = document.querySelector("#contributor-list");
+    const unorderedList = document.querySelector("#contributor-list");
 
     return i.map((x, index) => {
       return {
@@ -22,7 +22,7 @@ let commits = fetch(
     });
   });
 
-let pulls = fetch(
+const pulls = fetch(
     "https://api.github.com/repos/fvcproductions/apprenticeships/pulls?state=all"
   )
   .then((i) => {
@@ -39,9 +39,9 @@ let pulls = fetch(
     });
   });
 
-let result = Promise.all([commits, pulls])
+const result = Promise.all([commits, pulls])
   .then((i) => {
-    let all = [];
+    const all = [];
     i.map((x) => {
       x.map((p) => {
         all.push(p);
@@ -50,16 +50,16 @@ let result = Promise.all([commits, pulls])
     return all;
   })
   .then((i) => {
-    let unorderedList = document.querySelector("#contributor-list");
+    const unorderedList = document.querySelector("#contributor-list");
 
-    let uniqItems = unique(i, "user").filter(
+    const uniqItems = unique(i, "user").filter(
       (x) =>
       x.user !== "web-flow" &&
       x.user !== "renovate-bot" &&
       x.user !== "renovate[bot]"
     );
     uniqItems.forEach((i) => {
-      let li = document.createElement("li");
+      const li = document.createElement("li");
       li.innerHTML = `<a href="${i.url}" target="_blank" rel="nooppener"><img class="w-24 h-24 rounded-full" src="${i.avatar}" alt="${i.user}"/></a>`;
       li.classList.add("m-2", "rounded-full", "shadow", "hover-shadow-lg", "transition");
       unorderedList.append(li);

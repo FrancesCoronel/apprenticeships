@@ -71,7 +71,7 @@
     "datePublished":     "{{ .Date.Format "2006-01-02" | safeHTML }}",
     {{- end }}
     {{ with .Lastmod -}}
-    "dateModified":      "{{ .Format "2006-01-02" | safeHTML }}"
+    "dateModified":      "{{ .Lastmod.Format "2006-01-02" | safeHTML }}"
     {{- end }}
 }
 </script>
@@ -101,7 +101,6 @@
     }{{ end }}]
 }
 </script>
-
 {{ if .IsHome -}}
 <script type="application/ld+json">
 {

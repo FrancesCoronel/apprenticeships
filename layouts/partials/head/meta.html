@@ -7,9 +7,9 @@
 <meta itemprop="name" content="{{ .Title }}">
 <meta itemprop="wordCount" content="{{ .WordCount }}">
 <meta name="application-name" content="{{ .Site.Title }}">
-<meta name="DC.creator" content="{{ .Site.Author.name }}">
+{{ if .Site.Author.name }}<meta name="DC.creator" content="{{ .Site.Author.name }}">{{ end }}
 <meta name="DC.description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
-<meta name="DC.publisher" content="{{ .Site.Author.name }}">
+{{ if .Site.Author.name }}<meta name="DC.publisher" content="{{ .Site.Author.name }}">{{ end }}
 <meta name="DC.title" content="{{ .Title }}">
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
 <meta name="image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}">

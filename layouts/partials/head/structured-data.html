@@ -9,7 +9,7 @@
     "name":             "{{ .Site.Title }}",
     "thumbnailUrl":     "{{ .Site.Params.logo }}",
     "url":              "{{ .Site.BaseURL }}",
-    {{ if .Site.author.name }}
+    {{ if .Site.Author.name }}
      "author":           {
         "@type":        "Person",
         "name":         "{{ .Site.Author.name }}"
@@ -39,7 +39,7 @@
 {
     "@context":          "http://schema.org",
     "@type":             "BlogPosting",
-    {{ if .Site.author.name }}
+    {{ if .Site.Author.name }}
     "accountablePerson": "{{ .Site.Author.name }}",
     {{ end }}
     "articleSection":    "{{ .Section }}",

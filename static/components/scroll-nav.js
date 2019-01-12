@@ -1,5 +1,5 @@
 // import smoothscroll from "smoothscroll-polyfill";
-smoothscroll = require("smoothscroll-polyfill")
+smoothscroll = require("smoothscroll-polyfill");
 require("intersection-observer");
 
 smoothscroll.polyfill();

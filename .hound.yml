@@ -1,5 +1,5 @@
 jshint:
-  config_file: .jshintrc
+  enabled: false
 
 eslint:
   config_file: .eslintrc

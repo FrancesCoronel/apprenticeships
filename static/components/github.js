@@ -1,12 +1,12 @@
-function unique(array, propertyName) {
+const unique = (array, propertyName) => {
   return array.filter(
     (e, i) => array.findIndex((a) => a[propertyName] === e[propertyName]) === i
   );
-}
+};
 
 const commits = fetch(
-    "https://api.github.com/repos/fvcproductions/apprenticeships/commits"
-  )
+  "https://api.github.com/repos/fvcproductions/apprenticeships/commits"
+)
   .then((i) => {
     return i.json();
   })
@@ -23,8 +23,8 @@ const commits = fetch(
   });
 
 const pulls = fetch(
-    "https://api.github.com/repos/fvcproductions/apprenticeships/pulls?state=all"
-  )
+  "https://api.github.com/repos/fvcproductions/apprenticeships/pulls?state=all"
+)
   .then((i) => {
     return i.json();
   })
@@ -54,7 +54,7 @@ const result = Promise.all([commits, pulls])
 
     const uniqItems = unique(i, "user").filter(
       (x) =>
-      x.user !== "web-flow" &&
+        x.user !== "web-flow" &&
       x.user !== "renovate-bot" &&
       x.user !== "renovate[bot]"
     );

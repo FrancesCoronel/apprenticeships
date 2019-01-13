@@ -3,7 +3,6 @@
     "es6": true,
     "browser": true
   },
-  "plugins": ["import"],
   "ecmaFeatures": {
     "arrowFunctions": true,
     "binaryLiterals": true,
@@ -74,11 +73,10 @@
     "no-confusing-arrow": 2,
     "prefer-const": 2,
     "jsx-quotes": [2, "prefer-double"],
-    "import/export": 2,
-    "strict": [2, "global"],
+    "strict": [0, "global"],
     "no-undef": 0,
     "no-unused-vars": [
-      2,
+      0,
       {
         "args": "none"
       }

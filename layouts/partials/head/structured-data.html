@@ -9,10 +9,10 @@
     "name":             "{{ .Site.Title }}",
     "thumbnailUrl":     "{{ .Site.Params.logo }}",
     "url":              "{{ .Site.BaseURL }}",
-    {{ if .Site.Author.name }}
+    {{ with $.Site.Author.name }}
      "author":           {
         "@type":        "Person",
-        "name":         "{{ .Site.Author.name }}"
+        "name":         "{{ . }}"
     },
     {{ end }}
     "mainEntityOfPage": {
@@ -25,11 +25,11 @@
         "query-input":  "required name=search_term_string"
     },
     "sameAs":           [
-        {{ if .Site.Social.facebook }}"https://www.facebook.com/{{ .Site.Social.facebook }}",{{ end }}
-        {{ if .Site.Social.instagram }}"https://instagram.com/{{ .Site.Social.instagram }}",{{ end }}
-        {{ if .Site.Social.linkedin}}"https://www.linkedin.com/{{ .Site.Social.linkedin}}",{{ end }}
-        {{ if .Site.Social.twitter }}"https://twitter.com/{{ .Site.Social.twitter }}",{{ end }}
-        {{ if .Site.Social.youtube }}"https://youtube.com/{{ .Site.Social.youtube }}"{{ end }}
+        {{ with .Site.Social.facebook }}"https://www.facebook.com/{{ . }}",{{ end }}
+        {{ with .Site.Social.instagram }}"https://instagram.com/{{ . }}",{{ end }}
+        {{ with .Site.Social.linkedin}}"https://www.linkedin.com/{{ . }}",{{ end }}
+        {{ with .Site.Social.twitter }}"https://twitter.com/{{ . }}",{{ end }}
+        {{ with .Site.Social.youtube }}"https://youtube.com/{{ . }}"{{ end }}
     ]
 }
 </script>
@@ -39,13 +39,17 @@
 {
     "@context":          "http://schema.org",
     "@type":             "BlogPosting",
-    {{ if .Site.Author.name }}
-    "accountablePerson": "{{ .Site.Author.name }}",
+    {{ with $.Site.Author.name }}
+    "accountablePerson": "{{ . }}",
+    "copyrightHolder": "{{ . }}",
+    "creator": "{{ . }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ . }}"
+    },
     {{ end }}
     "articleSection":    "{{ .Section }}",
-    "copyrightHolder":   "{{ .Site.Author.name }}",
     "copyrightYear":     "{{ .Date.Format "2006" }}",
-    "creator":           "{{ .Site.Author.name }}",
     "genre":             "{{ .Type }}",
     "headline":          "{{ .Title }}",
     "inLanguage":        "en-US",
@@ -61,12 +65,6 @@
     "image":             [
         "{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}"
     ],
-    {{ if .Site.Author.name }}
-    "author":            {
-        "@type":         "Person",
-        "name":          "{{ .Site.Author.name }}"
-    },
-    {{ end }}
     "publisher":         {
         "@type":         "Organization",
         "name":          "{{ .Site.Title }}",

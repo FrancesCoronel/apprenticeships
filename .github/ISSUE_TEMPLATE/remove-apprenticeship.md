@@ -1,10 +1,16 @@
-## Remove apprenticeship
+---
+name: Remove apprenticeship
+about: Remove an existing apprenticeship
+title: "Remove: "
+labels: "remove"
+assignees: ""
+---
 
-### Which apprenticeship are you trying to remove?
+## Which apprenticeship are you trying to remove?
 
 XYZ
 
-### Why should that apprenticeship be removed?
+## Why should that apprenticeship be removed?
 
 - e.g. XYZ no longer offers apprenticeships
 

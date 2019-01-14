@@ -1,6 +1,6 @@
 # apprenticeships.me
 
-[![GitHub Issues](https://img.shields.io/github/issues/fvcproductions/apprenticeships.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fvcproductions/apprenticeships.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships/pulls) [![MIT License](https://img.shields.io/github/license/fvcproductions/apprenticeships.svg?style=flat-square)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square)](https://www.paypal.me/fvcproductions/5) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg?style=flat-square)](https://www.patreon.com/fvcproductions)
+[![GitHub Issues](https://img.shields.io/github/issues/fvcproductions/apprenticeships.me.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships.me/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fvcproductions/apprenticeships.me.svg?style=flat-square)](https://github.com/fvcproductions/apprenticeships.me/pulls) [![MIT License](https://img.shields.io/github/license/fvcproductions/apprenticeships.me.svg?style=flat-square)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square)](https://www.paypal.me/fvcproductions/5) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg?style=flat-square)](https://www.patreon.com/fvcproductions)
 
 Back in the good old days of the Renaissance, [apprenticeships](https://www.wikiwand.com/en/Apprenticeship) were quite common and acted as legal contracts between the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
 
@@ -12,13 +12,13 @@ Even though the formal university route became more popular over time, there has
 
 > To get started...
 
-1.  🍴 [Fork this repo](https://github.com/fvcproductions/apprenticeships#fork-destination-box)
-2.  🔨 View the contributing guidelines at [CONTRIBUTING.md](CONTRIBUTING.md)
+1.  🍴 [Fork this repo](https://github.com/fvcproductions/apprenticeships.me#fork-destination-box)
+2.  🔨 View the contributing guidelines at [CONTRIBUTING.md](.github/CONTRIBUTING.md)
 3.  👥 Add yourself as a contributor in the credits section
-4.  🔧 [Open a new pull request](https://github.com/fvcproductions/apprenticeships/compare)
+4.  🔧 [Open a new pull request](https://github.com/fvcproductions/apprenticeships.me/compare)
 5.  🎉 Get your pull request approved - success!
 
-Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issues/new) - any little bit of help counts! 😊
+Or just [create an issue](https://github.com/fvcproductions/apprenticeships.me/issues/new) - any little bit of help counts! 😊
 
 ## Code of Conduct
 

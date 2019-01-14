@@ -1,10 +1,16 @@
-## Edit apprenticeship
+---
+name: Edit apprenticeship
+about: Edit an existing apprenticeship
+title: "Edit: "
+labels: "edit"
+assignees: ""
+---
 
-### Which apprenticeship are you trying to edit?
+## Which apprenticeship are you trying to edit?
 
 XYZ
 
-### What edits do you want to make?
+## What edits do you want to make?
 
 - e.g. XYZ also has apprenticeships in San Francisco, CA
 

@@ -45,7 +45,18 @@ section {
 
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro",
+  "Segoe UI",
+  "Roboto",
+  "Oxygen",
+  "Ubuntu",
+  "Cantarell",
+  "Fira Sans",
+  "Droid Sans",
+  "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  sans-serif;
   color: rgba(0, 0, 0, .8);
   font-size: 20px;
   line-height: 1.6;
@@ -104,7 +115,7 @@ input[type=submit] {
 
 pre,
 code {
-  font-family: Menlo, Consolas, monospace;
+  font-family: monospace;
   font-size: inherit;
 }
 

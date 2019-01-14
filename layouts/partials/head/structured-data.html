@@ -1,0 +1,115 @@
+<!-- Homepage -->
+{{ if .IsHome -}}
+<script type="application/ld+json">
+{
+    "@context":         "https://schema.org",
+    "@type":            "WebSite",
+    "image":            "{{ .Site.Params.og_image }}",
+    "license":          "{{ .Site.Params.copyright }}",
+    "name":             "{{ .Site.Title }}",
+    "thumbnailUrl":     "{{ .Site.Params.logo }}",
+    "url":              "{{ .Site.BaseURL }}",
+    {{ with $.Site.Author.name }}
+     "author":           {
+        "@type":        "Person",
+        "name":         "{{ . }}"
+    },
+    {{ end }}
+    "mainEntityOfPage": {
+        "@type":        "WebPage",
+        "@id":          "{{ .Site.BaseURL }}"
+    },
+    "potentialAction":  {
+        "@type":        "SearchAction",
+        "target":       "{{ .Site.Params.search_url }}",
+        "query-input":  "required name=search_term_string"
+    },
+    "sameAs":           [
+        {{ with .Site.Social.facebook }}"https://www.facebook.com/{{ . }}",{{ end }}
+        {{ with .Site.Social.instagram }}"https://instagram.com/{{ . }}",{{ end }}
+        {{ with .Site.Social.linkedin}}"https://www.linkedin.com/{{ . }}",{{ end }}
+        {{ with .Site.Social.twitter }}"https://twitter.com/{{ . }}",{{ end }}
+        {{ with .Site.Social.youtube }}"https://youtube.com/{{ . }}"{{ end }}
+    ]
+}
+</script>
+<!-- Blog Posting -->
+{{- else if .IsPage -}}
+<script type="application/ld+json">
+{
+    "@context":          "http://schema.org",
+    "@type":             "BlogPosting",
+    {{ with $.Site.Author.name }}
+    "accountablePerson": "{{ . }}",
+    "copyrightHolder": "{{ . }}",
+    "creator": "{{ . }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ . }}"
+    },
+    {{ end }}
+    "articleSection":    "{{ .Section }}",
+    "copyrightYear":     "{{ .Date.Format "2006" }}",
+    "genre":             "{{ .Type }}",
+    "headline":          "{{ .Title }}",
+    "inLanguage":        "en-US",
+    "license":           "{{ .Site.Params.copyright }}",
+    "name":              "{{ .Title }}",
+    "url":               "{{ .Permalink }}",
+    "wordcount":         {{ .WordCount }},
+    "description":       "{{ if .Description }}{{ .Description | truncate 150 }}{{ else if .IsPage }}{{ .Summary | truncate 150 }}{{ else }}{{ .Site.Params.Description | truncate 150 }}{{ end }}",
+    "mainEntityOfPage":  {
+        "@type":         "WebPage",
+        "@id":           "{{ .Permalink }}"
+    },
+    "image":             [
+        "{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}"
+    ],
+    "publisher":         {
+        "@type":         "Organization",
+        "name":          "{{ .Site.Title }}",
+        "logo":          {
+          "@type":       "ImageObject",
+          "url":         "{{ .Site.BaseURL }}{{ .Site.Params.logo }}"
+        }
+    },
+    {{ if or (.Params.categories) (.Params.tags) -}}
+    "keywords":          [
+      {{ if .Params.categories }}{{ delimit .Params.categories " , " }}{{ end }}
+      {{ if .Params.tags }}{{ delimit .Params.tags " , " }}{{ end }}
+      "blog post"
+    ],
+    {{- end }}
+    {{ if not .PublishDate.IsZero -}}
+    "datePublished":     "{{ .PublishDate.Format "2006-01-02" | safeHTML }}",
+    {{- else if not .Date.IsZero -}}
+    "datePublished":     "{{ .Date.Format "2006-01-02" | safeHTML }}",
+    {{- end }}
+}
+</script>
+{{- end }}
+<!-- Breadcrumbs -->
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+{{ $.Scratch.Add "breadcrumb" (slice (dict "url" .Site.BaseURL "name" "home" "position" 1 )) }}
+{{ range $index, $element := split $url "/" }}
+{{ $.Scratch.Add "path" $element }}
+{{ $.Scratch.Add "path" "/" }}
+{{ if ne $element "" }}
+{{ $.Scratch.Add "breadcrumb" (slice (dict "url" ($.Scratch.Get "path") "name" . "position" (add $index 2))) }}
+{{ end }}
+{{ end }}
+<script type="application/ld+json">
+{
+  "@context":        "https://schema.org",
+  "@type":           "BreadcrumbList",
+  "itemListElement": [{{ range $.Scratch.Get "breadcrumb" }}{{ if ne .position 1 }},{{ end }}{
+        "@type":     "ListItem",
+        "position":  {{ .position }},
+        "item":      {
+          "@id":     "{{ .url }}",
+          "name":    "{{ .name }}"
+        }
+    }{{ end }}]
+}
+</script>

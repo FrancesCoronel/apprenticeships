@@ -1,4 +1,5 @@
-import smoothscroll from "smoothscroll-polyfill";
+// import smoothscroll from "smoothscroll-polyfill";
+smoothscroll = require("smoothscroll-polyfill");
 require("intersection-observer");
 
 smoothscroll.polyfill();
@@ -27,8 +28,8 @@ sections.forEach((i) => {
 function onEntry(entries, observer) {
   entries.map((entry, index) => {
     if (entry.isIntersecting) {
-      let toHighlight = document.querySelector(`[href="#${entry.target.id}"]`);
-      let active = document.querySelector(".active");
+      const toHighlight = document.querySelector(`[href="#${entry.target.id}"]`);
+      const active = document.querySelector(".active");
       active && active.classList.remove("active");
       toHighlight.classList.add("active");
     }
@@ -37,13 +38,17 @@ function onEntry(entries, observer) {
 
 // Scroll-to-Section functionality
 
-let sectionLinks = document.querySelectorAll(".scroll-nav__link");
+const sectionLinks = document.querySelectorAll(".scroll-nav__link");
 
-let onClick = (e, i) => {
+const onClick = (e, i) => {
   e.preventDefault();
   let whereToScroll = document.querySelector(i.getAttribute("href"));
   whereToScroll = whereToScroll.getBoundingClientRect();
-  window.scrollBy({ top: whereToScroll.top, left: 0, behavior: "smooth" });
+  window.scrollBy({
+    top: whereToScroll.top,
+    left: 0,
+    behavior: "smooth"
+  });
 };
 
 sectionLinks.forEach((i) => {

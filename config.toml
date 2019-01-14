@@ -1,16 +1,75 @@
-baseURL = "https://apprenticeships.fvcproductions.com/"
-languageCode = "en-us"
-title = "Apprenticeships"
+baseURL                              = "https://apprenticeships.me/"
+buildFuture                          = true
+copyright                            = "This work is licensed under MIT."
+enableEmoji                          = true
+enableRobotsTXT                      = true
+footnoteReturnLinkContents           = "↩"
+metaDataFormat                       = "yaml"
+title                                = "Apprenticeships.me"
 
+# Language
+languageCode                         = "en-US"
+defaultContentLanguage               = "en"
+enableMissingTranslationPlaceholders = true
+
+# Categories
+preserveTaxonomyNames                = false
+
+# Code
+pygmentsCodefences                   = true
+pygmentsCodefencesGuessSyntax        = true
+pygmentsStyle                        = "manni"
+
+# Internal Templates
+# googleAnalytics                    = ""
+# disqusShortname                    = ""
+
+# Outputs
+[outputs]
+  home                               = ["HTML", "Algolia"]
+  page                               = ["HTML"]
+
+# Output Formats
+[outputFormats]
+    [outputFormats.RSS]
+        mediatype                    = "application/rss"
+        baseName                     = "feed"
+
+# Algolia
 [outputFormats.Algolia]
-baseName = "algolia"
-isPlainText = true
-mediaType = "application/json"
-notAlternative = true
+  baseName                           = "algolia"
+  isPlainText                        = true
+  mediaType                          = "application/json"
+  notAlternative                     = true
 
 [params.algolia]
-vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-params = ["company", "link", "location", "description", "draft"]
+  vars                               = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+  params                             = ["company", "link", "location", "description", "draft"]
 
-[outputs]
-home = ["HTML", "Algolia"]
+# Site Params
+[params]
+    description                      = "Find a new career learning from the industry itself."
+    copyright                        = "Apprenticeships.me"
+    year_created                     = 2019
+    og_image                         = "https://i.imgur.com/jCh1pBO.png"
+    logo                             = "https://i.imgur.com/BtgIRcP.png"
+    brand_color                      = "#ff8284"
+    github_repo                      = "https://github.com/fvcproductions/apprenticeships"
+
+# Social Links
+[social]
+    email                            = "hello@apprenticeships.me"
+    # facebook                       = ""
+    # linkedin                       = ""
+    # twitter                        = ""
+    # instagram                      = ""
+    # youtube                        = ""
+
+# Permalinks
+[permalinks]
+  apprenticeships                    = "/:title/"
+
+# Author
+[author]
+    name                             = "Open Source Contributors"
+    copyright                        = "©️ Apprenticeships.me"

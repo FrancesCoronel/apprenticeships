@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{ partial "head/_index.html" . }}
+</head>
+
+<body class="text-black relative">
+  <!-- Navbar -->
+  {{ partial "navbar.html" . }}
+  <!-- Main Block -->
+  {{ block "main" . }} {{ end }}
+  <!-- Footer -->
+  {{ partial "footer.html" . }}
+  <!-- Scripts -->
+  {{ partial "scripts.html" . }}
+</body>
+
+</html>

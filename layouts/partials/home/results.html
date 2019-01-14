@@ -1,0 +1,38 @@
+<section id="two" class="p-8 md-p-12 lg-p-16 xl-p-20">
+  <div class="max-w-2xl mx-auto">
+    <h2 class="border-b-2 border-green inline-block">Find an apprenticeship</h2>
+    <div class="search mt-12">
+      <div id="search__box" class="w-full">
+        <!-- SearchBox widget will appear here -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="max-w-2xl mx-auto">
+        <div id="hits">
+          <div class="flex flex-wrap -mx-2 mt-0">
+            {{ range .Site.Pages }}
+            <a class="my-4 px-2 w-full md-w-1-2 lg-w-1-3" href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">
+              <div class="max-w-sm rounded overflow-hidden shadow-md hover-shadow-lg transition min-h-full">
+                <!-- <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains"> -->
+                <div class="px-6 py-4">
+                  <div class="font-bold text-xl mb-2">{{ .Params.company }}</div>
+                  <p class="text-grey-darker text-base">{{ .Params.description }}</p>
+                </div>
+                <div class="px-6 py-4">
+                  {{ with .Params.location }}
+                  {{ range . }}
+                  <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2 mb-2">{{ . }}</span>
+                  {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </a>
+            {{end}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pagination-container" class="flex justify-center mt-12"></div>
+  </div>
+</section>

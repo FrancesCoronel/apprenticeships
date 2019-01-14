@@ -8,5 +8,5 @@ Insert description of issue here
 
 > ✅️ By submitting this issue, I have verified the following
 
-* [] Checked to see if the issue has already been discussed before 🤔️
-* [] If proposing new content to be added, made sure enough details were provided 🔍️
+- [] Checked to see if the issue has already been discussed before 🤔️
+- [] If proposing new content to be added, made sure enough details were provided 🔍️

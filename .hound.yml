@@ -1,4 +1,5 @@
-eslint:
-  enabled: true
 jshint:
-  enabled: true
+  enabled: false
+
+eslint:
+  config_file: .eslintrc

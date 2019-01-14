@@ -1,0 +1,18 @@
+<nav class="flex items-center justify-between flex-wrap p-12 max-w-3xl mx-auto">
+  <div class="flex items-center md-flex-no-shrink mr-6">
+    <a href="/">
+      <img src="./images/logo.svg" alt="Logo" class="h-8 w-8 mr-6">
+      <span class="font-bold text-2xl">{{ .Site.Title }}</span>
+    </a>
+  </div>
+  <div class="w-full block flex-grow md-flex md-items-center md-w-auto">
+    <div class="text-sm md-flex-grow"></div>
+    <a href="{{ .Site.Params.github_repo }}" target="_blank" rel="noopener" class="block mt-4 md-inline-block md-mt-0 mr-4 bg-white text-black font-semibold rounded hover-underline transition px-4 py-2">
+      <img class="h-8 w-8 mr-4" src="./images/github-black.svg" alt="GitHub Logo"><span>Visit on GitHub</span>
+    </a>
+    <a href="{{ .Site.Params.github_repo }}/issues/new" target="_blank" rel="noopener" class="block mt-4 md-inline-block md-mt-0 mr-4 bg-green text-white font-semibold rounded hover-bg-green-dark transition px-4 py-2">
+      Contribute
+    </a>
+  </div>
+  </div>
+</nav>

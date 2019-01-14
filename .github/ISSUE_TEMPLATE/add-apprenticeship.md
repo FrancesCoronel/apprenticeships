@@ -1,23 +1,29 @@
-## Add apprenticeship
+---
+name: Add apprenticeship
+about: Add an apprenticeship to our growing list
+title: "Add: "
+labels: "addition"
+assignees: ""
+---
 
-### Company
+## Company
 
 XYZ
 
-### Description
+## Description
 
 XYZ is a company that does ABC.
 
-### Link
+## Link
 
 https://xyz.com
 
-### Location
+## Location
 
 - San Francisco, CA
 - Chicago, IL
 
-### Featured Image
+## Featured Image
 
 Include a link to an image to feature with the apprenticeship that is at least 500px by 500px or upload it directly here.
 

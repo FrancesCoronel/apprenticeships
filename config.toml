@@ -53,7 +53,6 @@ pygmentsStyle                        = "manni"
     year_created                     = 2019
     og_image                         = "https://i.imgur.com/jCh1pBO.png"
     logo                             = "https://i.imgur.com/BtgIRcP.png"
-    locale                           = "en_US"
     brand_color                      = "#ff8284"
     github_repo                      = "https://github.com/fvcproductions/apprenticeships"
 

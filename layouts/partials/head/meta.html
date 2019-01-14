@@ -1,33 +1,68 @@
-{{ with .Site.Social.facebook }}<meta property="article:author" content="https://www.facebook.com/{{ . }}">{{ end }}
-{{ with .Site.Social.facebook }}<meta property="article:publisher" content="https://www.facebook.com/{{ . }}">{{ end }}
-{{ with .Site.Social.twitter }}<meta name="twitter:creator" content="@{{ . }}">{{ end }}
-{{ with .Site.Social.twitter }}<meta name="twitter:site" content="@{{ . }}">{{ end }}
-<meta itemprop="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+<meta itemprop="description" content="{{ if .Description }}{{ .Description | truncate 150 }}{{ else if .IsPage }}{{ .Summary | truncate 150 }}{{ else }}{{ .Site.Params.description | truncate 150 }}{{ end }}">
 <meta itemprop="image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}">
 <meta itemprop="name" content="{{ .Title }}">
-<meta itemprop="wordCount" content="{{ .WordCount }}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
 <meta name="application-name" content="{{ .Site.Title }}">
-{{ if .Site.Author.name }}<meta name="DC.creator" content="{{ .Site.Author.name }}">{{ end }}
-<meta name="DC.description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
-{{ if .Site.Author.name }}<meta name="DC.publisher" content="{{ .Site.Author.name }}">{{ end }}
+<meta name="DC.description" content="{{ if .Description }}{{ .Description | truncate 150 }}{{ else if .IsPage }}{{ .Summary | truncate 150 }}{{ else }}{{ .Site.Params.description | truncate 150 }}{{ end }}">
 <meta name="DC.title" content="{{ .Title }}">
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+<meta name="description" content="{{ if .Description }}{{ .Description | truncate 150 }}{{ else if .IsPage }}{{ .Summary | truncate 150 }}{{ else }}{{ .Site.Params.description | truncate 150 }}{{ end }}">
+<meta name="HandheldFriendly" content="True">
 <meta name="image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}">
-<meta name="msapplication-tooltip" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="MobileOptimized" content="320">
+<meta name="msapplication-tooltip" content="{{ if .Description }}{{ .Description | truncate 150 }}{{ else if .IsPage }}{{ .Summary | truncate 150 }}{{ else }}{{ .Site.Params.description | truncate 150 }}{{ end }}">
 <meta name="msapplication-window" content="width=device-width;height=device-height">
+<meta name="robots" content="index, follow">
 <meta name="title" content="{{ .Title }}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description | truncate 150 }}{{ else if .IsPage }}{{ .Summary | truncate 150 }}{{ else }}{{ .Site.Params.description | truncate 150 }}{{ end }}">
 <meta name="twitter:image:src" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}">
 <meta name="twitter:text:title" content="{{ .Title }}">
 <meta name="twitter:title" content="{{ .Title }}">
-<meta property="article:section" content="{{ .Section }}">
-<meta property="dcterms:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta property="dcterms:description" content="{{ if .Description }}{{ .Description | truncate 150 }}{{ else if .IsPage }}{{ .Summary | truncate 150 }}{{ else }}{{ .Site.Params.description | truncate 150 }}{{ end }}">
 <meta property="dcterms:title" content="{{ .Title }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+<meta property="og:description" content="{{ if .Description }}{{ .Description | truncate 150 }}{{ else if .IsPage }}{{ .Summary | truncate 150 }}{{ else }}{{ .Site.Params.description | truncate 150 }}{{ end }}">
 <meta property="og:image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.og_image }}{{ end }}">
-<meta property="og:locale" content="{{ .Site.Params.locale }}">
-<meta property="og:site_name" content="{{ .Site.Params.title }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
+
+{{ with .Site.Params.default_content_language }}
+<meta name="DC.language" content="{{ . }}">
+{{ end }}
+
+{{ with .Site.Params.locale }}
+<meta property="og:locale" content="{{ . }}">
+{{ end }}
+
+{{ with .Site.Social.twitter }}
+<meta name="twitter:creator" content="@{{ . }}">
+<meta name="twitter:site" content="@{{ . }}">
+{{ end }}
+
+{{ with $.Site.Author.name }}
+<meta name="DC.creator" content="{{ . }}">
+<meta name="DC.publisher" content="{{ . }}">
+{{ end }}
+
+{{ with .Site.Social.facebook }}
+<meta property="article:author" content="https://www.facebook.com/{{ . }}">
+<meta property="article:publisher" content="https://www.facebook.com/{{ . }}">
+{{ end }}
+
+{{ with .Site.Params.google_site_verification }}
+<meta name="google-site-verification" content="{{ . }}">
+{{ end }}
+
+{{ with .Site.Params.pinterest_domain_verification }}
+<meta name="p:domain_verify" content="{{ . }}">
+{{ end }}
+
+{{ if .IsPage }}
+<meta property="article:section" content="Blog">
+<meta itemprop="wordCount" content="{{ .WordCount }}">
+{{ end }}

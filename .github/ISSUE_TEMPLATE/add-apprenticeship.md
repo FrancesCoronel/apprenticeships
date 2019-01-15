@@ -25,7 +25,7 @@ https://xyz.com
 
 ## Featured Image
 
-Include a link to an image to feature with the apprenticeship that is at least 500px by 500px or upload it directly here.
+Include a link to an image to feature with the apprenticeship that is at least 500px by 500px or upload it directly here. Also, please view the contributing guidelines to learn what makes an acceptable featured image.
 
 ---
 

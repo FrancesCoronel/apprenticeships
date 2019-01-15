@@ -30,6 +30,7 @@ Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issu
   - Most text editors have a built in sort function that makes this super easy.
 - Suggestions should be categorized by the right country and also sorted alphabetically but with the United States showing first.
   - e.g. United States, England, Portugal, etc.
+- The featured image should include the company's logo. Here's an example that uses the company logo in an office setting: [example](https://static.viget.com/careers/_540xAUTO_crop_center-center/Durham-entry.jpg?mtime=20180718173457). Please avoid any images that focus on individuals and show faces.
 
 ---
 

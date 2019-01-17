@@ -8,7 +8,7 @@
 - 🔧 Make a pull request [here](https://github.com/fvcproductions/apprenticeships/compare)
 - 🎉 Get your pull request approved - success!
 
-Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issues/new) - any little bit of help counts! 😊
+Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
 
 ## Making a Pull Request
 

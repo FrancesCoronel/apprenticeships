@@ -8,6 +8,8 @@ Even though the formal university route became more popular over time, there has
 
 > Note that most of these companies don't **always** have applications to their apprenticeship programs open - it's usually seasonal.
 
+**The directory of apprenticeships is now located at <a href="https://apprenticeships.me" target="_blank" rel="noopener">apprenticeships.me</a>.**
+
 ## Contributing
 
 > To get started...

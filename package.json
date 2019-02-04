@@ -42,7 +42,7 @@
     "postcss-partial-process": "1.0.0",
     "postcss-prepend-selector": "0.3.1",
     "postcss-responsive-type": "1.0.0",
-    "prettier": "1.16.3",
+    "prettier": "1.16.4",
     "tailwindcss": "0.7.4"
   }
 }

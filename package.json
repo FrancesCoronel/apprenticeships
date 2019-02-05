@@ -7,7 +7,7 @@
     "algolia": "atomic-algolia",
     "build:css": "postcss build static/style.pcss -c ./tailwind.config.js -o ./public/generated.css",
     "start": "concurrently  \"hugo -w\" \"postcss build static/style.pcss -c ./tailwind.config.js\" \"parcel ./public/index.html\" ",
-    "build": "hugo; parcel build ./public/*.html",
+    "build": "hugo; npm run algolia; parcel build ./public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "contributors": [{

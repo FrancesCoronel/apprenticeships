@@ -32,7 +32,7 @@
     "@babel/core": "7.2.2",
     "@babel/preset-env": "7.3.1",
     "concurrently": "4.1.0",
-    "cssnano": "4.1.8",
+    "cssnano": "4.1.10",
     "eslint": "5.13.0",
     "eslint-config-google": "0.12.0",
     "parcel-bundler": "1.11.0",

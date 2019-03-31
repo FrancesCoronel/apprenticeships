@@ -7,10 +7,11 @@
     "algolia": "atomic-algolia",
     "build:css": "postcss build static/style.pcss -c ./tailwind.config.js -o ./public/generated.css",
     "start": "concurrently  \"hugo -w\" \"postcss build static/style.pcss -c ./tailwind.config.js\" \"parcel ./public/index.html\" ",
-    "build": "hugo; npm run algolia; parcel build ./public/*.html",
+    "build": "node misc-scripts/github.js; hugo; npm run algolia; parcel build ./public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Frances Coronel",
       "email": "hello@fvcproductions.com",
       "url": "https://www.fvcproductions.com"
@@ -31,6 +32,7 @@
   "devDependencies": {
     "@babel/core": "7.4.0",
     "@babel/preset-env": "7.4.2",
+    "axios": "^0.18.0",
     "concurrently": "4.1.0",
     "cssnano": "4.1.10",
     "eslint": "5.16.0",

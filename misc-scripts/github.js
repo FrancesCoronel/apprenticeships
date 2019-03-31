@@ -64,7 +64,7 @@ Promise.all([commits, pulls])
       path.resolve(__dirname, "../data/github.json"),
       res,
       () => {
-        console.log("finished");
+        return;
       }
     );
   });

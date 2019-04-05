@@ -7,10 +7,11 @@
     "algolia": "atomic-algolia",
     "build:css": "postcss build static/style.pcss -c ./tailwind.config.js -o ./public/generated.css",
     "start": "concurrently  \"hugo -w\" \"postcss build static/style.pcss -c ./tailwind.config.js\" \"parcel ./public/index.html\" ",
-    "build": "hugo; parcel build ./public/*.html",
+    "build": "node misc-scripts/github.js; hugo; npm run algolia; parcel build ./public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Frances Coronel",
       "email": "hello@fvcproductions.com",
       "url": "https://www.fvcproductions.com"
@@ -29,20 +30,21 @@
     "smoothscroll-polyfill": "^0.4.3"
   },
   "devDependencies": {
-    "@babel/core": "7.2.2",
-    "@babel/preset-env": "7.2.3",
+    "@babel/core": "7.4.0",
+    "@babel/preset-env": "7.4.2",
+    "axios": "^0.18.0",
     "concurrently": "4.1.0",
-    "cssnano": "4.1.8",
-    "eslint": "5.12.0",
-    "eslint-config-google": "0.11.0",
+    "cssnano": "4.1.10",
+    "eslint": "5.16.0",
+    "eslint-config-google": "0.12.0",
     "parcel-bundler": "1.11.0",
     "postcss-cssnext": "3.1.0",
     "postcss-import": "12.0.1",
-    "postcss-nested": "4.1.1",
-    "postcss-partial-process": "1.0.0",
+    "postcss-nested": "4.1.2",
+    "postcss-partial-process": "2.0.0",
     "postcss-prepend-selector": "0.3.1",
     "postcss-responsive-type": "1.0.0",
-    "prettier": "1.15.3",
-    "tailwindcss": "0.7.3"
+    "prettier": "1.16.4",
+    "tailwindcss": "0.7.4"
   }
 }

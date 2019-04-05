@@ -6,9 +6,18 @@
           Contributors to {{ .Site.Title }}
         </h2>
         <p class="mt-12 mb-12">
-          This site and the listings are all available because of contributors like you. If you’re looking to contribute to any of the listings or to this site, take a look at the contributing guidelines in the repository below.
+          This site and the listings are all available because of contributors like you.
         </p>
-        <ul id="contributor-list" class="list-reset flex flex-wrap justify-center"></ul>
+        <ul id="contributor-list" class="list-reset flex flex-wrap justify-center">
+
+          {{range .Site.Data.github }}
+            <li class= "m-2 rounded-full shadow hover-shadow-lg transition">
+              <a href="{{.url}}" target="_blank" rel="noopener noreferrer">
+                <img class="w-24 h-24 rounded-full" src="{{ .avatar }}" alt="{{.user}}" />
+              </a>
+            </li>
+          {{ end }}
+        </ul>
       </div>
     </div>
 </section>

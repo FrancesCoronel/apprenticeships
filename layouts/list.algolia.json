@@ -1,31 +1,10 @@
-{{- $hits := slice -}}
+{{- $.Scratch.Add "index" slice -}}
 {{- $section := $.Site.GetPage "section" .Section }}
-{{- $validVars := $.Param "algolia.vars" | default slice -}}
-{{- $validParams := $.Param "algolia.params" | default slice -}}
-{{- range $i, $hit := .Site.AllPages -}}
-  {{- $dot := . -}}
-  {{- if or (and ($hit.IsDescendant $section) (and (not $hit.Draft) (not $hit.Params.private))) $section.IsHome -}}
-    {{- .Scratch.SetInMap $hit.File.Path "objectID" $hit.UniqueID -}}
-    {{- .Scratch.SetInMap "temp" "date" $hit.Date.UTC.Unix -}}
-    {{- .Scratch.SetInMap "temp" "path" "temp" -}}
-    {{- .Scratch.SetInMap "temp" "expirydate" $hit.ExpiryDate.UTC.Unix -}}
-    {{- .Scratch.SetInMap "temp" "permalink" $hit.Permalink -}}
-    {{- .Scratch.SetInMap "temp" "publishdate" $hit.PublishDate -}}
-    {{- .Scratch.SetInMap "temp" "summary" $hit.Summary -}}
-    {{- .Scratch.SetInMap "temp" "title" $hit.Title -}}
-    {{/* Include valid page vars */}}
-    {{- range $key, $param := (.Scratch.Get "temp") -}}
-      {{- if in $validVars $key -}}
-        {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
-      {{- end -}}
+{{- range .Site.AllPages -}}
+  {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
+    {{ if ( .Params.company ) and ( .Params.company "!=" "") and ( .Params.company "!=" null) }}
+      {{- $.Scratch.Add "index" (dict "objectID" .UniqueID "company" .Date.UTC.Unix "description" .Description "company" .Params.company "location" .Params.location  "link" .Params.Link)}}
     {{- end -}}
-    {{/* Include valid page params */}}
-    {{- range $key, $param := $hit.Params -}}
-      {{- if in $validParams $key -}}
-        {{- $dot.Scratch.SetInMap $hit.File.Path $key $param -}}
-      {{- end -}}
-    {{- end -}}
-    {{- $.Scratch.SetInMap "hits" $hit.File.Path (.Scratch.Get $hit.File.Path) -}}
   {{- end -}}
 {{- end -}}
-{{- jsonify ($.Scratch.GetSortedMapValues "index") -}}
+{{- $.Scratch.Get "index" | jsonify -}}

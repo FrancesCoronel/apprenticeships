@@ -42,5 +42,5 @@ Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issu
 ALGOLIA_APP_ID=
 ALGOLIA_ADMIN_KEY=
 ALGOLIA_INDEX_NAME=
-ALGOLIA_INDEX_FILE=
+ALGOLIA_INDEX_FILE=./public/algolia.json
 ```

@@ -1,7 +1,8 @@
 ---
 company: "Praxis"
-link: "https://discoverpraxis.com/"
+description: "Praxis is an intensive 12-month apprenticeship program for those who are entrepreneurial young people that want real-world career experience and a rigorous, self-directed educational experience."
 image: "/images/apprenticeships/8th-light.jpeg"
+link: "https://discoverpraxis.com/"
 location:
   - "Austin, TX"
   - "Atlanta, GA"
@@ -10,5 +11,4 @@ location:
   - "Pittsburgh, PA"
   - "Chicago, IL"
   - "Salt Lake City, UT"
-description: "Praxis is an intensive 12-month apprenticeship program for those who are entrepreneurial young people that want real-world career experience and a rigorous, self-directed educational experience."
 ---

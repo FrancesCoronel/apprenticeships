@@ -1,8 +1,8 @@
 ---
 company: "Spotify"
-link: "https://ttp.nyc/spotifyfellowship/"
+description: "The Spotify NYC Technology Fellowship is aimed at helping engineers just starting their careers in tech and provides an opportunity to work within a team and build upon current skills."
 image: "/images/apprenticeships/8th-light.jpeg"
+link: "https://ttp.nyc/spotifyfellowship/"
 location:
   - "New York, NY"
-description: "The Spotify NYC Technology Fellowship is aimed at helping engineers just starting their careers in tech and provides an opportunity to work within a team and build upon current skills."
 ---

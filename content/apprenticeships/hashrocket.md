@@ -1,9 +1,9 @@
 ---
 company: "HashRocket"
-link: "https://hashrocket.com/careers/apprentice"
+description: "The Hashrocket apprenticeship is a six–month salaried program designed to take candidates with some professional software development experience and turn them into software consultants."
 image: "/images/apprenticeships/8th-light.jpeg"
+link: "https://hashrocket.com/careers/apprentice"
 location:
   - "Chicago, IL"
   - "Jacksonville Beach, FL"
-description: "The Hashrocket apprenticeship is a six–month salaried program designed to take candidates with some professional software development experience and turn them into software consultants."
 ---

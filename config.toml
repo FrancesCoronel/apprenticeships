@@ -44,7 +44,7 @@ pygmentsStyle                        = "manni"
 
 [params.algolia]
   vars                               = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-  params                             = ["company", "link", "location", "description", "draft"]
+  params                             = ["company", "link", "location", "description", "image"]
 
 # Site Params
 [params]
@@ -53,7 +53,7 @@ pygmentsStyle                        = "manni"
     year_created                     = 2019
     og_image                         = "https://i.imgur.com/jCh1pBO.png"
     logo                             = "https://i.imgur.com/BtgIRcP.png"
-    brand_color                      = "#ff8284"
+    brand_color                      = "#77b255"
     github_repo                      = "https://github.com/fvcproductions/apprenticeships"
 
 # Social Links

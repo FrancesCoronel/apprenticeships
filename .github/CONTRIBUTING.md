@@ -1,22 +1,36 @@
 # Contributing
 
+- [Steps](#steps)
+- [Ways You Can Contribute](#ways-you-can-contribute)
+- [Adding a new apprenticeship](#adding-a-new-apprenticeship)
+- [Guidelines](#guidelines)
+  - [Text](#text)
+  - [Links](#links)
+  - [Images](#images)
+- [Making a Pull Request](#making-a-pull-request)
+
+## Steps
+
 > To get started...
 
 - 🍴 Fork this repo [here](https://github.com/fvcproductions/apprenticeships#fork-destination-box)
-- 🔨 **Read through the contributing guidelines below** and add an apprenticeship
+- 🔨 **Read through the contributing guidelines below**
 - 👥 Add yourself as a contributor under credits
 - 🔧 Make a pull request [here](https://github.com/fvcproductions/apprenticeships/compare)
 - 🎉 Get your pull request approved - success!
 
-Or just [create an issue](https://github.com/fvcproductions/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
+## Ways You Can Contribute
 
-## Making a Pull Request
+- [Add apprenticeship](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=addition&template=add-apprenticeship.md&title=Add%3A+) - Add an apprenticeship to our growing list 🌱
+- [Bug Report](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=bug&template=bug_report.md&title=Bug%3A+) - Create a bug report to help us improve this website 🐛
+- [Edit apprenticeship](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=edit&template=edit-apprenticeship.md&title=Edit%3A+) - Edit an existing apprenticeship 📝
+- [Feature Request](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=Feature+Request%3A+) - Suggest an idea for this project 💡
+- [Remove apprenticeship](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=remove&template=remove-apprenticeship.md&title=Remove%3A+) - Remove an existing apprenticeship 🔻
+- Or just [create a regular issue](https://github.com/fvcproductions/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
 
-- The pull request should have a useful title, like `Add [name of apprenticeship]` instead of `Update README`.
-- Search previous suggestions before making a new one, as yours may be a duplicate.
-- Make an individual pull request for each suggestion.
+## Adding a new apprenticeship
 
-### Add new file in `content/apprenticeships`
+> Add new Markdown file in `content/apprenticeships`
 
 ```markdown
 ---
@@ -32,8 +46,30 @@ location:
 ---
 ```
 
-- The link should not be to a direct link to the application page unless that's all that is available.
-- Use [title-casing](https://capitalizemytitle.com/).
-- Check your spelling and grammar using a tool like [Grammarly](https://grammarly.com).
-- Make sure your text editor is set to remove trailing whitespace.
-- The featured image should include the company's logo. Here's an example that uses the company logo in an office setting: [example](https://static.viget.com/careers/_540xAUTO_crop_center-center/Durham-entry.jpg?mtime=20180718173457). Please avoid any images that focus on individuals and show faces.
+> Add image referenced to "static/images/apprenticeships"
+
+`company-name.jpeg`
+
+## Guidelines
+
+### Text
+
+- Check your spelling and grammar using a tool like [Grammarly](https://grammarly.com)
+- Make sure your text editor is set to remove trailing whitespace
+
+### Links
+
+- The link should not be to a direct link to the application page unless that's all that is available
+- The link should link to the page describing the apprenticeship program or the closest thing to that
+
+### Images
+
+- The featured image should include the company's logo
+- Please avoid any images that focus on individuals and show faces since this can bias users
+- You don't have to worry about compressing or optimizing your image, we use [ImgBot](https://github.com/apps/imgbot) to do that but we recommend keeping all images under 1MB
+
+## Making a Pull Request
+
+- The pull request should have a useful title, like `Add [name of apprenticeship]` instead of `Update README`.
+- Search previous suggestions before making a new one, as yours may be a duplicate.
+- Make an individual pull request for each suggestion.

@@ -1,6 +1,7 @@
 ---
 company: "DevMynd"
 link: "https://www.devmynd.com/culture/careers/"
+image: "/images/apprenticeships/8th-light.jpeg"
 location:
   - "Chicago, IL"
   - "San Francisco, CA"

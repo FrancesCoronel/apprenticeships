@@ -1,6 +1,7 @@
 ---
 company: "HashRocket"
 link: "https://hashrocket.com/careers/apprentice"
+image: "/images/apprenticeships/8th-light.jpeg"
 location:
   - "Chicago, IL"
   - "Jacksonville Beach, FL"

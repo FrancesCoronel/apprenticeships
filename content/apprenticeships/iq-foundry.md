@@ -1,6 +1,7 @@
 ---
 company: "IQ Foundry"
 link: "http://www.iqfoundry.com/careers"
+image: "/images/apprenticeships/8th-light.jpeg"
 location:
   - "Madison, WI"
 description: "IQ Foundry is a marketing agency that designs and develops digital media including custom apps and feature-rich websites."

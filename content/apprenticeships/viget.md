@@ -1,6 +1,7 @@
 ---
 company: "Viget"
 link: "https://www.viget.com/apprenticeship/"
+image: "/images/apprenticeships/8th-light.jpeg"
 location:
   - "Washington, DC"
   - "Durham, NC"

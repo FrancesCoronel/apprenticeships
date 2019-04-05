@@ -1,6 +1,7 @@
 ---
 company: "Praxis"
 link: "https://discoverpraxis.com/"
+image: "/images/apprenticeships/8th-light.jpeg"
 location:
   - "Austin, TX"
   - "Atlanta, GA"

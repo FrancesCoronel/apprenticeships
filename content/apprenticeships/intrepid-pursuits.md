@@ -1,6 +1,7 @@
 ---
 company: "Intrepid Pursuits"
 link: "http://info.intrepid.io/apprentice"
+image: "/images/apprenticeships/8th-light.jpeg"
 location:
   - "Cambridge, MA"
   - "New York, NY"

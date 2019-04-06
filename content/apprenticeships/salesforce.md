@@ -1,4 +1,12 @@
-https://www.salesforce.com/company/careers/about-futureforce/apprenticeships/
+---
+company: "Salesforce Futureforce"
+description: "Our Futureforce apprenticeships provide hands-on, corporate experience to help develop and train the workforce of tomorrow."
+image: "/images/apprenticeships/salesforce-futureforce.jpg"
+link: "https://www.salesforce.com/company/careers/about-futureforce/apprenticeships/"
+location:
+  - "San Francisco, CA"
+  - "Chicago, IL"
+---
 
 Our Futureforce apprenticeships provide hands-on, corporate experience to help develop and train the workforce of tomorrow. We partner with global workforce development organizations to provide training and apprenticeship opportunities for urban youth, refugees, and adults with disabilities to transition to the digital economy where we specialize.
 

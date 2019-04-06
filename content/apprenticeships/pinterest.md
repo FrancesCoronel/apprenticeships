@@ -1,7 +1,7 @@
 ---
 company: "Pinterest"
 description: "Pinterest's apprentice program focuses on hiring engineers from non-traditional backgrounds who are comfortable with basic programming principles."
-image: "/images/apprenticeships/pinterest.jpeg"
+image: "/images/apprenticeships/pinterest.jpg"
 link: "https://www.techhireoakland.org/apprenticeships/paid-pinterest-software-apprenticeship"
 location:
   - "San Francisco, CA"

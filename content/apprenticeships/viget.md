@@ -1,7 +1,7 @@
 ---
 company: "Viget"
 description: "The Viget apprenticeship is a 10-week, paid training program designed to accelerate your career in user experience, visual design, engineering, or project management."
-image: "/images/apprenticeships/.jpg"
+image: "/images/apprenticeships/viget.jpg"
 link: "https://www.viget.com/apprenticeship/"
 location:
   - "Washington, DC"

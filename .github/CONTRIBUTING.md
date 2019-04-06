@@ -76,6 +76,6 @@ location:
 
 ## Making a Pull Request
 
-- The pull request should have a useful title, like `Add [name of apprenticeship]` instead of `Update README`.
-- Search previous suggestions before making a new one, as yours may be a duplicate.
-- Make an individual pull request for each suggestion.
+- The pull request should have a useful title, like `Add [name of apprenticeship]` instead of `Update README`
+- Search previous suggestions before making a new one, as yours may be a duplicate
+- Make an individual pull request for each suggestion

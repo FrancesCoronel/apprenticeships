@@ -7,6 +7,7 @@
   - [Text](#text)
   - [Links](#links)
   - [Images](#images)
+  - [Locations](#locations)
 - [Making a Pull Request](#making-a-pull-request)
 
 ## Steps
@@ -64,10 +65,14 @@ location:
 
 ### Images
 
-- Should be 1000px for width and 500px for height
-- The featured image should include the company's logo
+- The featured image should include the company's logo and be 1000px in width and 500px in height
 - Please avoid any images that focus on individuals and show faces since this can bias users
 - You don't have to worry about compressing or optimizing your image, we use [ImgBot](https://github.com/apps/imgbot) to do that but we recommend keeping all images under 250 KB
+
+### Locations
+
+- If it's not clear what the locations are, don't include any
+- If there are more than 20 locations where the apprenticeship is, than it should also not include the location
 
 ## Making a Pull Request
 

@@ -64,6 +64,7 @@ location:
 
 ### Images
 
+- Should be 1000px for width and 500px for height
 - The featured image should include the company's logo
 - Please avoid any images that focus on individuals and show faces since this can bias users
 - You don't have to worry about compressing or optimizing your image, we use [ImgBot](https://github.com/apps/imgbot) to do that but we recommend keeping all images under 250 KB

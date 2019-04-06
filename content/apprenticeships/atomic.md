@@ -1,7 +1,7 @@
 ---
 company: "Atomic"
 description: "Atomic Accelerator is a professional development program for recent computer science grads."
-image: "/images/apprenticeships/8th-light.jpeg"
+image: "/images/apprenticeships/.jpg"
 link: "https://atomicobject.com/careers/accelerator"
 location:
   - "Grand Rapids, MI"

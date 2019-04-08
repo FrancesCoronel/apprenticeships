@@ -3,7 +3,7 @@ const search = instantsearch({
   apiKey: process.env.ALGOLIA_ADMIN_KEY,
   indexName: "apprenticeships",
   routing: true,
-  searchableAttributes: ["company", "description", "location", "image"],
+  searchableAttributes: ["company", "description", "location"],
   searchFunction: function(helper) {
     helper.search();
   }

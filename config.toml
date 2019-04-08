@@ -44,7 +44,7 @@ pygmentsStyle                        = "manni"
 
 [params.algolia]
   vars                               = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-  params                             = ["company", "link", "location", "description", "image"]
+  params                             = ["company", "link", "location", "description", "image", "draft"]
 
 # Site Params
 [params]

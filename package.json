@@ -2,16 +2,14 @@
   "name": "apprenticeships.me",
   "version": "1.0.0",
   "description": "Find a new career learning from the industry itself.",
-  "main": "index.js",
   "scripts": {
     "algolia": "atomic-algolia",
     "build:css": "postcss build static/style.pcss -c ./tailwind.config.js -o ./public/generated.css",
-    "start": "concurrently  \"hugo -w\" \"postcss build static/style.pcss -c ./tailwind.config.js\" \"parcel ./public/index.html\" ",
+    "start": "concurrently \"hugo -w\" \"postcss build static/style.pcss -c ./tailwind.config.js\" \"parcel ./public/index.html\" ",
     "build": "node misc-scripts/github.js; hugo; npm run algolia; parcel build ./public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "contributors": [
-    {
+  "contributors": [{
       "name": "Frances Coronel",
       "email": "hello@fvcproductions.com",
       "url": "https://www.fvcproductions.com"

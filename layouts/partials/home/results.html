@@ -12,7 +12,7 @@
           <!-- Remove id #hits to test locally-->
           <div class="flex flex-wrap -mx-2 mt-0">
             {{ range .Site.Pages }}
-            <a class="my-4 px-2 w-full md-w-1-2 lg-w-1-3" href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer">
+            <a class="my-4 px-2 w-full md-w-1-2 lg-w-1-3" {{ if .Params.link }}href="{{ .Params.link }}"{{ end }} target="_blank" rel="noopener noreferrer">
               <div class="max-w-sm rounded overflow-hidden shadow-md hover-shadow-lg transition min-h-full">
                 <img class="w-full" src="{{ .Params.image }}" alt="{{ .Params.company }} - Logo Image">
                 <div class="px-6 py-4">

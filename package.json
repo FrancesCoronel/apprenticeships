@@ -10,8 +10,7 @@
     "build": "node misc-scripts/github.js; hugo; npm run algolia; parcel build ./public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "contributors": [
-    {
+  "contributors": [{
       "name": "Frances Coronel",
       "email": "hello@fvcproductions.com",
       "url": "https://www.fvcproductions.com"

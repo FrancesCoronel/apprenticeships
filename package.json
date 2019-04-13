@@ -31,7 +31,7 @@
   "devDependencies": {
     "@babel/core": "7.4.3",
     "@babel/preset-env": "7.4.3",
-    "axios": "^0.18.0",
+    "axios": "0.18.0",
     "concurrently": "4.1.0",
     "cssnano": "4.1.10",
     "eslint": "5.16.0",

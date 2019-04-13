@@ -2,8 +2,8 @@
 {{- $section := $.Site.GetPage "section" .Section }}
 {{- range .Site.AllPages -}}
   {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
-    {{ if ( .Params.company ) and ( .Params.company "!=" "") and ( .Params.company "!=" null) }}
-      {{- $.Scratch.Add "index" (dict "objectID" .UniqueID "company" .Date.UTC.Unix "description" .Description "company" .Params.company "location" .Params.location  "link" .Params.Link)}}
+    {{ if ( .Params.company ) and ( .Params.company "!=" "") and ( .Params.company "!=" "null") }}
+      {{- $.Scratch.Add "index" (dict "objectID" .UniqueID "company" .Date.UTC.Unix "description" .Description "company" .Params.company "location" .Params.location "link" .Params.Link "image" .Params.image)}}
     {{- end -}}
   {{- end -}}
 {{- end -}}

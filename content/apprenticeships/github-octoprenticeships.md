@@ -1,8 +1,11 @@
 ---
 company: "GitHub Octoprenticeships"
-link: "https://blog.github.com/2018-10-17-introducing-githubs-inaugural-apprenticeship-program-the-octoprenticeship/"
+description: "Octoprenticeships are six-month career development programs for people with non-traditional technical backgrounds from underrepresented groups in tech."
+image: "/images/apprenticeships/github-octoprenticeship.jpg"
+link: "https://github.com/about/careers"
 location:
   - "Remote"
-description: "Octoprenticeships are six-month career development programs for people with non-traditional technical backgrounds from underrepresented groups in tech."
-draft: false
+  - "San Francisco, CA"
 ---
+
+Octoprenticeships are six-month paid career development programs for people with non-traditional technical backgrounds from underrepresented groups in tech. Work on real projects with a GitHub Team, learn alongside a mentor in your field, and develop the skills you need to land your next dream job.

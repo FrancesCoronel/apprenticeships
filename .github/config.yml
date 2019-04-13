@@ -1,0 +1,74 @@
+# Configuration for request-info
+# https://github.com/behaviorbot/request-info
+
+# *Required* Comment to reply with
+requestInfoReplyComment: >
+  We would appreciate it if you could provide us with more info about this issue or pull request so we can better understand it. Thanks! 💛
+
+# *OPTIONAL* default titles to check against for lack of descriptiveness
+# MUST BE ALL LOWERCASE
+requestInfoDefaultTitles:
+  - update readme.md
+  - updates
+  - fixes
+  - new feature
+
+# *OPTIONAL* Label to be added to Issues and Pull Requests with insufficient information given
+requestInfoLabelToAdd: needs-more-info
+
+####################################################################################################
+
+# Configuration for todo
+# A GitHub App built with Probot that creates new issues based on actionable comments in your code.
+# https://github.com/apps/todo
+
+todo:
+  keyword: "TODO:"
+  label: "todo comment"
+
+####################################################################################################
+
+# Configuration for sentiment-bot
+# https://github.com/behaviorbot/sentiment-bot
+
+# *Required* toxicity threshold between 0 and .99 with the higher numbers being the most toxic
+# Anything higher than this threshold will be marked as toxic and commented on
+sentimentBotToxicityThreshold: .7
+
+# *Required* Comment to reply with
+sentimentBotReplyComment: >
+  Please be sure to review our Code of Conduct and remember to be respectful of other users. cc/ @fvcproductions @benjamin
+
+####################################################################################################
+
+# Configuration for welcome - https://github.com/behaviorbot/welcome
+
+# Configuration for new-issue-welcome - https://github.com/behaviorbot/new-issue-welcome
+# Comment to be posted to on first time issues
+
+newIssueWelcomeComment: >
+  Thank you for raising an issue!
+
+  Please make sure you have given us enough context and we will review it as soon as possible. ⏲️
+
+  If you don't hear back from anyone within the next week, feel free to reach out to one of the maintainers. 💛
+
+# Configuration for new-pr-welcome - https://github.com/behaviorbot/new-pr-welcome
+# Comment to be posted to on PRs from first time contributors in your repository
+
+newPRWelcomeComment: >
+  Thanks for opening this pull request!
+
+  Please make sure you have followed our contributing guidelines and we will review it as soon as possible. ⏲️
+
+  If you don't hear back from anyone within the next week, feel free to reach out to one of the maintainers. 💛
+
+# Configuration for first-pr-merge - https://github.com/behaviorbot/first-pr-merge
+# Comment to be posted to on pull requests merged by a first time user
+
+firstPRMergeComment: >
+  Congrats on merging your first pull request!
+
+  Here's a cute taco GIF as a small thank you. 💛
+
+  [Cute Tacos](https://media.giphy.com/media/pYCdxGyLFSwgw/giphy.gif)

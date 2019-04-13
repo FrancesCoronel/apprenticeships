@@ -1,3 +1,5 @@
+![Screenshot](/static/images/readme.jpg)
+
 # apprenticeships.me
 
 [![GitHub Issues](https://img.shields.io/github/issues/fvcproductions/apprenticeships.me.svg)](https://github.com/fvcproductions/apprenticeships.me/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fvcproductions/apprenticeships.me.svg)](https://github.com/fvcproductions/apprenticeships.me/pulls) [![MIT License](https://img.shields.io/github/license/fvcproductions/apprenticeships.me.svg)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.me/fvcproductions/5) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg)](https://www.patreon.com/fvcproductions) [![Netlify Status](https://api.netlify.com/api/v1/badges/bd2e661d-f9ac-493a-ac07-05429f092059/deploy-status)](https://app.netlify.com/sites/apprenticeships/deploys)
@@ -20,7 +22,7 @@ Even though the formal university route became more popular over time, there has
 4.  🔧 [Open a new pull request](https://github.com/fvcproductions/apprenticeships.me/compare)
 5.  🎉 Get your pull request approved - success!
 
-Or just [create an issue](https://github.com/fvcproductions/apprenticeships.me/issues/new) - any little bit of help counts! 😊
+Or just [create an issue](https://github.com/fvcproductions/apprenticeships.me/issues/new/choose) - any little bit of help counts! 😊
 
 ## Code of Conduct
 

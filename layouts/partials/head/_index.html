@@ -11,24 +11,13 @@
 
   ©️ Apprenticeships.me
   -->
-<meta charset="utf-8">
-<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
-<meta name="HandheldFriendly" content="True">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="MobileOptimized" content="320">
-<meta name="robots" content="index, follow">
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<title>{{ .Title }}</title>
+<!-- Meta -->
+{{ partial "head/meta.html" . }}
 <!-- Styles -->
 {{ partial "head/styles.html" . }}
 <!-- Favicons -->
 {{ partial "head/favicons.html" . }}
-<!-- Meta -->
-{{ partial "head/meta.html" . }}
 <!-- Meta Custom -->
 {{ partial "head/meta-custom.html" . }}
 <!-- Structured Data -->
-<!-- {{ partial "head/structured-data.html" . }} -->
+{{ partial "head/structured-data.html" . }}

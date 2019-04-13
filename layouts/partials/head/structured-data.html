@@ -1,6 +1,6 @@
 <!-- Homepage -->
 {{ if .IsHome -}}
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
     "@context":         "https://schema.org",
     "@type":            "WebSite",
@@ -33,9 +33,9 @@
     ]
 }
 </script>
-<!-- Blog Posting -->
+  <!-- Blog Posting -->
 {{- else if .IsPage -}}
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
     "@context":          "http://schema.org",
     "@type":             "BlogPosting",
@@ -93,23 +93,28 @@
 {{ $.Scratch.Add "path" .Site.BaseURL }}
 {{ $.Scratch.Add "breadcrumb" (slice (dict "url" .Site.BaseURL "name" "home" "position" 1 )) }}
 {{ range $index, $element := split $url "/" }}
-{{ $.Scratch.Add "path" $element }}
-{{ $.Scratch.Add "path" "/" }}
-{{ if ne $element "" }}
-{{ $.Scratch.Add "breadcrumb" (slice (dict "url" ($.Scratch.Get "path") "name" . "position" (add $index 2))) }}
-{{ end }}
+  {{ $.Scratch.Add "path" $element }}
+  {{ $.Scratch.Add "path" "/" }}
+  {{ if ne $element "" }}
+    {{ $.Scratch.Add "breadcrumb" (slice (dict "url" ($.Scratch.Get "path") "name" . "position" (add $index 2))) }}
+  {{ end }}
 {{ end }}
 <script type="application/ld+json">
-{
-  "@context":        "https://schema.org",
-  "@type":           "BreadcrumbList",
-  "itemListElement": [{{ range $.Scratch.Get "breadcrumb" }}{{ if ne .position 1 }},{{ end }}{
-        "@type":     "ListItem",
-        "position":  {{ .position }},
-        "item":      {
-          "@id":     "{{ .url }}",
-          "name":    "{{ .name }}"
+  {
+    "@context":        "https://schema.org",
+    "@type":           "BreadcrumbList",
+    "itemListElement": [
+  {{ range $.Scratch.Get "breadcrumb" }}
+    {{ if ne .position 1 }},
+    {{ end }}{
+            "@type":     "ListItem",
+            "position":
+    {{ .position }},
+            "item":      {
+              "@id":     "{{ .url }}",
+              "name":    "{{ .name }}"
+            }
         }
-    }{{ end }}]
-}
+  {{ end }}]
+  }
 </script>

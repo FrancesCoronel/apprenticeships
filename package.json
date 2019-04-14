@@ -7,7 +7,7 @@
     "algolia": "atomic-algolia",
     "build:css": "postcss build static/style.pcss -c ./tailwind.config.js -o ./public/generated.css",
     "start": "concurrently  \"hugo -w\" \"postcss build static/style.pcss -c ./tailwind.config.js\" \"parcel ./public/index.html\" ",
-    "build": "node misc-scripts/github.js; hugo; npm run algolia; parcel build ./public/*.html",
+    "build": "node misc-scripts/github.js; hugo; parcel build ./public/*.html; node misc-scripts/correct-image-paths.js; npm run algolia;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "contributors": [{

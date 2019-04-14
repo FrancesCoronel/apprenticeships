@@ -26,20 +26,20 @@ const findDistMatch = async() => {
   });
 };
 
-const addCorrectImageToJSONFile = (content) => {
-  const attributeFile = (fileName) => {
+const addCorrectImageToJSONFile = (content, match) => {
+  const attributeFile = (fileName, match) => {
     const name = fileName[0];
     const type = fileName[1];
     matchObj.map((b) => {
       if (b.name === name && b.type === type) {
-        x.image = `${b.name}.${b.hash}.${b.type}`;
+        match.image = `${b.name}.${b.hash}.${b.type}`;
       }
     });
   };
 
   return content.map((x) => {
     const fileName = x.image.split(".");
-    attributeFile(fileName);
+    attributeFile(fileName, x);
     return x.image;
   });
 };

@@ -1,7 +1,7 @@
 ---
 company: "Nava"
 description: "Nava partners with government agencies to deliver mission-critical software that helps public institutions earn people's trust."
-image: "/images/apprenticeships/nava.jpg"
+image: "nava.jpg"
 link: "https://blog.navapbc.com/nava-pbc-launches-apprenticeship-for-engineers-starting-careers-in-public-interest-technology-9ef8c2240b1b"
 location:
   - "Washington, DC"

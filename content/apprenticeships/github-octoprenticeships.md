@@ -1,7 +1,7 @@
 ---
 company: "GitHub Octoprenticeships"
 description: "Octoprenticeships are six-month career development programs for people with non-traditional technical backgrounds from underrepresented groups in tech."
-image: "/images/apprenticeships/github-octoprenticeship.jpg"
+image: "github-octoprenticeship.jpg"
 link: "https://github.com/about/careers"
 location:
   - "Remote"

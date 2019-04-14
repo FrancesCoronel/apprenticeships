@@ -19,7 +19,7 @@ search.addWidget(
           {{#hits}}
             <a class="my-4 px-2 w-full md-w-1-2 lg-w-1-3" href="{{{link}}}" target="_blank" rel="noopener noreferrer">
               <div class="max-w-sm rounded overflow-hidden shadow-md hover-shadow-lg transition min-h-full">
-                <!-- <img class="w-full" src="{{{image}}}" alt="{{{company}}} - Logo Image"> -->
+                <img class="w-full" src="{{{image}}}" alt="{{{company}}} - Logo Image">
                 <div class="px-6 py-4">
                   <div class="font-bold text-xl mb-2">{{{company}}}</div>
                   <p class="text-grey-darker text-base">{{{description}}}</p>

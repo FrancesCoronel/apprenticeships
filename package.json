@@ -7,7 +7,7 @@
     "algolia": "atomic-algolia",
     "build:css": "postcss build static/style.pcss -c ./tailwind.config.js -o ./public/generated.css",
     "start": "concurrently  \"hugo -w\" \"postcss build static/style.pcss -c ./tailwind.config.js\" \"parcel ./public/index.html\" ",
-    "build": "node misc-scripts/github.js; hugo; npm run algolia; parcel build ./public/*.html",
+    "build": "node misc-scripts/github.js; hugo; parcel build ./public/*.html; node misc-scripts/correct-image-paths.js; npm run algolia;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "contributors": [{
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@babel/core": "7.4.3",
     "@babel/preset-env": "7.4.3",
-    "axios": "^0.18.0",
+    "axios": "0.18.0",
     "concurrently": "4.1.0",
     "cssnano": "4.1.10",
     "eslint": "5.16.0",

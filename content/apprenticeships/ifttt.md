@@ -1,7 +1,7 @@
 ---
 company: "IFTTT"
 description: "Three-month program, paid and full-time, with the hopes of having you on the team as an - Engineer afterwards."
-image: "/images/apprenticeships/ifttt-apprenticeship.jpg"
+image: "ifttt-apprenticeship.jpg"
 link: "https://ifttt.com/apprenticeship"
 location:
   - "San Francisco, CA"

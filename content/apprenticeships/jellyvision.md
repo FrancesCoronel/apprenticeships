@@ -1,7 +1,7 @@
 ---
 company: "Jellyvision"
 description: "Jellyvision’s love of teaching and entertaining goes back decades, to when we were making educational videos, games like You Don’t Know Jack, and not as much money. Around the turn of the century, we began applying our expertise to solving communications challenges."
-image: "/images/apprenticeships/jellyvision.jpg"
+image: "jellyvision.jpg"
 link: "https://www.jellyvision.com/about-us/careers/"
 location:
   - "Chicago, IL"

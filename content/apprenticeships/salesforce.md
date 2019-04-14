@@ -1,7 +1,7 @@
 ---
 company: "Salesforce Futureforce"
 description: "Our Futureforce apprenticeships provide hands-on, corporate experience to help develop and train the workforce of tomorrow."
-image: "/images/apprenticeships/salesforce-futureforce.jpg"
+image: "salesforce-futureforce.jpg"
 link: "https://www.salesforce.com/company/careers/about-futureforce/apprenticeships/"
 location:
   - "San Francisco, CA"

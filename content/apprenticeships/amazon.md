@@ -1,7 +1,7 @@
 ---
 company: "Amazon"
 description: "Amazon is the perfect place to learn new skills with a range of apprenticeship opportunities to suit candidates with different backgrounds, qualifications and career aspirations."
-image: "/images/apprenticeships/amazon.jpg"
+image: "amazon.jpg"
 link: "https://www.amazon.jobs/en/landing_pages/apprentices"
 location:
   - "London, UK"

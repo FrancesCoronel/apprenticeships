@@ -1,7 +1,7 @@
 ---
 company: "Code for America"
 description: "We're excited to launch our apprenticeship program cohort to provide a pathway for people early in their technical careers to get on the job training."
-image: "/images/apprenticeships/code-for-america.jpg"
+image: "code-for-america.jpg"
 link: "https://www.codeforamerica.org/jobs"
 locations:
   - "San Francisco, CA"

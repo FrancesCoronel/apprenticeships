@@ -8,9 +8,7 @@ const matchObj = [];
 
 const findDistMatch = async() => {
   const directory = await readDir(path.resolve(__dirname, "../dist"));
-
-  return directory.map((file) => {
-    const fileName = file.split(".");
+  const attributeHash = (fileName) => {
     const name = fileName[0];
     const hash = fileName[1];
     const type = fileName[2];
@@ -19,30 +17,36 @@ const findDistMatch = async() => {
         i.hash = hash;
       }
     });
+    return match;
+  };
 
-    return match[0];
+  return directory.map((file) => {
+    const fileName = file.split(".");
+    return attributeHash(fileName)[0];
   });
 };
 
 const addCorrectImageToJSONFile = (content) => {
-  return content.map((x) => {
-    const fileName = x.image.split(".");
+  const attributeFile = (fileName) => {
     const name = fileName[0];
     const type = fileName[1];
-
     matchObj.map((b) => {
       if (b.name === name && b.type === type) {
         x.image = `${b.name}.${b.hash}.${b.type}`;
       }
     });
+  };
 
+  return content.map((x) => {
+    const fileName = x.image.split(".");
+    attributeFile(fileName);
     return x.image;
   });
 };
 
 const initScript = async() => {
   const data = readFile(path.resolve(__dirname, "../public/algolia.json"));
-  content = JSON.parse(await data);
+  const content = JSON.parse(await data);
   content.map((i) => {
     const file = i.image.split(".");
     const name = file[0];

@@ -5,11 +5,17 @@
     <form class="gh-form bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 text-left">
       <div class="mb-4">
         <label class="block text-grey-darker text-sm font-bold mb-2" for="title">
-          Apprenticeship Title
+          Title
         </label>
-        <input
-          class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker leading-tight"
-          id="title" type="text" required>
+        <input class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker leading-tight" id="title"
+          type="text" required placeholder="Add apprenticeship name">
+      </div>
+      <div class="mb-4">
+        <label class="block text-grey-darker text-sm font-bold mb-2" for="link">
+          Link
+        </label>
+        <input class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker leading-tight" id="link"
+          type="text" required placeholder="www.google.com">
       </div>
       <div class="mb-6">
         <label class="block text-grey-darker text-sm font-bold mb-2" for="description">
@@ -17,7 +23,7 @@
         </label>
         <textarea
           class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker mb-3 leading-tight"
-          id="description" required> </textarea>
+          id="description" placeholder="Add any other details"> </textarea>
       </div>
       <div class="flex items-center justify-between">
         <button

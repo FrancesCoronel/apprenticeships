@@ -1,23 +1,30 @@
-const issue = {
-  title: "Found a bug",
-  body: "I'm having a problem with this.",
-  assignees: ["benjaminmodayil"],
-  labels: ["bug"]
-};
+const form = document.querySelector(".gh-form");
+const title = form.querySelector("#title");
+const description = form.querySelector("#description");
 
-fetch("/.netlify/functions/form", {
-  // method: "POST",
-  method: "GET"
-  // headers: {
-  //   "Content-Type": "application/json",
-  //   Authorization: `token ${"asdfasdf"}`
-  // },
-  // body: JSON.stringify(issue)
-})
-  .then((i) => {
-    return i;
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const issue = {
+    title: title.value.trim(),
+    body: description.value.trim(),
+    labels: ["enhancement", "help wanted"]
+  };
+
+  fetch("/.netlify/functions/form", {
+    method: "POST",
+    // method: "GET"
+    headers: {
+      "Content-Type": "application/json"
+      // Authorization: `token ${"asdfasdf"}`
+    },
+    body: JSON.stringify(issue)
   })
-  .then((i) => {
-    console.log(i);
-  });
-// https://api.github.com/repos/fvcproductions/apprenticeships.me/issues
+    .then((i) => {
+      return i;
+    })
+    .then((i) => {
+      console.log(i);
+    });
+  // https://api.github.com/repos/fvcproductions/apprenticeships.me/issues
+});

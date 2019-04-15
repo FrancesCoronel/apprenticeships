@@ -5,6 +5,7 @@ const {GH_ACCESS_TOKEN} = process.env;
 //   "https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_joke";
 
 exports.handler = async(event, context) => {
+  console.log(event, context);
   // return fetch(API_ENDPOINT)
   //   .then((response) => response.json())
   //   .then((data) => ({

@@ -1,4 +1,5 @@
 const form = document.querySelector(".gh-form");
+const formParent = form.parentNode;
 const title = form.querySelector("#title");
 const link = form.querySelector("#link");
 const description = form.querySelector("#description");
@@ -12,7 +13,7 @@ form.addEventListener("submit", (e) => {
     labels: ["enhancement", "help wanted"]
   };
 
-  fetch("/.netlify/functions/form", {
+  return fetch("/.netlify/functions/form", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -20,11 +21,20 @@ form.addEventListener("submit", (e) => {
     body: JSON.stringify(issue)
   })
     .then((i) => {
-      // console.log();
-      return i.body.json();
+      if (i.status !== 200) throw Error();
+      return i;
     })
     .then((i) => {
-      console.log(i);
+      formParent.innerHTML = `
+      <p>Thank you for your contribution!</p>
+      `;
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      const paragraph = document.createElement("p");
+      const classes = ["text-red", "text-base", "mb-6", "text-center"];
+      paragraph.classList.add(...classes);
+      paragraph.innerHTML = `Oh no, something went wrong. <br> Please try again or enter it directly <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition"
+        href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">here</a>.`;
+      form.prepend(paragraph);
+    });
 });

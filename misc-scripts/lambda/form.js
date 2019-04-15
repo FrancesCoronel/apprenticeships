@@ -12,10 +12,10 @@ exports.handler = async(event, context) => {
   //     body: `${data.setup} ${data.punchline} *BA DUM TSSS*`
   //   }))
   //   .catch((error) => ({statusCode: 422, body: String(error)}));
-  callback(null, {
+  return {
     statusCode: 200,
-    body: "Hello, World"
-  });
+    body: "BEN *BA DUM TSSS*"
+  };
 };
 
 // User fills out form, form hits this function, function calls a process.env.access_token for GH permissions

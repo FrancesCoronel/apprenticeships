@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  functions = "./functions"
+  functions = "./misc-scripts/lambda"
   command = "npm run build"
 
 [context.production.environment]

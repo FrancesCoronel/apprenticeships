@@ -30,8 +30,7 @@ exports.handler = async(event, context) => {
     .catch((err) => {
       return {
         statusCode: 400,
-        body:
-          "Sorry! Something went wrong. Please visit the site directly and add your contribution. <a href='https://github.com/fvcproductions/apprenticeships/issues/new/choose'>Contribute</a>"
+        body: "Sorry! Something went wrong."
       };
     });
 };

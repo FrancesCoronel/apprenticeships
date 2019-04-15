@@ -21,10 +21,11 @@ form.addEventListener("submit", (e) => {
     body: JSON.stringify(issue)
   })
     .then((i) => {
-      return i;
+      return i.json();
     })
     .then((i) => {
       console.log(i);
+      return i;
     });
   // https://api.github.com/repos/fvcproductions/apprenticeships.me/issues
 });

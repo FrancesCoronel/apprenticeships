@@ -22,7 +22,7 @@ exports.handler = async(event, context) => {
     .then((i) => {
       return {
         statusCode: 200,
-        statusText: "Woohoo!" + event.body,
+        statusText: "Woohoo!" + event.body + " " + i,
         body:
           "Thank you for your contribution. Once approved, the apprenticeship will be added to the site."
       };

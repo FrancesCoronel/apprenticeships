@@ -5,17 +5,19 @@ const issue = {
   labels: ["bug"]
 };
 
-fetch("https://api.github.com/repos/fvcproductions/apprenticeships.me/issues", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    Authorization: `token ${"asdfasdf"}`
-  },
-  body: JSON.stringify(issue)
+fetch("/.netlify/functions/form", {
+  // method: "POST",
+  method: "GET"
+  // headers: {
+  //   "Content-Type": "application/json",
+  //   Authorization: `token ${"asdfasdf"}`
+  // },
+  // body: JSON.stringify(issue)
 })
   .then((i) => {
-    return i.json();
+    return i;
   })
   .then((i) => {
     console.log(i);
   });
+// https://api.github.com/repos/fvcproductions/apprenticeships.me/issues

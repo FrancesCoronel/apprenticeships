@@ -21,6 +21,7 @@ form.addEventListener("submit", (e) => {
     body: JSON.stringify(issue)
   })
     .then((i) => {
+      console.log(i);
       return i;
     })
     .catch((err) => console.log(err));

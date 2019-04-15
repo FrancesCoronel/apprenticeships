@@ -8,7 +8,7 @@ exports.handler = async(event, context) => {
 
   const data = JSON.parse(event.body);
 
-  fetch(
+  return fetch(
     "https://api.github.com/repos/fvcproductions/apprenticeships.me/issues",
     {
       method: "POST",

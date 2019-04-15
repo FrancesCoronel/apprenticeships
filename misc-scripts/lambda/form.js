@@ -1,22 +1,36 @@
 const fetch = require("node-fetch");
 const {GH_ACCESS_TOKEN} = process.env;
 
-// const API_ENDPOINT =
-//   "https://08ad1pao69.execute-api.us-east-1.amazonaws.com/dev/random_joke";
-
 exports.handler = async(event, context) => {
-  console.log(event, context);
-  // return fetch(API_ENDPOINT)
-  //   .then((response) => response.json())
-  //   .then((data) => ({
-  //     statusCode: 200,
-  //     body: `${data.setup} ${data.punchline} *BA DUM TSSS*`
-  //   }))
-  //   .catch((error) => ({statusCode: 422, body: String(error)}));
-  return {
-    statusCode: 200,
-    body: "BEN *BA DUM TSSS*"
-  };
-};
+  if (event.httpMethod !== "POST") {
+    return {statusCode: 405, body: "Method Not Allowed"};
+  }
 
-// User fills out form, form hits this function, function calls a process.env.access_token for GH permissions
+  const data = JSON.parse(event.body);
+
+  fetch(
+    "https://api.github.com/repos/fvcproductions/apprenticeships.me/issues",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `token ${GH_ACCESS_TOKEN}`
+      },
+      body: JSON.stringify(data)
+    }
+  )
+    .then((i) => {
+      return {
+        statusCode: 200,
+        body:
+          "Thank you for your contribution. Once approved, the apprenticeship will be added to the site."
+      };
+    })
+    .catch((err) => {
+      return {
+        statusCode: 400,
+        body:
+          "Sorry! Something went wrong. Please visit the site directly and add your contribution. <a href='https://github.com/fvcproductions/apprenticeships/issues/new/choose'>Contribute</a>"
+      };
+    });
+};

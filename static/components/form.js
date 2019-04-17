@@ -4,10 +4,10 @@ const title = form.querySelector("#title");
 const link = form.querySelector("#link");
 const description = form.querySelector("#description");
 const locations = form.querySelector("#locations");
-const captcha = form.querySelector("#g-recaptcha-response");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  const captcha = form.querySelector("#g-recaptcha-response");
   var hostname = window.location.host;
   const URL = `${hostname}.com/.netlify/functions/form`;
 

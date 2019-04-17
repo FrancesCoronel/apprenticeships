@@ -4,9 +4,13 @@ const title = form.querySelector("#title");
 const link = form.querySelector("#link");
 const description = form.querySelector("#description");
 const locations = form.querySelector("#locations");
+const captcha = form.querySelector("#g-recaptcha-response");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  var hostname = window.location.host;
+  const URL = `${hostname}.com/.netlify/functions/form`;
+
   const issue = {
     title: title.value.trim(),
     body:
@@ -14,34 +18,46 @@ form.addEventListener("submit", (e) => {
       " \n " +
       link.value.trim() +
       " \n " +
-      locations.trim(),
-    labels: ["enhancement", "help wanted"]
+      locations.value.trim(),
+    labels: ["enhancement", "help wanted"],
+    captcha: captcha.value
   };
 
-  var hostname = window.location.host;
-
-  return fetch(`${hostname}.com/.netlify/functions/form`, {
+  fetch(URL, {
     method: "POST",
     headers: {
-      "Content-Type": "application/json"
+      Accept: "application/json, text/plain, */*",
+      "Content-type": "application/json"
     },
     body: JSON.stringify(issue)
   })
-    .then((i) => {
-      if (i.status !== 200) throw Error();
-      return i;
-    })
-    .then((i) => {
-      formParent.innerHTML = `
-      <p>Thank you for your contribution!</p>
-      `;
-    })
-    .catch((err) => {
-      const paragraph = document.createElement("p");
-      const classes = ["text-red", "text-base", "mb-6", "text-center"];
-      paragraph.classList.add(...classes);
-      paragraph.innerHTML = `Oh no, something went wrong. <br> Please try again or enter it directly <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition"
-        href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">here</a>.`;
-      form.prepend(paragraph);
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+      alert(data.msg);
     });
+  // return fetch(`${hostname}.com/.netlify/functions/form`, {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json"
+  //   },
+  //   body: JSON.stringify(issue)
+  // })
+  //   .then((i) => {
+  //     if (i.status !== 200) throw Error();
+  //     return i;
+  //   })
+  //   .then((i) => {
+  //     formParent.innerHTML = `
+  //     <p>Thank you for your contribution!</p>
+  //     `;
+  //   })
+  //   .catch((err) => {
+  //     const paragraph = document.createElement("p");
+  //     const classes = ["text-red", "text-base", "mb-6", "text-center"];
+  //     paragraph.classList.add(...classes);
+  //     paragraph.innerHTML = `Oh no, something went wrong. <br> Please try again or enter it directly <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition"
+  //       href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">here</a>.`;
+  //     form.prepend(paragraph);
+  //   });
 });

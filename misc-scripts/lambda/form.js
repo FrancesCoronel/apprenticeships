@@ -2,17 +2,11 @@ const fetch = require("node-fetch");
 const {GH_ACCESS_TOKEN, GOOGLE_CAPTCHA} = process.env;
 
 const verifyGoogle = () => {
-  const URL = "https://www.google.com/recaptcha/api/siteverify";
-  const payload = {
-    secret: GOOGLE_CAPTCHA
-  };
-  fetch(URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(payload)
-  }).then((i) => console.log(i));
+  const URL = `https://www.google.com/recaptcha/api/siteverify?secret=${GOOGLE_CAPTCHA}&response=${
+    event.body.captcha
+  }`;
+
+  fetch(URL).then((res) => console.log(res));
 };
 exports.handler = async(event, context) => {
   verifyGoogle();

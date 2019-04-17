@@ -3,17 +3,24 @@ const formParent = form.parentNode;
 const title = form.querySelector("#title");
 const link = form.querySelector("#link");
 const description = form.querySelector("#description");
+const locations = form.querySelector("#locations");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
   const issue = {
     title: title.value.trim(),
-    body: description.value.trim() + " \n " + link.value.trim(),
+    body:
+      description.value.trim() +
+      " \n " +
+      link.value.trim() +
+      " \n " +
+      locations.trim(),
     labels: ["enhancement", "help wanted"]
   };
 
-  return fetch("/.netlify/functions/form", {
+  var hostname = window.location.host;
+
+  return fetch(`${hostname}.com/.netlify/functions/form`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

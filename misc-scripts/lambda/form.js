@@ -9,7 +9,38 @@ const verifyGoogle = () => {
   fetch(URL).then((res) => console.log(res));
 };
 exports.handler = async(event, context) => {
-  verifyGoogle();
+  if (
+    event.body.captcha === undefined ||
+    event.body.captcha === "" ||
+    event.body.captcha === null
+  ) {
+    return res.json({success: false, msg: "Please select captcha"});
+  }
+  // verifyGoogle();
+  const URL = `https://www.google.com/recaptcha/api/siteverify?secret=${GOOGLE_CAPTCHA}&response=${
+    event.body.captcha
+  }`;
+
+  return fetch(URL)
+    .then((i) => {
+      const body = JSON.parse(i);
+      return body;
+    })
+    .then((body) => {
+      console.log(body);
+
+      // If Not Successful
+      if (body.success !== undefined && !body.success) {
+        return {
+          statusCode: 401,
+          success: false,
+          body: "Failed captcha verification"
+        };
+      }
+
+      //If Successful
+      return {statusCode: 200, success: true, body: "Captcha passed"};
+    });
 
   // if (event.httpMethod !== "POST") {
   //   return {statusCode: 405, body: "Method Not Allowed"};

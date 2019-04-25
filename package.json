@@ -25,7 +25,7 @@
   "dependencies": {
     "atomic-algolia": "^0.3.15",
     "instantsearch.js": "^3.0.0",
-    "intersection-observer": "^0.5.1",
+    "intersection-observer": "^0.6.0",
     "smoothscroll-polyfill": "^0.4.3"
   },
   "devDependencies": {

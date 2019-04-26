@@ -8,9 +8,7 @@ const locations = form.querySelector("#locations");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const captcha = form.querySelector("#g-recaptcha-response");
-  var hostname = window.location.host;
-  console.log(hostname);
-  const URL = `${hostname}.com/.netlify/functions/form`;
+  const URL = "/.netlify/functions/form";
   console.log(URL);
 
   const issue = {

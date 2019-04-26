@@ -9,7 +9,9 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const captcha = form.querySelector("#g-recaptcha-response");
   var hostname = window.location.host;
+  console.log(hostname);
   const URL = `${hostname}.com/.netlify/functions/form`;
+  console.log(URL);
 
   const issue = {
     title: title.value.trim(),

@@ -14,7 +14,7 @@ exports.handler = async(event, context) => {
     event.body.captcha === "" ||
     event.body.captcha === null
   ) {
-    return res.json({success: false, msg: "Please select captcha"});
+    return {success: false, msg: "Please select captcha"};
   }
   // verifyGoogle();
   const URL = `https://www.google.com/recaptcha/api/siteverify?secret=${GOOGLE_CAPTCHA}&response=${

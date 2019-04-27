@@ -8,6 +8,7 @@ const verifyGoogle = () => {
 
   fetch(URL).then((res) => console.log(res));
 };
+
 exports.handler = async(event, context) => {
   if (
     event.body.captcha === undefined ||

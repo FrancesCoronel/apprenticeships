@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const captcha = form.querySelector("#g-recaptcha-response");
   const URL = "/.netlify/functions/form";
-  console.log(URL);
+  console.log({captcha, URL});
 
   const issue = {
     title: title.value.trim(),
@@ -37,7 +37,6 @@ form.addEventListener("submit", (e) => {
       alert(data.msg);
     });
   // return fetch(`${hostname}.com/.netlify/functions/form`, {
-  //   method: "POST",
   //   headers: {
   //     "Content-Type": "application/json"
   //   },

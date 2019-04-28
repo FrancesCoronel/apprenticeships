@@ -32,7 +32,7 @@ form.addEventListener("submit", (e) => {
   })
     .then((i) => {
       console.log(i);
-      if (i.statusCode !== 200) throw Error();
+      if (i.status !== 200) throw Error();
       console.log(i);
       return i;
     })

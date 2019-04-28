@@ -30,6 +30,8 @@ form.addEventListener("submit", (e) => {
     body: JSON.stringify(issue)
   })
     .then((i) => {
+      console.log(i);
+
       if (i.statusCode !== 200) throw Error();
       console.log(i);
       return i;

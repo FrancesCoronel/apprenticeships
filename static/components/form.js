@@ -9,8 +9,8 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const URL = "/.netlify/functions/form";
   const issue = {
-    title: `Add ${title.value.trim()}`,
-    body: `
+    title: `Add: ${title.value.trim()}`,
+    body: `\n
     ## Company
     \n
     ${title.value.trim()}

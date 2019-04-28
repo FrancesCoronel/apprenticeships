@@ -24,8 +24,7 @@ exports.handler = async(event, context) => {
 
   return fetch(URL)
     .then((i) => {
-      const body = JSON.parse(i);
-      return body;
+      return JSON.parse(i);
     })
     .then((body) => {
       console.log(body);
@@ -35,7 +34,7 @@ exports.handler = async(event, context) => {
         return {
           statusCode: 401,
           success: false,
-          statusText: "Failed captcha verification"
+          body: "Failed captcha verification"
         };
       }
 

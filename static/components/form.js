@@ -30,11 +30,12 @@ form.addEventListener("submit", (e) => {
     },
     body: JSON.stringify(issue)
   })
-    .then((i) => {
-      console.log(i);
-      if (i.status !== 200) throw Error();
-      console.log(i);
-      return i;
+    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      if (res.status !== 200) throw Error();
+      console.log(res);
+      return res;
     })
     .then(() => {
       formParent.innerHTML = `

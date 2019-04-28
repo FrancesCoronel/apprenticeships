@@ -2,18 +2,16 @@ const fetch = require("node-fetch");
 const {GH_ACCESS_TOKEN, GOOGLE_CAPTCHA} = process.env;
 
 exports.handler = async(event, context) => {
-  const data = JSON.parse(event.body);
-
   if (
-    data.captcha === undefined ||
-    data.captcha === "" ||
-    data.captcha === null
+    event.body.captcha === undefined ||
+    event.body.captcha === "" ||
+    event.body.captcha === null
   ) {
     return {success: false, msg: "Please select captcha"};
   }
 
   const URL = `https://www.google.com/recaptcha/api/siteverify?secret=${GOOGLE_CAPTCHA}&response=${
-    data.captcha
+    event.body.captcha
   }`;
 
   return fetch(URL)
@@ -51,7 +49,7 @@ exports.handler = async(event, context) => {
         .then((i) => {
           return {
             statusCode: 200,
-            statusText: "Woohoo!" + data + " " + i,
+            statusText: "Woohoo!" + event.body + " " + i,
             body:
               "Thank you for your contribution. Once approved, the apprenticeship will be added to the site."
           };

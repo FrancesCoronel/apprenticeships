@@ -9,7 +9,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const captcha = form.querySelector("#g-recaptcha-response");
   const URL = "/.netlify/functions/form";
-  console.log({captcha, URL});
 
   const issue = {
     title: title.value.trim(),
@@ -31,7 +30,8 @@ form.addEventListener("submit", (e) => {
     body: JSON.stringify(issue)
   })
     .then((i) => {
-      if (i.status !== 200) throw Error();
+      if (i.statusCode !== 200) throw Error();
+      console.log(i);
       return i;
     })
     .then(() => {

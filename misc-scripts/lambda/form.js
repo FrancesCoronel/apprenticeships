@@ -1,11 +1,11 @@
 const fetch = require("node-fetch");
-const {GH_ACCESS_TOKEN} = process.env;
+const { GH_ACCESS_TOKEN } = process.env;
 
-exports.handler = async(event, context) => {
+exports.handler = async (event, context) => {
   const data = JSON.parse(event.body);
 
   if (event.httpMethod !== "POST") {
-    return {statusCode: 405, body: "Method Not Allowed"};
+    return { statusCode: 405, body: "Method Not Allowed" };
   }
 
   return fetch(
@@ -19,7 +19,7 @@ exports.handler = async(event, context) => {
       body: JSON.stringify(data)
     }
   )
-    .then((i) => {
+    .then(i => {
       return {
         statusCode: 200,
         statusText: "Woohoo!" + event.body + " " + i,
@@ -27,7 +27,7 @@ exports.handler = async(event, context) => {
           "Thank you for your contribution. Once approved, the apprenticeship will be added to the site."
       };
     })
-    .catch((err) => {
+    .catch(err => {
       return {
         statusCode: 400,
         body: "Sorry! Something went wrong."

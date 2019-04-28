@@ -10,12 +10,11 @@ form.addEventListener("submit", (e) => {
   const URL = "/.netlify/functions/form";
   const issue = {
     title: `Add: ${title.value.trim()}`,
-    body: `\n
-    ## Company
-    \n
-    ${title.value.trim()}
-    \n
-    \n
+    body: `## Company
+\n
+${title.value.trim()}
+\n
+\n
 ## Description
 \n
 ${description.value.trim()}

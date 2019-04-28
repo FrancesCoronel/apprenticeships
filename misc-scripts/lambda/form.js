@@ -3,38 +3,18 @@ const {GH_ACCESS_TOKEN, GOOGLE_CAPTCHA} = process.env;
 
 exports.handler = async(event, context) => {
   const data = JSON.parse(event.body);
-  // if (
-  //   event.body.captcha === undefined ||
-  //   event.body.captcha === "" ||
-  //   event.body.captcha === null
-  // ) {
-  //   return {success: false, msg: "Please select captcha"};
-  // }
 
-  // const URL = `https://www.google.com/recaptcha/api/siteverify?secret=${GOOGLE_CAPTCHA}&response=${
-  //   event.body.captcha
-  // }`;
+  if (
+    event.body.captcha === undefined ||
+    event.body.captcha === "" ||
+    event.body.captcha === null
+  ) {
+    return {statusCode: 401, success: false, body: "Please select captcha"};
+  }
 
-  // return fetch(URL)
-  //   .then((i) => {
-  //     return JSON.parse(i);
-  //   })
-  //   .then((body) => {
-  //     // If Not Successful
-  //     if (body.success !== undefined && !body.success) {
-  //       return {
-  //         statusCode: 401,
-  //         success: false,
-  //         body: "Failed captcha verification"
-  //       };
-  //     }
-
-  //     if (event.httpMethod !== "POST") {
-  //       return {statusCode: 405, body: "Method Not Allowed"};
-  //     }
-
-  //     // start form to github submission
-  //     //If Successful
+  if (event.httpMethod !== "POST") {
+    return {statusCode: 405, body: "Method Not Allowed"};
+  }
 
   return fetch(
     "https://api.github.com/repos/fvcproductions/apprenticeships.me/issues",
@@ -61,14 +41,4 @@ exports.handler = async(event, context) => {
         body: "Sorry! Something went wrong."
       };
     });
-
-  // end form to github submission
-  // })
-  // .catch((err) => {
-  //   return {
-  //     statusCode: 401,
-  //     success: false,
-  //     statusText: err
-  //   };
-  // });
 };

@@ -21,7 +21,7 @@ form.addEventListener("submit", (e) => {
   };
 
   const doesErrorExist = document.querySelector(".form-error");
-  if (typeof doesErrorExist != "undefined" && doesErrorExist != null) {
+  if (doesErrorExist) {
     doesErrorExist.remove();
   }
 

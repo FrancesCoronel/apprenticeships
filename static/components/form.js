@@ -7,7 +7,6 @@ const locations = form.querySelector("#locations");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const captcha = form.querySelector("#g-recaptcha-response");
   const URL = "/.netlify/functions/form";
   const issue = {
     title: title.value.trim(),
@@ -28,6 +27,7 @@ form.addEventListener("submit", (e) => {
   const paragraph = document.createElement("p");
   const classes = ["form-error text-red", "text-base", "mb-6", "text-center"];
   paragraph.classList.add(...classes);
+  paragraph.innerHTML = "";
   form.prepend(paragraph);
 
   if (grecaptcha && grecaptcha.getResponse().length > 0) {

@@ -1,25 +1,19 @@
 const fetch = require("node-fetch");
 const {GH_ACCESS_TOKEN, GOOGLE_CAPTCHA} = process.env;
 
-const verifyGoogle = () => {
-  const URL = `https://www.google.com/recaptcha/api/siteverify?secret=${GOOGLE_CAPTCHA}&response=${
-    event.body.captcha
-  }`;
-
-  fetch(URL).then((res) => console.log(res));
-};
-
 exports.handler = async(event, context) => {
+  const data = JSON.parse(event.body);
+
   if (
-    event.body.captcha === undefined ||
-    event.body.captcha === "" ||
-    event.body.captcha === null
+    data.captcha === undefined ||
+    data.captcha === "" ||
+    data.captcha === null
   ) {
     return {success: false, msg: "Please select captcha"};
   }
-  // verifyGoogle();
+
   const URL = `https://www.google.com/recaptcha/api/siteverify?secret=${GOOGLE_CAPTCHA}&response=${
-    event.body.captcha
+    data.captcha
   }`;
 
   return fetch(URL)
@@ -27,8 +21,6 @@ exports.handler = async(event, context) => {
       return JSON.parse(i);
     })
     .then((body) => {
-      console.log(body);
-
       // If Not Successful
       if (body.success !== undefined && !body.success) {
         return {
@@ -38,13 +30,12 @@ exports.handler = async(event, context) => {
         };
       }
 
-      // start form to github submission
-      //If Successful
       if (event.httpMethod !== "POST") {
         return {statusCode: 405, body: "Method Not Allowed"};
       }
 
-      const data = JSON.parse(event.body);
+      // start form to github submission
+      //If Successful
 
       return fetch(
         "https://api.github.com/repos/fvcproductions/apprenticeships.me/issues",
@@ -60,7 +51,7 @@ exports.handler = async(event, context) => {
         .then((i) => {
           return {
             statusCode: 200,
-            statusText: "Woohoo!" + event.body + " " + i,
+            statusText: "Woohoo!" + data + " " + i,
             body:
               "Thank you for your contribution. Once approved, the apprenticeship will be added to the site."
           };

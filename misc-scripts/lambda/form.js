@@ -1,16 +1,8 @@
 const fetch = require("node-fetch");
-const {GH_ACCESS_TOKEN, GOOGLE_CAPTCHA} = process.env;
+const {GH_ACCESS_TOKEN} = process.env;
 
 exports.handler = async(event, context) => {
   const data = JSON.parse(event.body);
-
-  if (
-    event.body.captcha === undefined ||
-    event.body.captcha === "" ||
-    event.body.captcha === null
-  ) {
-    return {statusCode: 401, success: false, body: "Please select captcha"};
-  }
 
   if (event.httpMethod !== "POST") {
     return {statusCode: 405, body: "Method Not Allowed"};

@@ -17,11 +17,16 @@ form.addEventListener("submit", (e) => {
       link.value.trim() +
       " \n " +
       locations.value.trim(),
-    labels: ["enhancement", "help wanted"],
-    captcha: captcha.value
+    labels: ["enhancement", "help wanted"]
   };
+
+  const doesErrorExist = document.querySelector(".form-error");
+  if (typeof doesErrorExist != "undefined" && doesErrorExist != null) {
+    doesErrorExist.remove();
+  }
+
   const paragraph = document.createElement("p");
-  const classes = ["text-red", "text-base", "mb-6", "text-center"];
+  const classes = ["form-error text-red", "text-base", "mb-6", "text-center"];
   paragraph.classList.add(...classes);
   form.prepend(paragraph);
 

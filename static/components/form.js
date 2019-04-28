@@ -19,10 +19,10 @@ form.addEventListener("submit", (e) => {
     labels: ["enhancement", "help wanted"]
   };
 
-  const doesErrorExist = document.querySelector(".form-error");
-  if (doesErrorExist) {
-    doesErrorExist.remove();
-  }
+  // const doesErrorExist = document.querySelector(".form-error");
+  // if (doesErrorExist) {
+  //   doesErrorExist.remove();
+  // }
 
   const paragraph = document.createElement("p");
   const classes = ["form-error text-red", "text-base", "mb-6", "text-center"];
@@ -34,7 +34,7 @@ form.addEventListener("submit", (e) => {
     return fetch(URL, {
       method: "POST",
       headers: {
-        Accept: "application/json, text/plain, */*",
+        Accept: "application/json",
         "Content-Type": "application/json"
       },
       body: JSON.stringify(issue)

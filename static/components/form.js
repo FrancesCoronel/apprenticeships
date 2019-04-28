@@ -31,7 +31,10 @@ form.addEventListener("submit", (e) => {
     },
     body: JSON.stringify(issue)
   })
-    .then((res) => res.json())
+    .then((res) => {
+      console.log(res);
+      return res;
+    })
     .then((data) => {
       console.log({data});
       alert(data.msg);

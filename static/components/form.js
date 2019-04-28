@@ -23,7 +23,7 @@ form.addEventListener("submit", (e) => {
     captcha: captcha.value
   };
 
-  fetch(URL, {
+  return fetch(URL, {
     method: "POST",
     headers: {
       Accept: "application/json, text/plain, */*",
@@ -33,9 +33,10 @@ form.addEventListener("submit", (e) => {
   })
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      console.log({data});
       alert(data.msg);
-    });
+    })
+    .catch((err) => console.log(err));
   // return fetch(`${hostname}.com/.netlify/functions/form`, {
   //   headers: {
   //     "Content-Type": "application/json"

@@ -41,6 +41,13 @@ exports.handler = async(event, context) => {
 
       //If Successful
       return {statusCode: 200, success: true, body: "Captcha passed"};
+    })
+    .catch((err) => {
+      return {
+        statusCode: 401,
+        success: false,
+        body: err
+      };
     });
 
   // if (event.httpMethod !== "POST") {

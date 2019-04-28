@@ -49,7 +49,9 @@ sentimentBotReplyComment: >
 newIssueWelcomeComment: >
   Thank you for raising an issue!
 
+
   Please make sure you have given us enough context and we will review it as soon as possible. ⏲️
+
 
   If you don't hear back from anyone within the next week, feel free to reach out to one of the maintainers. 💛
 
@@ -59,7 +61,9 @@ newIssueWelcomeComment: >
 newPRWelcomeComment: >
   Thanks for opening this pull request!
 
+
   Please make sure you have followed our contributing guidelines and we will review it as soon as possible. ⏲️
+
 
   If you don't hear back from anyone within the next week, feel free to reach out to one of the maintainers. 💛
 
@@ -69,6 +73,8 @@ newPRWelcomeComment: >
 firstPRMergeComment: >
   Congrats on merging your first pull request!
 
+
   Here's a cute taco GIF as a small thank you. 💛
 
-  [Cute Tacos](https://media.giphy.com/media/pYCdxGyLFSwgw/giphy.gif)
+
+  ![Cute Tacos](https://media.giphy.com/media/pYCdxGyLFSwgw/giphy.gif)

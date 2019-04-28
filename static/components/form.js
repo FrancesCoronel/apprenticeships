@@ -23,6 +23,7 @@ form.addEventListener("submit", (e) => {
   };
 
   return fetch(URL, {
+    method: "POST",
     headers: {
       Accept: "application/json, text/plain, */*",
       "Content-Type": "application/json"
@@ -31,7 +32,6 @@ form.addEventListener("submit", (e) => {
   })
     .then((i) => {
       console.log(i);
-
       if (i.statusCode !== 200) throw Error();
       console.log(i);
       return i;

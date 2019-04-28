@@ -9,13 +9,29 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const URL = "/.netlify/functions/form";
   const issue = {
-    title: title.value.trim(),
-    body:
-      description.value.trim() +
-      " \n " +
-      link.value.trim() +
-      " \n " +
-      locations.value.trim(),
+    title: `Add ${title.value.trim()}`,
+    body: `
+    ## Company
+    \n
+    ${title.value.trim()}
+    \n
+    \n
+## Description
+\n
+${description.value.trim()}
+\n
+\n
+## Link
+\n
+${link.value.trim()}
+\n
+\n
+## Location
+\n
+${locations.value.trim()}
+\n
+*This entry was submitted by the form on the site*
+`,
     labels: ["enhancement", "help wanted"]
   };
 

@@ -24,44 +24,27 @@ form.addEventListener("submit", (e) => {
   };
 
   return fetch(URL, {
-    method: "POST",
     headers: {
       Accept: "application/json, text/plain, */*",
-      "Content-type": "application/json"
+      "Content-Type": "application/json"
     },
     body: JSON.stringify(issue)
   })
-    .then((res) => {
-      console.log(res);
-      console.log(res.statusText());
-      return res.statusText();
+    .then((i) => {
+      if (i.status !== 200) throw Error();
+      return i;
     })
-    .then((data) => {
-      console.log({data});
-      alert(data.msg);
+    .then(() => {
+      formParent.innerHTML = `
+      <p>Thank you for your contribution!</p>
+      `;
     })
-    .catch((err) => console.log(err));
-  // return fetch(`${hostname}.com/.netlify/functions/form`, {
-  //   headers: {
-  //     "Content-Type": "application/json"
-  //   },
-  //   body: JSON.stringify(issue)
-  // })
-  //   .then((i) => {
-  //     if (i.status !== 200) throw Error();
-  //     return i;
-  //   })
-  //   .then((i) => {
-  //     formParent.innerHTML = `
-  //     <p>Thank you for your contribution!</p>
-  //     `;
-  //   })
-  //   .catch((err) => {
-  //     const paragraph = document.createElement("p");
-  //     const classes = ["text-red", "text-base", "mb-6", "text-center"];
-  //     paragraph.classList.add(...classes);
-  //     paragraph.innerHTML = `Oh no, something went wrong. <br> Please try again or enter it directly <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition"
-  //       href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">here</a>.`;
-  //     form.prepend(paragraph);
-  //   });
+    .catch((err) => {
+      const paragraph = document.createElement("p");
+      const classes = ["text-red", "text-base", "mb-6", "text-center"];
+      paragraph.classList.add(...classes);
+      paragraph.innerHTML = `Oh no, something went wrong. <br> Please try again or enter it directly <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition"
+        href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">here</a>.`;
+      form.prepend(paragraph);
+    });
 });

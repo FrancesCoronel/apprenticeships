@@ -19,13 +19,19 @@ form.addEventListener("submit", (e) => {
     labels: ["enhancement", "help wanted"]
   };
 
-  // const doesErrorExist = document.querySelector(".form-error");
-  // if (doesErrorExist) {
-  //   doesErrorExist.remove();
-  // }
+  const doesErrorExist = document.querySelector(".form-error");
+  if (doesErrorExist) {
+    doesErrorExist.remove();
+  }
 
   const paragraph = document.createElement("p");
-  const classes = ["form-error text-red", "text-base", "mb-6", "text-center"];
+  const classes = [
+    "form-error",
+    "text-red",
+    "text-base",
+    "mb-6",
+    "text-center"
+  ];
   paragraph.classList.add(...classes);
   paragraph.innerHTML = "";
   form.prepend(paragraph);

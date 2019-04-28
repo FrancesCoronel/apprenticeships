@@ -33,8 +33,8 @@ form.addEventListener("submit", (e) => {
   })
     .then((res) => {
       console.log(res);
-      console.log(res.body.text());
-      return res.body.text();
+      console.log(res.statusText());
+      return res.statusText();
     })
     .then((data) => {
       console.log({data});

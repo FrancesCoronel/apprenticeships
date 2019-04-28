@@ -35,18 +35,18 @@ exports.handler = async(event, context) => {
         return {
           statusCode: 401,
           success: false,
-          body: "Failed captcha verification"
+          statusText: "Failed captcha verification"
         };
       }
 
       //If Successful
-      return {statusCode: 200, success: true, body: "Captcha passed"};
+      return {statusCode: 200, success: true, statusText: "Captcha passed"};
     })
     .catch((err) => {
       return {
         statusCode: 401,
         success: false,
-        body: err
+        statusText: err
       };
     });
 

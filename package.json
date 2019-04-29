@@ -10,7 +10,8 @@
     "build": "node misc-scripts/github.js; hugo; parcel build ./public/*.html; node misc-scripts/correct-image-paths.js; npm run algolia;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "contributors": [{
+  "contributors": [
+    {
       "name": "Frances Coronel",
       "email": "hello@fvcproductions.com",
       "url": "https://www.fvcproductions.com"
@@ -25,6 +26,7 @@
   "dependencies": {
     "atomic-algolia": "^0.3.15",
     "instantsearch.js": "^3.0.0",
+    "node-fetch": "^2.3.0",
     "intersection-observer": "^0.6.0",
     "smoothscroll-polyfill": "^0.4.3"
   },

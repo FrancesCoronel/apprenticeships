@@ -5,7 +5,7 @@ const link = form.querySelector("#link");
 const description = form.querySelector("#description");
 const locations = form.querySelector("#locations");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", e => {
   e.preventDefault();
   const URL = "/.netlify/functions/form";
   const issue = {
@@ -60,7 +60,7 @@ ${locations.value.trim()}
       },
       body: JSON.stringify(issue)
     })
-      .then((i) => {
+      .then(i => {
         if (i.status !== 200) throw Error();
         return i;
       })
@@ -69,7 +69,7 @@ ${locations.value.trim()}
       <p>Thank you for your contribution!</p>
       `;
       })
-      .catch((err) => {
+      .catch(err => {
         paragraph.innerHTML = `Oh no, something went wrong. <br> Please try again or enter it directly <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition"
         href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">here</a>.`;
       });

@@ -1,14 +1,16 @@
 # Contributing
 
-- [Steps](#steps)
-- [Ways You Can Contribute](#ways-you-can-contribute)
-- [Adding a new apprenticeship](#adding-a-new-apprenticeship)
-- [Guidelines](#guidelines)
-  - [Text](#text)
-  - [Links](#links)
-  - [Images](#images)
-  - [Locations](#locations)
-- [Making a Pull Request](#making-a-pull-request)
+- [Contributing](#contributing)
+  - [Steps](#steps)
+  - [Ways You Can Contribute](#ways-you-can-contribute)
+  - [Guidelines](#guidelines)
+    - [Text](#text)
+    - [Links](#links)
+    - [Images](#images)
+    - [Locations](#locations)
+  - [Local Development](#local-development)
+  - [Adding a new apprenticeship](#adding-a-new-apprenticeship)
+  - [Making a Pull Request](#making-a-pull-request)
 
 ## Steps
 
@@ -28,28 +30,6 @@
 - [Feature Request](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=Feature+Request%3A+) - Suggest an idea for this project 💡
 - [Remove apprenticeship](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=remove&template=remove-apprenticeship.md&title=Remove%3A+) - Remove an existing apprenticeship 🔻
 - Or just [create a regular issue](https://github.com/fvcproductions/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
-
-## Adding a new apprenticeship
-
-> Add new Markdown file in `content/apprenticeships`
-
-```markdown
----
-company: "Company or Organization Name"
-description: "1 to 2 sentence description about apprenticeship by this company or organization."
-image: "/images/apprenticeships/company-name.jpeg"
-link: "https://company-website.com"
-location:
-  - "London, UK"
-  - "San Francisco, CA"
-  - "City, State"
-  - "City, Country"
----
-```
-
-> Add image referenced to "static/images/apprenticeships"
-
-`company-name.jpeg`
 
 ## Guidelines
 
@@ -72,7 +52,39 @@ location:
 ### Locations
 
 - If it's not clear what the locations are, don't include any
-- If there are more than 20 locations where the apprenticeship is, than it should also not include the location
+- If there are more than 10 locations where the apprenticeship is, the location be indicated as "Multiple Locations"
+
+## Local Development
+
+> Install dependencies
+
+`npm install`
+
+> Start local environment
+
+`npm start`
+
+## Adding a new apprenticeship
+
+> Add new Markdown file in `content/apprenticeships`
+
+```markdown
+---
+company: "Company or Organization Name"
+description: "1 to 2 sentence description about apprenticeship by this company or organization."
+image: "/images/apprenticeships/company-name.jpeg"
+link: "https://company-website.com"
+location:
+  - "London, UK"
+  - "San Francisco, CA"
+  - "City, State"
+  - "City, Country"
+---
+```
+
+> Add image referenced to "static/images/apprenticeships"
+
+`company-name.jpg`
 
 ## Making a Pull Request
 

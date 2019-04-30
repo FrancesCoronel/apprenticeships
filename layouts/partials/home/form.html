@@ -1,41 +1,37 @@
 <section class="bg-green-lightest p-8 md-p-12 lg-p-16 xl-p-20" id="five">
   <div class="w-full max-w-sm mx-auto text-center">
     <h2 class="border-b-2 border-green inline-block max-w-sm self-center">Want to contribute?</h2>
-    <p class="mt-12 mb-12 text-left">Enter an apprenticeship below or submit it directly <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition" href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">here</a>.</p>
+    <p class="mt-12 mb-12 text-left">Submit an apprenticeship below or <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition"
+      href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">create an issue on GitHub</a> to add one in.</p>
+      <p><i>Submitting the form below will automatically create the issue on GitHub for you.</i></p>
     <form class="gh-form bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 text-left">
       <div class="mb-4">
         <label class="block text-grey-darker text-sm font-bold mb-2" for="title">
-          Title
+          Name of Apprenticeship
         </label>
-        <input class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker leading-tight" id="title"
-          type="text" required placeholder="Add apprenticeship name">
+        <input class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker leading-tight" id="title" placeholder="" required type="text">
       </div>
       <div class="mb-4">
         <label class="block text-grey-darker text-sm font-bold mb-2" for="link">
-          Link
+          Link to Apprenticeship
         </label>
-        <input class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker leading-tight" id="link"
-          type="text" required placeholder="https://www.google.com">
+        <input class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker leading-tight" id="link" placeholder="https://" required type="text">
       </div>
       <div class="mb-4">
         <label class="block text-grey-darker text-sm font-bold mb-2" for="locations">
-          Locations
+          Locations of Apprenticeship
         </label>
-        <input class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker leading-tight"
-          id="locations" type="text"
-          placeholder="Philadelphia, PA; Falls Church, VA; San Francisco, CA">
+        <input class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker leading-tight" id="locations" placeholder="Philadelphia, PA; Falls Church, VA; San Francisco, CA" type="text">
       </div>
       <div class="mb-4">
         <label class="block text-grey-darker text-sm font-bold mb-2" for="description">
-          Description
+          Description of Apprenticeship
         </label>
-        <textarea
-          class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker mb-3 leading-tight"
-          id="description" placeholder="Add any other details"></textarea>
+        <textarea class="shadow border border-white-darker rounded w-full py-2 px-3 text-grey-darker mb-3 leading-tight" id="description" placeholder="Add any other details" rows="5"></textarea>
       </div>
       <div class="g-recaptcha flex justify-center mb-4" data-sitekey="6LeFo54UAAAAAFP4M4vP-jrHQW2GQcA0bhwCXr22"></div>
       <div class="flex items-center justify-between">
-        <input type="submit" value="Submit" class="block mx-auto mt-4 md-mt-0 bg-green text-white font-bold rounded hover-bg-green-dark transition px-4 py-2">
+        <input class="block mx-auto mt-4 md-mt-0 bg-green text-white font-bold rounded hover-bg-green-dark transition px-4 py-2" type="submit" value="Submit">
       </div>
     </form>
   </div>

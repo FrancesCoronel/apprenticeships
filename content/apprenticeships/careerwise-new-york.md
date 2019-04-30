@@ -3,7 +3,7 @@ company: "CareerWise New York"
 description: "CareerWise New York is a program offering a three-year applied-learning environment for high school students and an innovative talent-acquisition strategy for businesses."
 image: "careerwise-new-york.jpg"
 link: "https://www.careerwisenewyork.org/"
-locations:
+location:
   - "New York, NY"
 ---
 

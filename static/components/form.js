@@ -9,6 +9,9 @@ const loader = document.querySelector(".icon-loader");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  formButton.classList.add("hidden");
+  loader.classList.remove("hidden");
+
   const URL = "/.netlify/functions/form";
   const issue = {
     title: `Add: ${title.value.trim()}`,
@@ -63,16 +66,8 @@ ${locations.value.trim()}
       body: JSON.stringify(issue)
     })
       .then((i) => {
-        formButton.classList.add("hidden");
-        loader.classList.remove("hidden");
-        return i;
-      })
-      .then((i) => {
         if (i.status !== 200) {
           throw Error();
-        } else {
-          formButton.classList.remove("hidden");
-          loader.classList.add("hidden");
         }
         return i;
       })
@@ -80,9 +75,12 @@ ${locations.value.trim()}
         formParent.innerHTML = `
       <p>Thank you for your contribution!</p>
       `;
+        formButton.classList.remove("hidden");
+        loader.classList.add("hidden");
       })
       .catch((err) => {
         formButton.classList.remove("hidden");
+        loader.classList.add("hidden");
         paragraph.innerHTML = `Oh no, something went wrong. <br> Please try again or enter it directly <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition"
         href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">here</a>.`;
       });

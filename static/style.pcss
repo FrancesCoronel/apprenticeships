@@ -84,6 +84,28 @@ h2 {
   transition: all 0.3s ease;
 }
 
+
+.dot-1 {
+  animation: load 0.8s 0.3s infinite alternate;
+}
+
+.dot-2 {
+  animation: load 0.8s infinite alternate;
+}
+
+.dot-3 {
+  animation: load 0.8s 0.55s infinite alternate;
+}
+
+@keyframes load {
+  0% {
+    transform: translate(0px, 10px);
+   }
+  100% {
+    transform: translate(0, -10px);
+  }
+}
+
 @media screen and (min-width: 992px) {
   .fixed-nav {
     position: absolute;
@@ -93,5 +115,3 @@ h2 {
 }
 
 @tailwind utilities;
-
-

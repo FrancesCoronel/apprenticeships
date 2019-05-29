@@ -45,7 +45,9 @@ const addCorrectImageToJSONFile = (content, match) => {
 };
 
 const initScript = async() => {
-  const data = readFile(path.resolve(__dirname, "../public/algolia.json"));
+  const data = readFile(path.resolve(__dirname, "../public/algolia.json"), () =>
+    console.log("complete")
+  );
   const content = JSON.parse(await data);
   content.map((i) => {
     const file = i.image.split(".");
@@ -59,7 +61,8 @@ const initScript = async() => {
   addCorrectImageToJSONFile(content);
   fs.writeFile(
     path.resolve(__dirname, "../public/algolia.json"),
-    JSON.stringify(content)
+    JSON.stringify(content),
+    () => console.log("complete")
   );
 };
 

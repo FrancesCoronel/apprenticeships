@@ -14,11 +14,13 @@ const commits = axios
   )
   .then((i) => {
     return i.data.map((x) => {
-      return {
-        user: x.committer.login,
-        avatar: x.committer.avatar_url,
-        url: x.committer.html_url
-      };
+      if (x && x.committer !== null) {
+        return {
+          user: x.committer.login,
+          avatar: x.committer.avatar_url,
+          url: x.committer.html_url
+        };
+      }
     });
   });
 

@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "algolia": "atomic-algolia",
+    "prebuild": "rm -rf dist",
     "build:css": "postcss build static/style.pcss -c ./tailwind.config.js -o ./public/generated.css",
     "start": "concurrently  \"hugo -w\" \"postcss build static/style.pcss -c ./tailwind.config.js\" \"parcel ./public/index.html\" ",
-    "build": "node misc-scripts/github.js; hugo; parcel build ./public/*.html; node misc-scripts/correct-image-paths.js; npm run algolia;",
+    "build": "npm run prebuild; node misc-scripts/github.js; hugo; parcel build ./public/*.html; node misc-scripts/correct-image-paths.js; npm run algolia;",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "contributors": [

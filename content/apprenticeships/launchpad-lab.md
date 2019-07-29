@@ -7,4 +7,4 @@ location:
   - "Chicago, IL"
 ---
 
-For more information about how LaunchPad Lab approachs apprenticeships: https://launchpadlab.com/blog/apprenticeships-how-we-approach-this-old-new-trend/
+For more information about how LaunchPad Lab approaches apprenticeships: https://launchpadlab.com/blog/apprenticeships-how-we-approach-this-old-new-trend/

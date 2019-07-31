@@ -42,3 +42,4 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 - [Mark Arce](https://github.com/markarce)
 - [Amy Frieson](https://github.com/amyyf)
 - [Kristal Garcia](https://github.com/kgmajor)
+- [Fu Shen](https://www.linkedin.com/in/shenfu0311/)

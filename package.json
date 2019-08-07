@@ -32,7 +32,7 @@
     "intersection-observer": "^0.6.0",
     "node-fetch": "^2.3.0",
     "smoothscroll-polyfill": "^0.4.3",
-    "snyk": "^1.192.3"
+    "snyk": "^1.195.1"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",

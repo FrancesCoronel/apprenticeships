@@ -31,8 +31,12 @@ const addCorrectImageToJSONFile = (content, match) => {
     const name = fileName[0];
     const type = fileName[1];
     matchObj.map((b) => {
-      if (b.name === name && b.type === type) {
+      if (b.name === name && b.type === type && b.hash !== undefined) {
         match.image = `${b.name}.${b.hash}.${b.type}`;
+      } else {
+        throw new Error(
+          "The Image Path identifier has failed! Try running the build one more time."
+        );
       }
     });
   };

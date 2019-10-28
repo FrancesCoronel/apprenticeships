@@ -27,14 +27,12 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "atomic-algolia": "^0.3.15",
     "instantsearch.js": "^3.0.0",
-    "intersection-observer": "^0.7.0",
     "node-fetch": "^2.3.0",
-    "smoothscroll-polyfill": "^0.4.3",
     "snyk": "^1.212.0"
   },
   "devDependencies": {
+    "atomic-algolia": "^0.3.15",
     "@babel/core": "7.6.2",
     "@babel/preset-env": "7.6.2",
     "axios": "0.19.0",

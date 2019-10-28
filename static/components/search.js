@@ -26,7 +26,7 @@ search.addWidget(
                 </div>
                 <div class="px-6 py-4">
                   {{#location}}
-                    <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm text-grey-darker mr-2 mb-2">
+                    <span class="inline-block bg-white-dark rounded-full px-3 py-1 text-sm text-grey-darker mr-2 mb-2">
                       {{ . }}
                     </span>
                   {{/location}}

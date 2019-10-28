@@ -4,7 +4,10 @@ const axios = require("axios");
 
 const unique = (array, propertyName) => {
   return array.filter(
-    (e, i) => array.findIndex((a) => a[propertyName] === e[propertyName]) === i
+    (e, i) =>
+      array.findIndex((a) => {
+        return a && e && a[propertyName] === e[propertyName];
+      }) === i
   );
 };
 

@@ -1,2 +1,2 @@
-require("./components/search");
-require("./components/form");
+import"./components/search";
+import"./components/form";

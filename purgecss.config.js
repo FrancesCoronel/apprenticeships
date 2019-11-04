@@ -1,6 +1,6 @@
 // module.exports = {
 //   content: ["./dist/**/*.html", "./static/**/*.js"],
-//   css: ["./src/css/generated.css"],
+//   css: ["./src/css/style.css"],
 //   whitelist: ["body", "html", "standard-white-component"],
 //   extractors: [
 //     {

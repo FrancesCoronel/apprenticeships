@@ -58,10 +58,17 @@ Promise.all([commits, pulls])
       "renovate[bot]",
       "imgbot[bot]",
       "ImgBotApp",
-      "code-factor"
+      "code-factor",
+      "dependabot[bot]",
+      "ghost",
+      "snyk-bot",
+      "restyled-io[bot]"
     ];
 
-    const data = unique(i, "user").filter((x) => !banned.includes(x.user));
+    const data = unique(i, "user").filter(({user}) => {
+      console.log(user);
+      return !banned.includes(user);
+    });
     return JSON.stringify(data);
   })
   .then((res) => {

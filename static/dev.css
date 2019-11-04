@@ -84,8 +84,6 @@
   transition: all 0.3s ease;
 }
 
-
-
 .dot-1 {
   animation: load 0.8s 0.3s infinite alternate;
 }

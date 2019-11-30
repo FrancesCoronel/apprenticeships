@@ -6,9 +6,12 @@
   "scripts": {
     "algolia": "atomic-algolia",
     "prebuild": "rm -rf dist",
-    "build:css": "postcss build static/style.pcss -c ./tailwind.config.js -o ./public/generated.css",
-    "start": "concurrently  \"hugo -w\" \"postcss build static/style.pcss -c ./tailwind.config.js\" \"parcel ./public/index.html\" ",
-    "build": "npm run prebuild; node misc-scripts/github.js; hugo; parcel build ./public/*.html; node misc-scripts/correct-image-paths.js; npm run algolia;",
+    "copy:dist": "cp -R public/ dist/",
+    "build:css": "postcss static/dev.css -o static/style.css; postcss static/dev.css -o public/style.css",
+    "serve": "npm run build:css & hugo serve",
+    "oldstart": "concurrently  \"hugo -w\" \"npm run serve\"",
+    "start": "npm run build:css; hugo --gc server",
+    "build": "hugo; npm run prebuild; npm run build:css; node misc-scripts/github.js; npm run algolia; npm run copy:dist;",
     "test": "echo \"Error: no test specified\" && exit 1",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
@@ -40,7 +43,6 @@
     "cssnano": "4.1.10",
     "eslint": "6.4.0",
     "eslint-config-google": "0.14.0",
-    "parcel-bundler": "1.12.3",
     "postcss-cli": "6.1.3",
     "postcss-cssnext": "3.1.0",
     "postcss-import": "12.0.1",

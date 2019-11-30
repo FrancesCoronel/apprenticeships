@@ -62,6 +62,10 @@
   background-color: #77B255;
 }
 
+.ais-search-box {
+  max-width: 100% !important;
+}
+
 .ais-pagination--item {
   font-size: inherit;
   transition: all 0.3s ease;
@@ -79,7 +83,6 @@
 .transition {
   transition: all 0.3s ease;
 }
-
 
 .dot-1 {
   animation: load 0.8s 0.3s infinite alternate;

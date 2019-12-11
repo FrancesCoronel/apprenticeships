@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "instantsearch.js": "^3.0.0",
+    "instantsearch.js": "^4.0.0",
     "node-fetch": "^2.3.0",
     "snyk": "^1.212.0"
   },

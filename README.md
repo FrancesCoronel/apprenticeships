@@ -43,4 +43,5 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 - [Amy Frieson](https://github.com/amyyf)
 - [Kristal Garcia](https://github.com/kgmajor)
 - [Brittani Gongre](http://github.com/bgongre)
-- [Michael Bonner] (http://github.com/mdb1710)
+- [Michael Bonner](http://github.com/mdb1710)
+- [Aaron Clark](https://github.com/aaronclarkcodes)

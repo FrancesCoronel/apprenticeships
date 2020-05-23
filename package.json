@@ -30,9 +30,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "instantsearch.js": "^4.0.0",
+    "instantsearch.js": "^4.3.1",
     "node-fetch": "^2.3.0",
-    "snyk": "^1.212.0"
+    "snyk": "^1.324.0"
   },
   "devDependencies": {
     "atomic-algolia": "0.3.17",

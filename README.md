@@ -2,7 +2,7 @@
 
 ![Screenshot](/static/images/readme.jpg)
 
-[![GitHub Issues](https://img.shields.io/github/issues/fvcproductions/apprenticeships.me.svg)](https://github.com/fvcproductions/apprenticeships.me/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fvcproductions/apprenticeships.me.svg)](https://github.com/fvcproductions/apprenticeships.me/pulls) [![MIT License](https://img.shields.io/github/license/fvcproductions/apprenticeships.me.svg)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.me/fvcproductions/5) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg)](https://www.patreon.com/fvcproductions) [![Netlify Status](https://api.netlify.com/api/v1/badges/bd2e661d-f9ac-493a-ac07-05429f092059/deploy-status)](https://app.netlify.com/sites/apprenticeships/deploys)
+[![Financial Contributors on Open Collective](https://opencollective.com/fvcproductions/all/badge.svg?label=financial+contributors)](https://opencollective.com/fvcproductions) [![GitHub Issues](https://img.shields.io/github/issues/fvcproductions/apprenticeships.me.svg)](https://github.com/fvcproductions/apprenticeships.me/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/fvcproductions/apprenticeships.me.svg)](https://github.com/fvcproductions/apprenticeships.me/pulls) [![MIT License](https://img.shields.io/github/license/fvcproductions/apprenticeships.me.svg)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.me/fvcproductions/5) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg)](https://www.patreon.com/fvcproductions) [![Netlify Status](https://api.netlify.com/api/v1/badges/bd2e661d-f9ac-493a-ac07-05429f092059/deploy-status)](https://app.netlify.com/sites/apprenticeships/deploys)
 
 Back in the good old days of the Renaissance, [apprenticeships](https://www.wikiwand.com/en/Apprenticeship) were quite common and acted as legal contracts between the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
 
@@ -45,3 +45,33 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 - [Brittani Gongre](http://github.com/bgongre)
 - [Michael Bonner](http://github.com/mdb1710)
 - [Aaron Clark](https://github.com/aaronclarkcodes)
+
+## Contributors
+
+### Code Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+<a href="https://github.com/fvcproductions/apprenticeships.me/graphs/contributors"><img src="https://opencollective.com/fvcproductions/contributors.svg?width=890&button=false" /></a>
+
+### Financial Contributors
+
+Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/fvcproductions/contribute)]
+
+#### Individuals
+
+<a href="https://opencollective.com/fvcproductions"><img src="https://opencollective.com/fvcproductions/individuals.svg?width=890"></a>
+
+#### Organizations
+
+Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/fvcproductions/contribute)]
+
+<a href="https://opencollective.com/fvcproductions/organization/0/website"><img src="https://opencollective.com/fvcproductions/organization/0/avatar.svg"></a>
+<a href="https://opencollective.com/fvcproductions/organization/1/website"><img src="https://opencollective.com/fvcproductions/organization/1/avatar.svg"></a>
+<a href="https://opencollective.com/fvcproductions/organization/2/website"><img src="https://opencollective.com/fvcproductions/organization/2/avatar.svg"></a>
+<a href="https://opencollective.com/fvcproductions/organization/3/website"><img src="https://opencollective.com/fvcproductions/organization/3/avatar.svg"></a>
+<a href="https://opencollective.com/fvcproductions/organization/4/website"><img src="https://opencollective.com/fvcproductions/organization/4/avatar.svg"></a>
+<a href="https://opencollective.com/fvcproductions/organization/5/website"><img src="https://opencollective.com/fvcproductions/organization/5/avatar.svg"></a>
+<a href="https://opencollective.com/fvcproductions/organization/6/website"><img src="https://opencollective.com/fvcproductions/organization/6/avatar.svg"></a>
+<a href="https://opencollective.com/fvcproductions/organization/7/website"><img src="https://opencollective.com/fvcproductions/organization/7/avatar.svg"></a>
+<a href="https://opencollective.com/fvcproductions/organization/8/website"><img src="https://opencollective.com/fvcproductions/organization/8/avatar.svg"></a>
+<a href="https://opencollective.com/fvcproductions/organization/9/website"><img src="https://opencollective.com/fvcproductions/organization/9/avatar.svg"></a>

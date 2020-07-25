@@ -45,7 +45,7 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 - [Brittani Gongre](http://github.com/bgongre)
 - [Michael Bonner](http://github.com/mdb1710)
 - [Aaron Clark](https://github.com/aaronclarkcodes)
-
+- [Ken Sparks](https://github.com/KenSparks-Dev)
 ## Contributors
 
 ### Code Contributors

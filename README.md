@@ -47,6 +47,7 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 - [Aaron Clark](https://github.com/aaronclarkcodes)
 - [Ken Sparks](https://github.com/KenSparks-Dev)
 - [Celena Handojo](https://github.com/chandojo)
+
 ## Contributors
 
 ### Code Contributors

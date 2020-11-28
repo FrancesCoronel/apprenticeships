@@ -32,7 +32,7 @@
   "dependencies": {
     "instantsearch.js": "^4.3.1",
     "node-fetch": "^2.6.1",
-    "snyk": "^1.324.0"
+    "snyk": "^1.425.4"
   },
   "devDependencies": {
     "atomic-algolia": "0.3.19",

@@ -30,10 +30,16 @@ In the interest of fostering an open and welcoming environment, we as contributo
 
 More details can be found at this project's [code of conduct](.github/CODE_OF_CONDUCT.md).
 
-## Credits
+## Maintainers
 
 - [Frances Coronel](https://github.com/francescoronel) 🍫🍓
 - [Benjamin Modayil](https://modayil.me)
+- [Angus Chang](https://github.com/changangus)
+
+## Contributors
+
+This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+
 - [Leilani Raranga](https://linkedin.com/in/leilanir)
 - [Colton Hurst](https://www.coltonhurst.com)
 - [Julia Schultz](https://github.com/jschultz21)
@@ -46,14 +52,3 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 - [Michael Bonner](http://github.com/mdb1710)
 - [Aaron Clark](https://github.com/aaronclarkcodes)
 - [Ken Sparks](https://github.com/KenSparks-Dev)
-- [Angus Chang](https://github.com/changangus)
-## Contributors
-
-### Code Contributors
-
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/francescoronel/apprenticeships.me/graphs/contributors"><img src="https://opencollective.com/francescoronel/contributors.svg?width=890&button=false" /></a>
-
-### Financial Contributors
-
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/francescoronel/contribute)]

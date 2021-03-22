@@ -37,7 +37,7 @@
   "devDependencies": {
     "atomic-algolia": "0.3.19",
     "@babel/core": "7.13.10",
-    "@babel/preset-env": "7.13.10",
+    "@babel/preset-env": "7.13.12",
     "axios": "0.21.1",
     "concurrently": "6.0.0",
     "cssnano": "4.1.10",

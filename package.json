@@ -39,7 +39,7 @@
     "@babel/core": "7.14.0",
     "@babel/preset-env": "7.14.1",
     "axios": "0.21.1",
-    "concurrently": "6.0.2",
+    "concurrently": "6.1.0",
     "cssnano": "5.0.2",
     "eslint": "7.24.0",
     "eslint-config-google": "0.14.0",

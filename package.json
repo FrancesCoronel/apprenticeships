@@ -40,7 +40,7 @@
     "@babel/preset-env": "7.14.7",
     "axios": "0.21.1",
     "concurrently": "6.2.0",
-    "cssnano": "5.0.6",
+    "cssnano": "5.0.7",
     "eslint": "7.31.0",
     "eslint-config-google": "0.14.0",
     "postcss-cli": "8.3.1",

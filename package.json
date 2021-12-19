@@ -43,7 +43,7 @@
     "eslint": "8.4.1",
     "cssnano": "5.0.12",
     "eslint-config-google": "0.14.0",
-    "postcss-cli": "9.0.2",
+    "postcss-cli": "9.1.0",
     "postcss-cssnext": "3.1.1",
     "postcss-import": "14.0.2",
     "postcss-nested": "5.0.6",

@@ -2,7 +2,7 @@
 
 ![Screenshot](/static/images/readme.jpg)
 
-[![Financial Contributors on Open Collective](https://opencollective.com/francescoronel/all/badge.svg?label=financial+contributors)](https://opencollective.com/francescoronel) [![GitHub Issues](https://img.shields.io/github/issues/francescoronel/apprenticeships.me.svg)](https://github.com/francescoronel/apprenticeships.me/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/francescoronel/apprenticeships.me.svg)](https://github.com/francescoronel/apprenticeships.me/pulls) [![MIT License](https://img.shields.io/github/license/francescoronel/apprenticeships.me.svg)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.me/fvcproductions/5) [![Become a Patron!](https://img.shields.io/badge/Patreon-Become%20a%20Patron!-orange.svg)](https://www.patreon.com/fvcproductions) [![Netlify Status](https://api.netlify.com/api/v1/badges/bd2e661d-f9ac-493a-ac07-05429f092059/deploy-status)](https://app.netlify.com/sites/apprenticeships/deploys)
+[![GitHub Issues](https://img.shields.io/github/issues/francescoronel/apprenticeships.me.svg)](https://github.com/francescoronel/apprenticeships.me/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/francescoronel/apprenticeships.me.svg)](https://github.com/francescoronel/apprenticeships.me/pulls) [![MIT License](https://img.shields.io/github/license/francescoronel/apprenticeships.me.svg)](http://badges.mit-license.org) [![Netlify Status](https://api.netlify.com/api/v1/badges/bd2e661d-f9ac-493a-ac07-05429f092059/deploy-status)](https://app.netlify.com/sites/apprenticeships/deploys)
 
 Back in the good old days of the Renaissance, [apprenticeships](https://www.wikiwand.com/en/Apprenticeship) were quite common and acted as legal contracts between the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
 
@@ -32,7 +32,7 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 
 ## Maintainers
 
-- [Frances Coronel](https://github.com/francescoronel) 🍫🍓
+- [Frances Coronel](https://github.com/francescoronel)
 - [Benjamin Modayil](https://modayil.me)
 - [Angus Chang](https://github.com/changangus)
 

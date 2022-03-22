@@ -6,7 +6,7 @@
 # @fvcproductions will be requested for
 # review when someone opens a pull request.
 
-*       @fvcproductions @benjaminmodayil
+*       @FrancesCoronel
 
 # Order is important; the last matching pattern takes the most
 # precedence. When someone opens a pull request that only

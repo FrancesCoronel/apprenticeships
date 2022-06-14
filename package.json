@@ -41,7 +41,7 @@
     "@babel/preset-env": "7.16.11",
     "concurrently": "7.2.1",
     "eslint": "8.17.0",
-    "cssnano": "5.1.7",
+    "cssnano": "5.1.11",
     "eslint-config-google": "0.14.0",
     "postcss-cli": "9.1.0",
     "postcss-cssnext": "3.1.1",

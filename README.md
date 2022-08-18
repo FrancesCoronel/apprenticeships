@@ -52,3 +52,4 @@ This project exists thanks to all the people who contribute. [[Contribute](CONTR
 - [Michael Bonner](http://github.com/mdb1710)
 - [Aaron Clark](https://github.com/aaronclarkcodes)
 - [Ken Sparks](https://github.com/KenSparks-Dev)
+- [Larry Urrego](https://github.com/LaUrrego)

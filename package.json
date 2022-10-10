@@ -40,7 +40,7 @@
     "@babel/core": "7.18.5",
     "@babel/preset-env": "7.18.2",
     "concurrently": "7.3.0",
-    "eslint": "8.21.0",
+    "eslint": "8.25.0",
     "cssnano": "5.1.13",
     "eslint-config-google": "0.14.0",
     "postcss-cli": "9.1.0",

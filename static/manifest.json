@@ -1,13 +1,13 @@
 {
-  "background_color": "{{ .Site.Params.brand_color }}",
-  "description": "{{ .Site.Params.description }}",
+  "background_color": "#77b255",
+  "description": "Find a new career learning from the industry itself.",
   "display": "standalone",
-  "name": "{{ .Site.Title }}",
+  "name": "Apprenticeships.me",
   "orientation": "portrait",
   "scope": "/",
-  "short_name": "{{ .Site.Title }}",
+  "short_name": "Apprenticeships.me",
   "start_url": "/?utm_source=homescreen",
-  "theme_color": "{{ .Site.Params.brand_color }}",
+  "theme_color": "#77b255",
   "icons": [{
       "src": "./images/favicons/36x36.png",
       "sizes": "36x36",

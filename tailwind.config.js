@@ -70,9 +70,8 @@ const colors = {
 
 module.exports = {
   content: [
-    "./public/**/*.{html,js}",
     "./layouts/**/*.{html,js}",
-    "./misc-scripts/**/*.{html,js}",
+    "./components/**/*.{html,js}",
   ],
 
   /*

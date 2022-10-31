@@ -2,7 +2,7 @@
 
 ![Screenshot](/static/images/readme.jpg)
 
-[![GitHub Issues](https://img.shields.io/github/issues/francescoronel/apprenticeships.me.svg)](https://github.com/FrancesCoronel/apprenticeships.me/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/francescoronel/apprenticeships.me.svg)](https://github.com/FrancesCoronel/apprenticeships.me/pulls) [![MIT License](https://img.shields.io/github/license/francescoronel/apprenticeships.me.svg)](http://badges.mit-license.org) [![Netlify Status](https://api.netlify.com/api/v1/badges/bd2e661d-f9ac-493a-ac07-05429f092059/deploy-status)](https://app.netlify.com/sites/apprenticeships/deploys)
+[![GitHub Issues](https://img.shields.io/github/issues/FrancesCoronel/apprenticeships.me.svg)](https://github.com/FrancesCoronel/apprenticeships.me/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/FrancesCoronel/apprenticeships.me.svg)](https://github.com/FrancesCoronel/apprenticeships.me/pulls) [![MIT License](https://img.shields.io/github/license/FrancesCoronel/apprenticeships.me.svg)](http://badges.mit-license.org) [![Netlify Status](https://api.netlify.com/api/v1/badges/bd2e661d-f9ac-493a-ac07-05429f092059/deploy-status)](https://app.netlify.com/sites/apprenticeships/deploys)
 
 Back in the good old days of the Renaissance, [apprenticeships](https://www.wikiwand.com/en/Apprenticeship) were quite common and acted as legal contracts between the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
 

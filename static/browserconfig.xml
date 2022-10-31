@@ -6,7 +6,7 @@
     <square150x150logo src="./images/favicons/150x150.png" />
     <wide310x150logo src="./images/favicons/310x150.png" />
     <square310x310logo src="./images/favicons/310x310.png" />
-    <tilecolor>{{ .Site.Params.brand_color }}</tilecolor>
+    <tilecolor>#77b255</tilecolor>
     </tile>
   </msapplication>
 </browserconfig>

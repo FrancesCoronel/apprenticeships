@@ -1,12 +1,15 @@
 // postcss.config.js
 module.exports = {
   plugins: {
-    "cssnano": {},
-    "postcss-cssnext": {},
     "postcss-import": {},
-    "postcss-nested": {preset: "default"},
-    "postcss-responsive-type": {html: true},
+    "postcss-cssnext": {},
+    "cssnano": {},
     "tailwindcss/nesting": {},
-    "tailwindcss": {},
+    "postcss-responsive-type": {
+      html: true
+    },
+    "tailwindcss": {
+      config: "./tailwind.config.js"
+    },
   }
 };

@@ -3,12 +3,11 @@
   "editor.insertSpaces": true,
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
-  "eslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "files.trimTrailingWhitespace": true,
   "markdown.extension.preview.autoShowPreviewToSide": false,
   "markdown.preview.fontFamily": "BlinkMacSystemFont,-apple-system,Roboto,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif",
   "markdownlint.run": "onSave",
-  "prettier.eslintIntegration": true,
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false
 }

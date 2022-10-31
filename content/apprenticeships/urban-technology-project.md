@@ -2,7 +2,7 @@
 company: "Urban Technology Project"
 description: "The IT Apprenticeship Program provides its participants with a pathway that will lead to employment in the Information Technology field or prepare them for a 2 or 4 year degree."
 image: "urban-technology-project.jpg"
-link: "https://utp-philly.org/programs/"
+link: "https://utp-philly.org"
 location:
   - "Philadelphia, PA"
 ---

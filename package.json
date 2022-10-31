@@ -12,15 +12,13 @@
     "oldstart": "concurrently  \"hugo -w\" \"npm run serve\"",
     "start": "npm run build:css; hugo --gc server",
     "build": "hugo; npm run prebuild; npm run build:css; node misc-scripts/github.js; npm run algolia; npm run copy:dist;",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "contributors": [
     {
       "name": "Frances Coronel",
-      "email": "hello@fvcproductions.com",
-      "url": "https://www.fvcproductions.com"
+      "email": "hello@francescoronel.com",
+      "url": "https://francescoronel.com"
     },
     {
       "name": "Benjamin Modayil",
@@ -35,13 +33,13 @@
     "snyk": "^1.996.0"
   },
   "devDependencies": {
-    "atomic-algolia": "0.3.19",
-    "axios": "0.27.2",
     "@babel/core": "7.18.10",
     "@babel/preset-env": "7.18.2",
+    "atomic-algolia": "0.3.19",
+    "axios": "0.27.2",
     "concurrently": "7.3.0",
-    "eslint": "8.21.0",
     "cssnano": "5.1.13",
+    "eslint": "8.21.0",
     "eslint-config-google": "0.14.0",
     "postcss-cli": "10.0.0",
     "postcss-cssnext": "3.1.1",

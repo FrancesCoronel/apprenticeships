@@ -54,7 +54,7 @@ pygmentsStyle                        = "manni"
     og_image                         = "https://i.imgur.com/jCh1pBO.png"
     logo                             = "https://i.imgur.com/BtgIRcP.png"
     brand_color                      = "#77b255"
-    github_repo                      = "https://github.com/fvcproductions/apprenticeships"
+    github_repo                      = "https://github.com/francescoronel/apprenticeships"
 
 # Social Links
 [social]

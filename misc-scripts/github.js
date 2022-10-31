@@ -13,7 +13,7 @@ const unique = (array, propertyName) => {
 
 const commits = axios
   .get(
-    "https://api.github.com/repos/fvcproductions/apprenticeships/commits?per_page=100"
+    "https://api.github.com/repos/francescoronel/apprenticeships/commits?per_page=100"
   )
   .then((i) => {
     return i.data.map((x) => {

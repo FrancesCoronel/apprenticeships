@@ -1,7 +1,7 @@
 ---
-company: "GenM"
-description: "Online company that matches people interested in digital marketing with entrepreneurs for three month internships"
-image: "/images/apprenticeships/genm-image.png"
-link: "https://genm.co"
+company: "Acadium"
+description: "Work with a mentor for 3 months and gain the digital marketing work experience you need to get hired. 100% remote and always free."
+image: "/images/apprenticeships/acadium.jpg"
+link: "https://acadium.com/apprenticeships-for-marketers"
 location:
 ---

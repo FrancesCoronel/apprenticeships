@@ -1,4 +1,5 @@
 @tailwind preflight;
+@tailwind base;
 @tailwind components;
 
 .search {

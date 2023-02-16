@@ -53,3 +53,4 @@ This project exists thanks to all the people who contribute. [[Contribute](CONTR
 - [Aaron Clark](https://github.com/aaronclarkcodes)
 - [Ken Sparks](https://github.com/KenSparks-Dev)
 - [Larry Urrego](https://github.com/LaUrrego)
+- [William Ray](https://github.com/Will513r)

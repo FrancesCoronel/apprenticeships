@@ -38,7 +38,7 @@ More details can be found at this project's [code of conduct](.github/CODE_OF_CO
 
 ## Contributors
 
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
+This project exists thanks to all the people who contributed via pull requests.
 
 - [Leilani Raranga](https://linkedin.com/in/leilanir)
 - [Colton Hurst](https://www.coltonhurst.com)

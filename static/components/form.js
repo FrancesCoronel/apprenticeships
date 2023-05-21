@@ -82,7 +82,7 @@ ${locations.value.trim()}
         formButton.classList.remove("hidden");
         loader.classList.add("hidden");
         paragraph.innerHTML = `Oh no, something went wrong. <br> Please try again or enter it directly <a class="font-bold text-green-dark hover-text-green-darker no-underline hover-underline transition"
-        href="https://github.com/fvcproductions/apprenticeships.me/issues/new/choose">here</a>.`;
+        href="https://github.com/FrancesCoronel/apprenticeships.me/issues/new/choose">here</a>.`;
       });
   } else {
     paragraph.innerHTML = "Oops, you have to check the recaptcha!";

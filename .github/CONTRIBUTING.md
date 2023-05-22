@@ -23,11 +23,11 @@
 
 ## Ways You Can Contribute
 
-- [Add apprenticeship](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=addition&template=add-apprenticeship.md&title=Add%3A+) - Add an apprenticeship to our growing list 🌱
-- [Bug Report](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=bug&template=bug_report.md&title=Bug%3A+) - Create a bug report to help us improve this website 🐛
-- [Edit apprenticeship](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=edit&template=edit-apprenticeship.md&title=Edit%3A+) - Edit an existing apprenticeship 📝
-- [Feature Request](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=Feature+Request%3A+) - Suggest an idea for this project 💡
-- [Remove apprenticeship](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=remove&template=remove-apprenticeship.md&title=Remove%3A+) - Remove an existing apprenticeship 🔻
+- [Add apprenticeship](https://github.com/FrancesCoronel/apprenticeships/issues/new?assignees=&labels=addition&template=add-apprenticeship.md&title=Add%3A+) - Add an apprenticeship to our growing list 🌱
+- [Bug Report](https://github.com/FrancesCoronel/apprenticeships/issues/new?assignees=&labels=bug&template=bug_report.md&title=Bug%3A+) - Create a bug report to help us improve this website 🐛
+- [Edit apprenticeship](https://github.com/FrancesCoronel/apprenticeships/issues/new?assignees=&labels=edit&template=edit-apprenticeship.md&title=Edit%3A+) - Edit an existing apprenticeship 📝
+- [Feature Request](https://github.com/FrancesCoronel/apprenticeships/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=Feature+Request%3A+) - Suggest an idea for this project 💡
+- [Remove apprenticeship](https://github.com/FrancesCoronel/apprenticeships/issues/new?assignees=&labels=remove&template=remove-apprenticeship.md&title=Remove%3A+) - Remove an existing apprenticeship 🔻
 - Or just [create a regular issue](https://github.com/FrancesCoronel/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
 
 ## Guidelines

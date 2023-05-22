@@ -1,5 +1,5 @@
 {
-  "background_color": "{{ .Site.Params.brand_color }}",
+  "background_color": "#77b255",
   "description": "{{ .Site.Params.description }}",
   "display": "standalone",
   "name": "{{ .Site.Title }}",
@@ -7,7 +7,7 @@
   "scope": "/",
   "short_name": "{{ .Site.Title }}",
   "start_url": "/?utm_source=homescreen",
-  "theme_color": "{{ .Site.Params.brand_color }}",
+  "theme_color": "#77b255",
   "icons": [{
       "src": "./images/favicons/36x36.png",
       "sizes": "36x36",

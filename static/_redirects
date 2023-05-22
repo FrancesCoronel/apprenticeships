@@ -1,7 +1,5 @@
 # These rules will change if you change your site’s custom domains or HTTPS settings
 
-# Redirect domain aliases to primary domain
-https://apprenticeships.fvcproductions.com/* https://apprenticeships.me/:splat 301!
+## Optional: Redirect default Netlify subdomain to primary domain
 
-# Optional: Redirect default Netlify subdomain to primary domain
 https://apprenticeships.netlify.com/* https://apprenticeships.me/:splat 301!

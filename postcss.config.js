@@ -8,8 +8,5 @@ module.exports = {
     }),
     require("postcss-responsive-type")({html: true}),
     require("tailwindcss")("./tailwind.config.js")
-    // require('postcss-partial-process')({
-    //   plugins: [require('postcss-prepend-selector')({selector: '#root '})],
-    // }),
   ]
 };

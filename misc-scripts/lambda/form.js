@@ -9,7 +9,7 @@ exports.handler = async(event, context) => {
   }
 
   return fetch(
-    "https://api.github.com/repos/fvcproductions/apprenticeships.me/issues",
+    "https://api.github.com/repos/FrancesCoronel/apprenticeships/issues",
     {
       method: "POST",
       headers: {

@@ -9,13 +9,13 @@
         <p class="mt-12 mb-12">
           This site was made possible because of contributors like you.
         </p>
-        <ul class="list-reset flex flex-wrap justify-center" id="contributor-list">
+        <ul class="list-none flex flex-wrap justify-center" id="contributor-list">
           {{range .Site.Data.github }}
-            <li class="m-2 rounded-full shadow hover-shadow-lg transition">
-              <a href="{{.url}}" target="_blank" rel="noopener noreferrer">
-                <img class="w-24 h-24 rounded-full" src="{{ .avatar }}" alt="{{.user}}"/>
-              </a>
-            </li>
+          <li class="m-2 rounded-full shadow hover-shadow-lg transition">
+            <a href="{{.url}}" target="_blank" rel="noopener noreferrer">
+              <img class="w-24 h-24 rounded-full" src="{{ .avatar }}" alt="{{.user}}" />
+            </a>
+          </li>
           {{ end }}
         </ul>
       </div>

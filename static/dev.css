@@ -1,4 +1,4 @@
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 
 .search {
@@ -16,8 +16,8 @@
 }
 
 .ais-search-box--input {
-   padding: 20px;
-   font-size: 1rem;
+  padding: 20px;
+  font-size: 1rem;
 }
 
 .ais-search-box--magnifier-wrapper {
@@ -99,7 +99,7 @@
 @keyframes load {
   0% {
     transform: translate(0px, 10px);
-   }
+  }
   100% {
     transform: translate(0, -10px);
   }

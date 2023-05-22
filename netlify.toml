@@ -16,8 +16,3 @@
   from = "https://apprenticeships.netlify.com/*"
   to = "/:splat"
   status = 301
-
-[[redirects]]
-  from = "https://apprenticeships.fvcproductions.com/*"
-  to = "/:splat"
-  status = 301

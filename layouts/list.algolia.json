@@ -1,9 +1,9 @@
 {{- $.Scratch.Add "index" slice -}}
 {{- $section := $.Site.GetPage "section" .Section }}
-{{- range .Site.AllPages -}}
-  {{- if or (and (.IsDescendant $section) (and (not .Draft) (not .Params.private))) $section.IsHome -}}
-    {{ if ( .Params.company ) and ( .Params.company "!=" "") and ( .Params.company "!=" "null") }}
-      {{- $.Scratch.Add "index" (dict "objectID" .UniqueID "company" .Date.UTC.Unix "description" .Description "company" .Params.company "location" .Params.location "link" .Params.Link "image" .Params.image)}}
+{{- range $index, $element := (.Site.AllPages) -}}
+  {{- if or (and ($element.IsDescendant $section) (and (not $element.Draft) (not $element.Params.private))) $section.IsHome -}}
+    {{ with $element.Params.company }}
+      {{- $.Scratch.Add "index" (dict "id" $index "company" $element.Date.UTC.Unix "description" $element.Description "company" $element.Params.company "location" $element.Params.location "link" $element.Params.Link "image" $element.Params.image)}}
     {{- end -}}
   {{- end -}}
 {{- end -}}

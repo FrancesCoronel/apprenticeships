@@ -34,7 +34,7 @@
 <link href="/images/favicons/96x96.png" rel="icon" sizes="96x96" type="image/png">
 <link href="/manifest.json?v=2" rel="manifest">
 {{ with .Site.Params.brand_color }}
-  <link rel="mask-icon" color="{{ . }}" href="/images/favicons/114x114.png">
+<link rel="mask-icon" color="{{ . }}" href="/images/favicons/114x114.png">
 {{ end }}
 <!-- <link rel="shortcut icon" href="/images/favicons/favicon.ico"> -->
 <meta content="/browserconfig.xml" name="msapplication-config">
@@ -42,8 +42,9 @@
 <meta content="/images/favicons/310x310.png" name="msapplication-square310x310logo">
 <meta content="/images/favicons/70x70.png" name="msapplication-square70x70logo">
 {{ with .Site.Params.brand_color }}
-  <meta name="msapplication-TileColor" content="{{ . }}">
+<meta name="msapplication-TileColor" content="{{ . }}">
 {{ end }}
 <meta content="/images/favicons/144x144.png" name="msapplication-TileImage">
 <meta content="/images/favicons/310x150.png" name="msapplication-wide310x150logo">
-{{ with .Site.Params.brand_color }}<meta name="theme-color" content="{{ . }}">{{ end }}
+{{ with .Site.Params.brand_color }}
+<meta name="theme-color" content="{{ . }}">{{ end }}

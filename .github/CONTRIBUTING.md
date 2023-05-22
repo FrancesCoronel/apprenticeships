@@ -1,35 +1,34 @@
 # Contributing
 
-- [Contributing](#contributing)
-  - [Steps](#steps)
-  - [Ways You Can Contribute](#ways-you-can-contribute)
-  - [Guidelines](#guidelines)
-    - [Text](#text)
-    - [Links](#links)
-    - [Images](#images)
-    - [Locations](#locations)
-  - [Local Development](#local-development)
-  - [Adding a new apprenticeship](#adding-a-new-apprenticeship)
-  - [Making a Pull Request](#making-a-pull-request)
+- [Steps](#steps)
+- [Ways You Can Contribute](#ways-you-can-contribute)
+- [Guidelines](#guidelines)
+  - [Text](#text)
+  - [Links](#links)
+  - [Images](#images)
+  - [Locations](#locations)
+- [Local Development](#local-development)
+- [Adding a new apprenticeship](#adding-a-new-apprenticeship)
+- [Making a Pull Request](#making-a-pull-request)
 
 ## Steps
 
 > To get started...
 
-- 🍴 Fork this repo [here](https://github.com/fvcproductions/apprenticeships#fork-destination-box)
+- 🍴 Fork this repo [here](https://github.com/FrancesCoronel/apprenticeships#fork-destination-box)
 - 🔨 **Read through the contributing guidelines below**
 - 👥 Add yourself as a contributor under credits
-- 🔧 Make a pull request [here](https://github.com/fvcproductions/apprenticeships/compare)
+- 🔧 Make a pull request [here](https://github.com/FrancesCoronel/apprenticeships/compare)
 - 🎉 Get your pull request approved - success!
 
 ## Ways You Can Contribute
 
-- [Add apprenticeship](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=addition&template=add-apprenticeship.md&title=Add%3A+) - Add an apprenticeship to our growing list 🌱
-- [Bug Report](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=bug&template=bug_report.md&title=Bug%3A+) - Create a bug report to help us improve this website 🐛
-- [Edit apprenticeship](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=edit&template=edit-apprenticeship.md&title=Edit%3A+) - Edit an existing apprenticeship 📝
-- [Feature Request](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=Feature+Request%3A+) - Suggest an idea for this project 💡
-- [Remove apprenticeship](https://github.com/fvcproductions/apprenticeships.me/issues/new?assignees=&labels=remove&template=remove-apprenticeship.md&title=Remove%3A+) - Remove an existing apprenticeship 🔻
-- Or just [create a regular issue](https://github.com/fvcproductions/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
+- [Add apprenticeship](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=addition&template=add-apprenticeship.md&title=Add%3A+) - Add an apprenticeship to our growing list 🌱
+- [Bug Report](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=bug&template=bug_report.md&title=Bug%3A+) - Create a bug report to help us improve this website 🐛
+- [Edit apprenticeship](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=edit&template=edit-apprenticeship.md&title=Edit%3A+) - Edit an existing apprenticeship 📝
+- [Feature Request](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=Feature+Request%3A+) - Suggest an idea for this project 💡
+- [Remove apprenticeship](https://github.com/FrancesCoronel/apprenticeships.me/issues/new?assignees=&labels=remove&template=remove-apprenticeship.md&title=Remove%3A+) - Remove an existing apprenticeship 🔻
+- Or just [create a regular issue](https://github.com/FrancesCoronel/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
 
 ## Guidelines
 

@@ -1,6 +1,6 @@
 const search = instantsearch({
-  appId: "T8ZJTROSF4",
-  apiKey: "2743534926e3fc45db586cb379fd59d3",
+  appId: "LE508NV48J",
+  apiKey: "91fdf2082cc5980fe42ebf48c8fd1272",
   indexName: "apprenticeships",
   routing: true,
   searchableAttributes: ["company", "description", "location"],

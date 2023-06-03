@@ -5,4 +5,6 @@ image: "ada-developers-academy.jpg"
 link: "https://www.adadevelopersacademy.org/"
 location:
   - "Seattle, WA"
+  - "Atlanta, GA"
+  - "Remote"
 ---

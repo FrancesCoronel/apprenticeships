@@ -54,3 +54,4 @@ This project exists thanks to all the people who contributed via pull requests.
 - [Ken Sparks](https://github.com/KenSparks-Dev)
 - [Larry Urrego](https://github.com/LaUrrego)
 - [Dana Rocha](https://github.com/dana-rocha)
+- [Vansh Bataviya](https://github.com/vanshb03)

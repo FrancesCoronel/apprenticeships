@@ -38,7 +38,7 @@
     "atomic-algolia": "0.3.19",
     "axios": "1.4.0",
     "@babel/core": "7.21.0",
-    "@babel/preset-env": "7.20.2",
+    "@babel/preset-env": "7.22.9",
     "concurrently": "8.1.0",
     "eslint": "8.26.0",
     "cssnano": "5.1.13",

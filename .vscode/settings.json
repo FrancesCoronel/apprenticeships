@@ -4,7 +4,7 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "files.trimTrailingWhitespace": true,
   "markdown.extension.preview.autoShowPreviewToSide": false,

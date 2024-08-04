@@ -57,3 +57,4 @@ This project exists thanks to all the people who contributed via pull requests.
 - [Vansh Bataviya](https://github.com/vanshb03)
 - [Ajay Deshmukh](https://github.com/stlaja)
 - [Tunde Sanusi](https://github.com/tuhamworld)
+- [Febin Bellamy](https://github.com/febinbellamy)

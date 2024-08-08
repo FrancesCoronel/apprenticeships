@@ -2,7 +2,7 @@
 company: "Airbnb"
 description: "Airbnb is built around the idea that everyone should be able to take the perfect trip, including where they stay, what they do, and who they meet. To that end, we empower millions of people around the world to use their spaces, passions, and talents to become entrepreneurs."
 image: "airbnb.jpg"
-link: "https://careers.airbnb.com/university/"
+link: "https://careers.airbnb.com/connect-engineering-apprenticeship/"
 location:
   - "San Francisco, CA"
 ---

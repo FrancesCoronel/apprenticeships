@@ -4,5 +4,5 @@ description: "Nagarro is a global digital engineering company that helps busines
 image: "nagarro.jpg"
 link: "https://www.nagarro.com/en/careers"
 location:
-    - "Work from anywhere"
+    - "Remote"
 ---

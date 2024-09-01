@@ -51,7 +51,7 @@
     "postcss-prepend-selector": "0.3.1",
     "postcss-responsive-type": "1.0.0",
     "prettier": "2.8.8",
-    "tailwindcss": "3.1.8"
+    "tailwindcss": "3.4.10"
   },
   "snyk": true
 }

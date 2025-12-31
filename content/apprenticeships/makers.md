@@ -4,6 +4,5 @@ description: "Whether you’re switching careers or just starting out, Makers ap
 image: "makers.png"
 link: "https://makers.tech/learn/apprenticeships"
 location:
-  - "London, UK"
   - "Multiple Locations (UK)"
 ---

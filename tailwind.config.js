@@ -87,7 +87,9 @@ module.exports = {
   |
   */
 
-  colors: colors,
+  theme: {
+    extend: {
+      colors: colors,
 
   /*
   |-----------------------------------------------------------------------------
@@ -153,7 +155,7 @@ module.exports = {
   |
   */
 
-  textSizes: {
+  fontSize: {
     xs: ".75rem", // 12px
     sm: ".875rem", // 14px
     base: "1rem", // 16px
@@ -864,6 +866,9 @@ module.exports = {
   | the plugin system works.
   |
   */
+
+    }
+  },
 
   plugins: [
     function({

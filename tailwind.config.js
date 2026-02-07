@@ -69,6 +69,11 @@ const colors = {
 };
 
 module.exports = {
+  content: [
+    "./layouts/**/*.html",
+    "./content/**/*.md",
+    "./static/**/*.css"
+  ],
   /*
   |-----------------------------------------------------------------------------
   | Colors                                  https://tailwindcss.com/docs/colors
@@ -879,11 +884,7 @@ module.exports = {
       addUtilities(newUtilities, {
         variants: ["responsive"]
       });
-    },
-    require("tailwindcss/plugins/container")({
-      // center: true,
-      // padding: '1rem',
-    })
+    }
   ],
 
   /*

@@ -11,7 +11,7 @@
     "serve": "npm run build:css & hugo serve",
     "oldstart": "concurrently  \"hugo -w\" \"npm run serve\"",
     "start": "npm run build:css; hugo --gc server",
-    "build": "hugo; npm run prebuild; npm run build:css; node misc-scripts/github.js; npm run algolia; npm run copy:dist;",
+    "build": "hugo && npm run prebuild && npm run build:css && (node misc-scripts/github.js || true) && (npm run algolia || true) && npm run copy:dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
@@ -51,7 +51,12 @@
     "postcss-prepend-selector": "0.3.1",
     "postcss-responsive-type": "1.0.0",
     "prettier": "2.8.8",
-    "tailwindcss": "3.1.8"
+    "tailwindcss": "3.1.8",
+    "hugo-bin": "0.149.2"
+  },
+  "hugo-bin": {
+    "buildTags": "extended",
+    "version": "0.128.0"
   },
   "snyk": true
 }

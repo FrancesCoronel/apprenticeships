@@ -30,9 +30,13 @@ In the interest of fostering an open and welcoming environment, we as contributo
 
 More details can be found at this project's [code of conduct](.github/CODE_OF_CONDUCT.md).
 
-## Maintainers
+## Current maintainers
 
 - [Frances Coronel](https://github.com/francescoronel)
+- [Febin Bellamy](https://github.com/febinbellamy)
+
+## Former maintainers
+
 - [Benjamin Modayil](https://modayil.me)
 - [Angus Chang](https://github.com/changangus)
 
@@ -59,3 +63,4 @@ This project exists thanks to all the people who contributed via pull requests.
 - [Shailendra Kawadkar](https://github.com/shailendrakawadkar)
 - [Tunde Sanusi](https://github.com/tuhamworld)
 - [Febin Bellamy](https://github.com/febinbellamy)
+- [Maya Razdan](https://github.com/maya-razdan)

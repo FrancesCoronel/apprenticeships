@@ -4,12 +4,12 @@
   command = "npm run build"
 
 [context.production.environment]
-  HUGO_VERSION = "0.48"
+  HUGO_VERSION = "0.48.1"
   HUGO_ENV = "production"
   HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.48"
+  HUGO_VERSION = "0.48.1"
 
 # Redirect default Netlify subdomain to primary domain
 [[redirects]]

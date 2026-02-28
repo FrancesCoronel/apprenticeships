@@ -1,6 +1,6 @@
 # apprenticeships.me
 
-![Screenshot](public/images/readme.jpg)
+![Screenshot](public/images/readme.png)
 
 [![GitHub Issues](https://img.shields.io/github/issues/francescoronel/apprenticeships.svg)](https://github.com/francescoronel/apprenticeships/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/francescoronel/apprenticeships.svg)](https://github.com/francescoronel/apprenticeships/pulls) [![MIT License](https://img.shields.io/github/license/francescoronel/apprenticeships.svg)](http://badges.mit-license.org) [![Netlify Status](https://api.netlify.com/api/v1/badges/bd2e661d-f9ac-493a-ac07-05429f092059/deploy-status)](https://app.netlify.com/sites/apprenticeships/deploys)
 

@@ -26,18 +26,18 @@ export default function Intro() {
               themselves.
             </p>
             <p className="mt-6 text-gray-700 leading-relaxed">
-              The number of American apprentices has{" "}
+              The number of registered U.S. apprentices has{" "}
               <a
                 className="font-bold text-[#4a8c2a] hover:text-[#3a7020] no-underline hover:underline transition-all"
-                href="https://www.wikiwand.com/en/Apprenticeship#/United_States"
+                href="https://www.dol.gov/agencies/eta/apprenticeship/about/statistics"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                increased from 375,000 in 2014 to 500,000 in 2016
+                grown to over 593,000 active apprentices as of 2022
               </a>
-              , while the federal government intends to see 750,000 by 2019,
-              particularly by expanding the apprenticeship model to include
-              roles in information technology.
+              , with the U.S. Department of Labor investing over $1 billion to
+              expand programs — particularly in high-growth sectors like
+              information technology, cybersecurity, and software development.
             </p>
           </div>
         </div>

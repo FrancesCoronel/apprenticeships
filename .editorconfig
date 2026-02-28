@@ -1,0 +1,27 @@
+# EditorConfig is an config file that helps to
+# enforce coding styles across different editors
+#
+# For the most part, you'll need to download a plugin
+# to get your IDE to recognize this file. There are,
+# however, editors that support EditorConfig natively
+# (e.g., Coda, BBEdit, IntelliJIDEA, etc.)
+#
+# For more on EditorConfig, visit:  http://editorconfig.org/
+#
+
+root = true
+
+# Line endings, whitespaces, and newlines - O, my!
+[*]
+end_of_line = lf
+insert_final_newline = false
+charset = utf-8
+
+# JS, PHP, and Less explicitly lint for this
+[*.{js,jsx,ts,tsx,php,less}]
+trim_trailing_whitespace = true
+
+# Indenting style & size across the codebase
+[package.json, *.{js,jsx,ts,tsx,json,php,txt,html,less,css, md}]
+indent_style = space
+indent_size = 2

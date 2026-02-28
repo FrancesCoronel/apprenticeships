@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# apprenticeships.me
 
-## Getting Started
+![Screenshot](/public/images/readme.jpg)
 
-First, run the development server:
+[![GitHub Issues](https://img.shields.io/github/issues/francescoronel/apprenticeships.svg)](https://github.com/francescoronel/apprenticeships/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/francescoronel/apprenticeships.svg)](https://github.com/francescoronel/apprenticeships/pulls) [![MIT License](https://img.shields.io/github/license/francescoronel/apprenticeships.svg)](http://badges.mit-license.org) [![Netlify Status](https://api.netlify.com/api/v1/badges/bd2e661d-f9ac-493a-ac07-05429f092059/deploy-status)](https://app.netlify.com/sites/apprenticeships/deploys)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Back in the good old days of the Renaissance, [apprenticeships](https://www.wikiwand.com/en/Apprenticeship) were quite common and acted as legal contracts between the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Even though the formal university route became more popular over time, there has been a noteworthy trend in the software industry where the idea of an intensive period of training with masters (e.g. [coding bootcamps](https://www.wikiwand.com/en/Coding_bootcamp)) has started to become a popular option once again.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+> Note that most of these companies don't **always** have applications to their apprenticeship programs open - it's usually seasonal.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**The directory of apprenticeships is now located at <a href="https://apprenticeships.me" target="_blank" rel="noopener">https://apprenticeships.me</a>.**
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+> To get started...
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. 🍴 [Fork this repo](https://github.com/francescoronel/apprenticeships#fork-destination-box)
+2. 🔨 View the contributing guidelines at [CONTRIBUTING.md](.github/CONTRIBUTING.md)
+3. 👥 Add yourself as a contributor in the credits section
+4. 🔧 [Open a new pull request](https://github.com/francescoronel/apprenticeships/compare)
+5. 🎉 Get your pull request approved - success!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Or just [create an issue](https://github.com/francescoronel/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
 
-## Deploy on Vercel
+## Code of Conduct
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+More details can be found at this project's [code of conduct](.github/CODE_OF_CONDUCT.md).
+
+## Maintainers
+
+- [Frances Coronel](https://github.com/francescoronel)
+- [Benjamin Modayil](https://modayil.me)
+- [Angus Chang](https://github.com/changangus)
+
+## Contributors
+
+This project exists thanks to all the people who contributed via pull requests.
+
+- [Leilani Raranga](https://linkedin.com/in/leilanir)
+- [Colton Hurst](https://www.coltonhurst.com)
+- [Julia Schultz](https://github.com/jschultz21)
+- [Brittany Hill](https://github.com/ibrittanyhill)
+- [Chris Miller](https://www.linkedin.com/in/chris-miller-6470751/)
+- [Mark Arce](https://github.com/markarce)
+- [Amy Frieson](https://github.com/amyyf)
+- [Kristal Garcia](https://github.com/kgmajor)
+- [Brittani Gongre](http://github.com/bgongre)
+- [Michael Bonner](http://github.com/mdb1710)
+- [Aaron Clark](https://github.com/aaronclarkcodes)
+- [Ken Sparks](https://github.com/KenSparks-Dev)
+- [Larry Urrego](https://github.com/LaUrrego)
+- [Dana Rocha](https://github.com/dana-rocha)
+- [Vansh Bataviya](https://github.com/vanshb03)
+- [Ajay Deshmukh](https://github.com/stlaja)
+- [Shailendra Kawadkar](https://github.com/shailendrakawadkar)
+- [Tunde Sanusi](https://github.com/tuhamworld)
+- [Febin Bellamy](https://github.com/febinbellamy)

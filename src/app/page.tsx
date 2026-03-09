@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { safeJsonLd } from "@/lib/json-ld";
 import { getAllApprenticeships } from "@/lib/apprenticeships";
 import contributorsData from "@/data/contributors.json";
 import type { Contributor } from "@/lib/types";
@@ -52,12 +53,12 @@ export default function Home() {
       <Script
         id="schema-website"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(websiteSchema) }}
       />
       <Script
         id="schema-itemlist"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(itemListSchema) }}
       />
       <Hero />
       <Intro />

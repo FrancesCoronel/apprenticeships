@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import type { Metadata } from "next";
+import { safeJsonLd } from "@/lib/json-ld";
 import {
   getAllSlugs,
   getApprenticeshipBySlug,
@@ -92,7 +93,7 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
       <Script
         id={`schema-${slug}`}
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd(schema) }}
       />
       <section className="p-8 md:p-12 lg:p-16 xl:p-20">
       <div className="max-w-4xl mx-auto">

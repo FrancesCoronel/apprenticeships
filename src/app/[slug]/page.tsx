@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import type { Metadata } from "next";
 import {
   getAllSlugs,
@@ -26,9 +27,34 @@ export async function generateMetadata({
     return { title: "Not Found" };
   }
 
+  const title = `${apprenticeship.company} Apprenticeship`;
+
   return {
-    title: `${apprenticeship.company} Apprenticeship | Apprenticeships.me`,
+    title,
     description: apprenticeship.description,
+    alternates: {
+      canonical: `https://apprenticeships.me/${slug}`,
+    },
+    openGraph: {
+      title,
+      description: apprenticeship.description,
+      url: `https://apprenticeships.me/${slug}`,
+      siteName: "Apprenticeships.me",
+      type: "website",
+      images: [
+        {
+          url: `/images/apprenticeships/${apprenticeship.image}`,
+          width: 1200,
+          height: 630,
+          alt: `${apprenticeship.company} apprenticeship program`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: apprenticeship.description,
+    },
   };
 }
 
@@ -40,8 +66,35 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
     notFound();
   }
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOccupationalProgram",
+    name: `${apprenticeship.company} Apprenticeship`,
+    description: apprenticeship.description,
+    url: `https://apprenticeships.me/${slug}`,
+    provider: {
+      "@type": "Organization",
+      name: apprenticeship.company,
+      url: apprenticeship.link,
+    },
+    ...(apprenticeship.location.length > 0 && {
+      locationCreated: apprenticeship.location.map((loc) => ({
+        "@type": "Place",
+        name: loc,
+      })),
+    }),
+    occupationalCategory: "Software Development",
+    programType: "Apprenticeship",
+  };
+
   return (
-    <section className="p-8 md:p-12 lg:p-16 xl:p-20">
+    <>
+      <Script
+        id={`schema-${slug}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <section className="p-8 md:p-12 lg:p-16 xl:p-20">
       <div className="max-w-4xl mx-auto">
         <Link
           href="/#search"
@@ -54,7 +107,7 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
           <div className="relative w-full h-64 md:h-80">
             <Image
               src={`/images/apprenticeships/${apprenticeship.image}`}
-              alt={`${apprenticeship.company} logo`}
+              alt={`${apprenticeship.company} apprenticeship program`}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 896px"
@@ -108,5 +161,6 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
         </div>
       </div>
     </section>
+    </>
   );
 }

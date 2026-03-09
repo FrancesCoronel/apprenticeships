@@ -14,13 +14,35 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://apprenticeships.me"),
-  title: "Apprenticeships.me | Find tech apprenticeship programs",
+  title: {
+    default: "Apprenticeships.me | Find Tech Apprenticeship Programs",
+    template: "%s | Apprenticeships.me",
+  },
   description:
-    "A directory of tech apprenticeship programs to help you find a new career learning from the industry itself.",
+    "A curated directory of 90+ tech apprenticeship programs to help you find a new career learning from the industry itself.",
+  keywords: [
+    "tech apprenticeship",
+    "software engineering apprenticeship",
+    "coding apprenticeship",
+    "developer apprenticeship",
+    "design apprenticeship",
+    "learn to code",
+    "tech jobs",
+    "paid apprenticeship programs",
+  ],
+  authors: [
+    {
+      name: "Frances Coronel",
+      url: "https://github.com/FrancesCoronel",
+    },
+  ],
+  alternates: {
+    canonical: "https://apprenticeships.me",
+  },
   openGraph: {
     title: "Apprenticeships.me",
     description:
-      "A directory of tech apprenticeship programs to help you find a new career learning from the industry itself.",
+      "A curated directory of 90+ tech apprenticeship programs to help you find a new career learning from the industry itself.",
     url: "https://apprenticeships.me",
     siteName: "Apprenticeships.me",
     type: "website",
@@ -29,7 +51,7 @@ export const metadata: Metadata = {
         url: "/images/readme.jpg",
         width: 1200,
         height: 630,
-        alt: "Apprenticeships.me",
+        alt: "Apprenticeships.me — Find tech apprenticeship programs",
       },
     ],
   },
@@ -37,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Apprenticeships.me",
     description:
-      "A directory of tech apprenticeship programs to help you find a new career learning from the industry itself.",
+      "A curated directory of 90+ tech apprenticeship programs to help you find a new career learning from the industry itself.",
   },
   icons: {
     icon: [

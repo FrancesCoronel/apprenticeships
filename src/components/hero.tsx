@@ -27,7 +27,7 @@ export default function Hero() {
           </div>
           <div className="w-full md:w-1/2 px-2">
             <Image
-              alt="Header illustration"
+              alt="Person discovering tech apprenticeship opportunities"
               src="/images/header.svg"
               width={600}
               height={400}

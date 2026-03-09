@@ -16,7 +16,7 @@ export default function ApprenticeshipCard({ apprenticeship }: Props) {
         <div className="relative w-full h-48">
           <Image
             src={`/images/apprenticeships/${apprenticeship.image}`}
-            alt={`${apprenticeship.company} logo`}
+            alt={`${apprenticeship.company} apprenticeship program`}
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

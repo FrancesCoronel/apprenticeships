@@ -30,9 +30,11 @@ In the interest of fostering an open and welcoming environment, we as contributo
 
 More details can be found at this project's [code of conduct](.github/CODE_OF_CONDUCT.md).
 
-## Maintainers
-
+## Current maintainers
 - [Frances Coronel](https://github.com/francescoronel)
+- [Febin Bellamy](https://github.com/febinbellamy)
+
+## Former maintainers
 - [Benjamin Modayil](https://modayil.me)
 - [Angus Chang](https://github.com/changangus)
 

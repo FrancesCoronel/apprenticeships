@@ -4,5 +4,5 @@ description: "If you are passionate about coding, curious about AI and machine l
 image: "allstate.png"
 link: "https://www.allstate.jobs/job/23121503/software-engineer-apprentice/"
 location:
-  - "Remote (United States)"
+  - "United States (Remote)"
 ---

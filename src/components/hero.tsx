@@ -11,7 +11,7 @@ export default function Hero() {
             </h1>
             <div className="flex justify-center lg:justify-start mt-8">
               <a
-                href="https://www.producthunt.com/posts/apprenticeships-me?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-apprenticeships-me"
+                href="https://www.producthunt.com/posts/apprenticeships-me?utm_source=badge-featured&utm_medium=badge&utm_source=badge-apprenticeships-me"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex"

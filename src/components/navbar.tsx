@@ -5,20 +5,20 @@ const GITHUB_REPO = "https://github.com/FrancesCoronel/apprenticeships";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 md:p-12 max-w-7xl mx-auto">
-      <Link href="/" className="flex items-center shrink-0 mr-6">
+    <nav className="flex flex-col gap-4 md:gap-0 px-6 pt-6 pb-4 md:flex-row md:flex-wrap md:items-center md:justify-between md:p-12 max-w-7xl mx-auto">
+      <Link href="/" className="flex items-center shrink-0 md:mr-6">
         <Image
           src="/images/logo.svg"
           alt="Logo"
-          width={32}
-          height={32}
-          className="mr-4"
+          width={40}
+          height={40}
+          className="mr-4 size-10 shrink-0"
         />
         <span className="font-bold text-xl md:text-2xl">
           Apprenticeships.me
         </span>
       </Link>
-      <div className="flex items-center gap-3">
+      <div className="flex flex-wrap items-center justify-center gap-3 md:ml-auto md:justify-end">
         <a
           href={GITHUB_REPO}
           target="_blank"

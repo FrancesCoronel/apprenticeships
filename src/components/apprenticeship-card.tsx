@@ -12,7 +12,7 @@ export default function ApprenticeshipCard({ apprenticeship }: Props) {
       href={`/${apprenticeship.slug}`}
       className="block my-4 px-2 w-full md:w-1/2 lg:w-1/3"
     >
-      <div className="max-w-sm rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow min-h-full bg-white">
+      <div className="mx-auto max-w-sm rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow min-h-full bg-white">
         <div className="relative w-full h-48">
           <Image
             src={`/images/apprenticeships/${apprenticeship.image}`}

@@ -2,7 +2,7 @@
 company: "Greater Sum"
 description: "Greater Sum is a software consultancy whose program accepts individuals with a wide range of experience."
 image: "greater-sum.jpg"
-link: "https://www.greatersum.com/software-apprenticeship/"
+link: "https://www.thegreatersum.org/careers"
 location:
   - "Atlanta, GA"
 ---

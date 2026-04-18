@@ -2,7 +2,7 @@
 company: "CareerWise Colorado"
 description: "Gain valuable work experience, build a professional network, earn debt-free college credit…and get paid while you do it"
 image: "careerwise-colorado.jpg"
-link: "https://www.careerwisecolorado.org/"
+link: "https://www.careerwiseusa.org/location/careerwise-colorado/"
 location:
   - "Denver, CO"
 ---

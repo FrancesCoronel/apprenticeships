@@ -110,7 +110,7 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
               src={`/images/apprenticeships/${apprenticeship.image}`}
               alt={`${apprenticeship.company} apprenticeship program`}
               fill
-              className="object-cover"
+              className="object-contain p-8 bg-white"
               sizes="(max-width: 768px) 100vw, 896px"
               priority
             />

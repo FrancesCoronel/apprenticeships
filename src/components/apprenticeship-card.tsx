@@ -13,12 +13,12 @@ export default function ApprenticeshipCard({ apprenticeship }: Props) {
       className="block my-4 px-2 w-full md:w-1/2 lg:w-1/3"
     >
       <div className="mx-auto max-w-sm rounded overflow-hidden shadow-md hover:shadow-lg transition-shadow min-h-full bg-white">
-        <div className="relative w-full h-48">
+        <div className="relative w-full h-48 bg-white">
           <Image
             src={`/images/apprenticeships/${apprenticeship.image}`}
             alt={`${apprenticeship.company} apprenticeship program`}
             fill
-            className="object-cover"
+            className="object-contain p-6"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         </div>

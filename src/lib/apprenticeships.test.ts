@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import {
   getAllApprenticeships,
   getAllSlugs,
@@ -37,5 +37,27 @@ describe("apprenticeship content", () => {
 
   it("returns null for an unknown slug", async () => {
     expect(await getApprenticeshipBySlug("does-not-exist")).toBeNull();
+  });
+});
+
+describe("listings with missing fields", () => {
+  it("fills in empty defaults", async () => {
+    const fs = await import("node:fs");
+    const os = await import("node:os");
+    const path = await import("node:path");
+    const root = fs.mkdtempSync(path.join(os.tmpdir(), "apprenticeships-"));
+    fs.mkdirSync(path.join(root, "content", "apprenticeships"), { recursive: true });
+    fs.writeFileSync(path.join(root, "content", "apprenticeships", "bare.md"), "---\n---\n");
+    fs.writeFileSync(path.join(root, "content", "apprenticeships", "notes.txt"), "ignored");
+
+    const cwd = vi.spyOn(process, "cwd").mockReturnValue(root);
+    vi.resetModules();
+    const mod = await import("./apprenticeships");
+    cwd.mockRestore();
+
+    const empty = { slug: "bare", company: "", description: "", image: "", link: "", location: [] };
+    expect(mod.getAllApprenticeships()).toEqual([empty]);
+    expect(await mod.getApprenticeshipBySlug("bare")).toEqual({ ...empty, content: "" });
+    fs.rmSync(root, { recursive: true });
   });
 });

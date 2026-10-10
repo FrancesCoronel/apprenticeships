@@ -16,13 +16,12 @@ jobs:
   ci:
     uses: FrancesCoronel/workflows/.github/workflows/ci-node.yml@v1
 
-  # Unit tests with coverage over all of src/. Started at today's level
-  # (lib/ and the submit action are covered, pages and components aren't yet);
-  # raise min as tests land, toward 100.
+  # Unit tests with coverage over all of src/. Every file is fully covered,
+  # so any new untested code fails the check.
   coverage:
     uses: FrancesCoronel/workflows/.github/workflows/coverage.yml@claude/quality-gates
     with:
-      min: 26
+      min: 100
 
   security:
     uses: FrancesCoronel/workflows/.github/workflows/security.yml@claude/quality-gates

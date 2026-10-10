@@ -16,8 +16,28 @@ jobs:
   ci:
     uses: FrancesCoronel/workflows/.github/workflows/ci-node.yml@v1
 
+  # Unit tests with coverage over all of src/. Started at today's level
+  # (lib/ and the submit action are covered, pages and components aren't yet);
+  # raise min as tests land, toward 100.
+  coverage:
+    uses: FrancesCoronel/workflows/.github/workflows/coverage.yml@claude/quality-gates
+    with:
+      min: 26
+
+  security:
+    uses: FrancesCoronel/workflows/.github/workflows/security.yml@claude/quality-gates
+
+  # Zero axe violations (WCAG 2 AA) and Lighthouse 90+ performance,
+  # 100 accessibility, best practices and SEO.
+  web-quality:
+    uses: FrancesCoronel/workflows/.github/workflows/web-quality.yml@claude/quality-gates
+    with:
+      urls: |
+        /
+        /acadium
+
   dependabot:
-    needs: ci
+    needs: [ci, coverage, security, web-quality]
     if: github.event_name == 'pull_request' && github.event.pull_request.user.login == 'dependabot[bot]'
     uses: FrancesCoronel/workflows/.github/workflows/dependabot-automerge.yml@v1
     permissions:

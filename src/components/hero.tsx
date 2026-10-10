@@ -19,9 +19,8 @@ export default function Hero() {
                 <Image
                   alt="Apprenticeships.me - Featured on Product Hunt"
                   height={54}
-                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=153013&theme=light"
+                  src="/images/product-hunt-featured.svg"
                   width={250}
-                  unoptimized
                   className="h-auto w-auto max-w-full"
                 />
               </a>

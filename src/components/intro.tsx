@@ -28,7 +28,7 @@ export default function Intro() {
             <p className="mt-6 text-gray-700 leading-relaxed">
               The number of registered U.S. apprentices has{" "}
               <a
-                className="font-bold text-[#4a8c2a] hover:text-[#3a7020] no-underline hover:underline transition-all"
+                className="font-bold text-[#3f7d22] hover:text-[#2f6b19] no-underline hover:underline transition-all"
                 href="https://www.dol.gov/agencies/eta/apprenticeship/about/statistics"
                 target="_blank"
                 rel="noopener noreferrer"

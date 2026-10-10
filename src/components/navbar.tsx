@@ -38,7 +38,7 @@ export default function Navbar() {
           href={`${GITHUB_REPO}/issues/new/choose`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-[#77B255] text-white font-bold rounded px-4 py-2 hover:bg-[#5a9a3a] transition-all"
+          className="inline-flex items-center bg-[#3f7d22] text-white font-bold rounded px-4 py-2 hover:bg-[#2f6b19] transition-all"
         >
           Contribute
         </a>

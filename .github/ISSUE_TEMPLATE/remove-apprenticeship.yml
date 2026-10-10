@@ -1,0 +1,24 @@
+name: Remove apprenticeship
+description: Remove an existing apprenticeship 🔻
+title: "Remove: "
+labels: ["remove"]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Which apprenticeship should be removed?
+      placeholder: XYZ
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why should it be removed?
+      placeholder: XYZ no longer offers apprenticeships
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link that confirms it, if you have one.

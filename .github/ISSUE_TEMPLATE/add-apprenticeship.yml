@@ -1,0 +1,53 @@
+name: Add apprenticeship
+description: Add an apprenticeship to our growing list 🌱
+title: "Add: "
+labels: ["addition"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping people break into tech! 🙏🏽 Please check the [contributing guidelines](https://github.com/FrancesCoronel/apprenticeships/blob/main/.github/CONTRIBUTING.md) first.
+  - type: input
+    id: company
+    attributes:
+      label: Company
+      placeholder: XYZ
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: 1 to 2 sentences about the apprenticeship.
+      placeholder: XYZ runs a 6-month paid apprenticeship for career changers.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: The page describing the apprenticeship program, not the application form unless that's all there is.
+      placeholder: https://xyz.com/apprenticeship
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Locations
+      description: One per line. Use "Remote" if remote, or "Multiple Locations" if there are more than 10. Leave blank if unclear.
+      placeholder: |
+        San Francisco, CA
+        Remote
+  - type: textarea
+    id: image
+    attributes:
+      label: Featured image
+      description: A link to (or upload of) an image with the company's logo, 1000px wide by 500px tall. Please avoid photos of people's faces.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the list and this apprenticeship hasn't been added yet
+          required: true
+        - label: I've mentioned any affiliation I have with this company in the description

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#77B255] p-6 text-white">
+    <footer className="bg-[#3f7d22] p-6 text-white">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
         <Link href="/" className="hover:underline">
           Copyright &copy; {new Date().getFullYear()} Apprenticeships.me

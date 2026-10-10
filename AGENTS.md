@@ -34,6 +34,31 @@ A curated directory of development and design apprenticeships, published at [app
 - Fill in the PR template, including the checklist. PRs that skip the template may be closed.
 - Don't touch `package.json`, workflows or site code in a listing PR.
 
+## Code layout
+
+Next.js App Router with a `src/` directory, deployed on Vercel.
+
+| Path | What's there |
+|---|---|
+| `content/apprenticeships/` | One Markdown file per listing (frontmatter only) |
+| `public/images/apprenticeships/` | Listing images, named to match the listing's `image` field |
+| `src/app/` | Pages (`page.tsx`, `[slug]/page.tsx`), layout, `robots.ts`, `sitemap.ts` |
+| `src/components/` | UI components, one per file, kebab-case names |
+| `src/lib/` | Listing loading (`apprenticeships.ts`), GitHub API, JSON-LD, shared types |
+| `src/actions/` | Server actions (the submit form opens a GitHub issue) |
+| `src/data/` | Static data such as `contributors.json` |
+
+Imports use the `@/` alias for `src/`. Environment variables are listed in `.env.example`.
+
 ## Checks
 
-CI comes from the shared workflows in [FrancesCoronel/workflows](https://github.com/FrancesCoronel/workflows). Run `npm run lint` and `npm run build` locally before opening a code PR.
+CI comes from the shared workflows in [FrancesCoronel/workflows](https://github.com/FrancesCoronel/workflows). Before opening a code PR, run:
+
+```bash
+npm ci
+npm run lint
+npx tsc --noEmit
+npm run build
+```
+
+Node version is in `.nvmrc`. npm is the only package manager; don't add another lockfile.

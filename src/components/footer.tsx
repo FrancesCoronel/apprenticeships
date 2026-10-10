@@ -17,12 +17,12 @@ export default function Footer() {
             Code of Conduct
           </a>
           <a
-            href="https://www.netlify.com"
+            href="https://vercel.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            This site is powered by Netlify
+            This site is powered by Vercel
           </a>
         </div>
       </div>

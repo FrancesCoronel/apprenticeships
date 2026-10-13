@@ -8,7 +8,7 @@ export default function Resources() {
         <ul className="mt-8 space-y-6">
           <li>
             <a
-              className="text-[#4a8c2a] hover:text-[#3a7020] no-underline hover:underline transition-all"
+              className="text-[#3f7d22] hover:text-[#2f6b19] no-underline hover:underline transition-all"
               href="https://apprentice.at/"
               target="_blank"
               rel="noopener noreferrer"

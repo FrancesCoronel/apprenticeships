@@ -79,23 +79,33 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${plusJakartaSans.variable} antialiased`}>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-090NV67GR5"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-090NV67GR5');
-          `}
-        </Script>
+        {/* Only count real visits: skip local, CI and preview builds */}
+        {process.env.VERCEL_ENV === "production" && (
+          <>
+            <Script
+              src="https://www.googletagmanager.com/gtag/js?id=G-090NV67GR5"
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-090NV67GR5');
+              `}
+            </Script>
+          </>
+        )}
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <Analytics />
-        <SpeedInsights />
+        {/* Their scripts are served by Vercel, so they 404 anywhere else (local, CI) */}
+        {process.env.VERCEL && (
+          <>
+            <Analytics />
+            <SpeedInsights />
+          </>
+        )}
       </body>
     </html>
   );

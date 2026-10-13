@@ -19,17 +19,17 @@ jobs:
   # Unit tests with coverage over all of src/. Every file is fully covered,
   # so any new untested code fails the check.
   coverage:
-    uses: FrancesCoronel/workflows/.github/workflows/coverage.yml@claude/quality-gates
+    uses: FrancesCoronel/workflows/.github/workflows/coverage.yml@v1
     with:
       min: 100
 
   security:
-    uses: FrancesCoronel/workflows/.github/workflows/security.yml@claude/quality-gates
+    uses: FrancesCoronel/workflows/.github/workflows/security.yml@v1
 
   # Zero axe violations (WCAG 2 AA) and Lighthouse 90+ performance,
   # 100 accessibility, best practices and SEO.
   web-quality:
-    uses: FrancesCoronel/workflows/.github/workflows/web-quality.yml@claude/quality-gates
+    uses: FrancesCoronel/workflows/.github/workflows/web-quality.yml@v1
     with:
       urls: |
         /

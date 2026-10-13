@@ -61,14 +61,6 @@ export const metadata: Metadata = {
     description:
       "A curated directory of 90+ tech apprenticeship programs to help you find a new career learning from the industry itself.",
   },
-  icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/images/favicons/32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/favicons/16x16.png", sizes: "16x16", type: "image/png" },
-    ],
-    apple: "/images/favicons/apple-touch-icon.png",
-  },
 };
 
 export default function RootLayout({

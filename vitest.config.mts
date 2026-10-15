@@ -9,6 +9,8 @@ export default defineConfig({
   },
   test: {
     environment: "node",
+    // e2e/ holds Playwright specs, which run under `npm run test:e2e`, not Vitest
+    include: ["src/**/*.test.{ts,tsx}"],
     coverage: {
       provider: "v8",
       // Count every source file, so untested ones show up as 0%

@@ -34,7 +34,7 @@ export default function SubmitForm() {
         <p className="mt-8 mb-4 text-left text-gray-700">
           Submit an apprenticeship below or{" "}
           <a
-            className="font-bold text-[#4a8c2a] hover:text-[#3a7020] no-underline hover:underline transition-all"
+            className="font-bold text-[#3f7d22] hover:text-[#2f6b19] no-underline hover:underline transition-all"
             href="https://github.com/FrancesCoronel/apprenticeships/issues/new/choose"
             target="_blank"
             rel="noopener noreferrer"
@@ -120,7 +120,7 @@ export default function SubmitForm() {
           <button
             type="submit"
             disabled={status.type === "loading"}
-            className="block mx-auto bg-[#77B255] text-white font-bold rounded hover:bg-[#5a9a3a] transition-all px-6 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="block mx-auto bg-[#3f7d22] text-white font-bold rounded hover:bg-[#2f6b19] transition-all px-6 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status.type === "loading" ? "Submitting..." : "Submit"}
           </button>

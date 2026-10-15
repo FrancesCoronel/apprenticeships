@@ -1,0 +1,22 @@
+import path from "node:path";
+import { defineConfig } from "vitest/config";
+
+export default defineConfig({
+  // tsconfig keeps JSX as-is for Next, so tell Vite how to compile it
+  oxc: { jsx: { runtime: "automatic" } },
+  resolve: {
+    alias: { "@": path.resolve(import.meta.dirname, "src") },
+  },
+  test: {
+    environment: "node",
+    // e2e/ holds Playwright specs, which run under `npm run test:e2e`, not Vitest
+    include: ["src/**/*.test.{ts,tsx}"],
+    coverage: {
+      provider: "v8",
+      // Count every source file, so untested ones show up as 0%
+      include: ["src/**/*.{ts,tsx}"],
+      exclude: ["src/**/*.test.*", "src/**/*.d.ts", "src/lib/types.ts"],
+      reporter: ["text", "json-summary", "html"],
+    },
+  },
+});

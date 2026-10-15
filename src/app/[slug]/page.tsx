@@ -99,7 +99,7 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
       <div className="max-w-4xl mx-auto">
         <Link
           href="/#search"
-          className="inline-flex items-center text-[#4a8c2a] hover:text-[#3a7020] mb-8 font-bold hover:underline transition-all"
+          className="inline-flex items-center text-[#3f7d22] hover:text-[#2f6b19] mb-8 font-bold hover:underline transition-all"
         >
           &larr; Back to all apprenticeships
         </Link>
@@ -147,7 +147,7 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
               href={apprenticeship.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#77B255] text-white font-bold rounded px-6 py-3 hover:bg-[#5a9a3a] transition-all"
+              className="inline-block bg-[#3f7d22] text-white font-bold rounded px-6 py-3 hover:bg-[#2f6b19] transition-all"
             >
               Visit apprenticeship &rarr;
             </a>

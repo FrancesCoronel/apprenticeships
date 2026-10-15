@@ -12,6 +12,10 @@ updates:
         update-types: [minor, patch]
       react:
         patterns: ["react", "react-dom", "@types/react", "@types/react-dom"]
+    ignore:
+      # Keep @types/node on the Node major we run; bump it by hand when Node moves
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
 
   - package-ecosystem: github-actions
     directory: /

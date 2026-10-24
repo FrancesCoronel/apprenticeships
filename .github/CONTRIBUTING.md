@@ -57,11 +57,11 @@
 
 > Install dependencies
 
-`npm install`
+`npm ci`
 
 > Start local environment
 
-`npm start`
+`npm run dev`
 
 ## Adding a new apprenticeship
 

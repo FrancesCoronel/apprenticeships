@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import { describe, expect, it, vi } from "vitest";
 import {
   getAllApprenticeships,
@@ -14,6 +16,14 @@ describe("apprenticeship content", () => {
       expect(a.company, a.slug).not.toBe("");
       expect(a.link, a.slug).toMatch(/^https?:\/\//);
       expect(Array.isArray(a.location), a.slug).toBe(true);
+    }
+  });
+
+  it("has an image file for every listing", () => {
+    const imagesDir = path.join(process.cwd(), "public", "images", "apprenticeships");
+    for (const a of all) {
+      expect(a.image, a.slug).not.toBe("");
+      expect(fs.existsSync(path.join(imagesDir, a.image)), `${a.slug}: ${a.image}`).toBe(true);
     }
   });
 
@@ -42,9 +52,7 @@ describe("apprenticeship content", () => {
 
 describe("listings with missing fields", () => {
   it("fills in empty defaults", async () => {
-    const fs = await import("node:fs");
     const os = await import("node:os");
-    const path = await import("node:path");
     const root = fs.mkdtempSync(path.join(os.tmpdir(), "apprenticeships-"));
     fs.mkdirSync(path.join(root, "content", "apprenticeships"), { recursive: true });
     fs.writeFileSync(path.join(root, "content", "apprenticeships", "bare.md"), "---\n---\n");

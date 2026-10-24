@@ -8,6 +8,6 @@ Insert description of PR here
 
 ## ✅️ By submitting this PR, I have verified the following
 
-- [] Checked to see if a similar PR has already been opened 🤔️
-- [] Reviewed the contributing guidelines 🔍️
-- [] Added my name to the bottom of the list under the **Credits** section in the `README.md` with a link to my website or GitHub profile 👥️
+- [ ] Checked to see if a similar PR has already been opened 🤔️
+- [ ] Reviewed the contributing guidelines 🔍️
+- [ ] Added my name to the bottom of the list under the **Credits** section in the `README.md` with a link to my website or GitHub profile 👥️

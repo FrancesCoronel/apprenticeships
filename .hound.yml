@@ -1,5 +1,0 @@
-jshint:
-  enabled: false
-
-eslint:
-  config_file: .eslintrc

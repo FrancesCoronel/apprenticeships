@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { withSentryConfig } from "@sentry/nextjs";
 
 const nextConfig: NextConfig = {
   images: {
@@ -19,4 +20,11 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withSentryConfig(nextConfig, {
+  org: "fvcproductions",
+  project: "apprenticeships",
+  // Source maps upload only when SENTRY_AUTH_TOKEN is set on the host
+  silent: !process.env.CI,
+  widenClientFileUpload: true,
+  disableLogger: true,
+});

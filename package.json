@@ -33,7 +33,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitest/coverage-v8": "^5.0.5",
-    "eslint": "^9",
+    "eslint": "^10",
     "eslint-config-next": "16.4.3",
     "jsdom": "^27.4.0",
     "tailwindcss": "^4",

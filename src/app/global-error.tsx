@@ -2,10 +2,13 @@
 
 import { useEffect } from "react";
 import { reportError } from "@/lib/report-error";
+// This replaces the root layout, so it has to load the site styles itself
+import "./globals.css";
 
 // Next.js catches render errors in an error boundary, so they never reach Sentry's
 // global handlers. Report them here. This replaces the root layout, so it renders
-// its own <html> and <body>.
+// its own <html> and <body>. Server errors carry a digest and were already reported
+// by onRequestError in instrumentation.ts, so only client errors are sent.
 export default function GlobalError({
   error,
   reset,
@@ -15,7 +18,7 @@ export default function GlobalError({
 }) {
   useEffect(() => {
     console.error(error);
-    void reportError(error);
+    if (!error.digest) void reportError(error);
   }, [error]);
 
   return (

@@ -10,6 +10,7 @@ vi.mock("@/lib/report-error", () => ({ reportError }));
 afterEach(() => {
   cleanup();
   vi.restoreAllMocks();
+  reportError.mockClear();
 });
 
 describe("global error page", () => {
@@ -26,5 +27,12 @@ describe("global error page", () => {
 
     await userEvent.click(screen.getByRole("button", { name: "Try again" }));
     expect(reset).toHaveBeenCalledTimes(1);
+  });
+
+  it("doesn't report server errors again, since onRequestError already did", () => {
+    vi.spyOn(console, "error").mockImplementation(() => {});
+    const error = Object.assign(new Error("server render failed"), { digest: "123" });
+    render(<GlobalError error={error} reset={() => {}} />, { container: document });
+    expect(reportError).not.toHaveBeenCalled();
   });
 });

@@ -1,0 +1,24 @@
+name: Edit apprenticeship
+description: Edit an existing apprenticeship 📝
+title: "Edit: "
+labels: ["edit"]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Which apprenticeship are you editing?
+      placeholder: XYZ
+    validations:
+      required: true
+  - type: textarea
+    id: edits
+    attributes:
+      label: What should change?
+      placeholder: XYZ also has apprenticeships in Chicago, IL
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: A link that confirms the change.

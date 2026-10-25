@@ -15,7 +15,13 @@ export default defineConfig({
       provider: "v8",
       // Count every source file, so untested ones show up as 0%
       include: ["src/**/*.{ts,tsx}"],
-      exclude: ["src/**/*.test.*", "src/**/*.d.ts", "src/lib/types.ts"],
+      exclude: [
+        "src/**/*.test.*",
+        "src/**/*.d.ts",
+        "src/lib/types.ts",
+        // Next.js runtime hooks that only load the Sentry SDK
+        "src/instrumentation*.ts",
+      ],
       reporter: ["text", "json-summary", "html"],
     },
   },

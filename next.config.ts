@@ -1,5 +1,5 @@
 import type { NextConfig } from "next";
-import { withSentryConfig } from "@sentry/nextjs";
+import { withSentryConfig } from "@sentry/nextjs/config";
 
 const nextConfig: NextConfig = {
   images: {
@@ -26,5 +26,7 @@ export default withSentryConfig(nextConfig, {
   // Source maps upload only when SENTRY_AUTH_TOKEN is set on the host
   silent: !process.env.CI,
   widenClientFileUpload: true,
-  disableLogger: true,
+  bundleSizeOptimizations: {
+    excludeDebugStatements: true,
+  },
 });

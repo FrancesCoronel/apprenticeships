@@ -17,11 +17,7 @@
 ### If you're changing site code
 
 - [ ] `npm run lint`, `npm run typecheck` and `npm test` pass locally
-- [ ] I checked the change in the browser (and added screenshots below if it's visual)
-
-### For every PR
-
-- [ ] If I used AI tools, I reviewed every change myself and checked that the links work
+- [ ] I checked the change in the browser (and added screenshots if it's visual)
 
 ### Credits
 

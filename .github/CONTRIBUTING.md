@@ -17,24 +17,24 @@
 
 - 🍴 Fork this repo [here](https://github.com/FrancesCoronel/apprenticeships#fork-destination-box)
 - 🔨 **Read through the contributing guidelines below**
-- 👥 Add yourself as a contributor under credits
+- 👥 Add yourself to the Contributors section in the README
 - 🔧 Make a pull request [here](https://github.com/FrancesCoronel/apprenticeships/compare)
 - 🎉 Get your pull request approved - success!
 
 ## Ways You Can Contribute
 
 - [Add apprenticeship](https://github.com/FrancesCoronel/apprenticeships/issues/new?template=add-apprenticeship.yml) - Add an apprenticeship to our growing list 🌱
-- [Bug Report](https://github.com/FrancesCoronel/apprenticeships/issues/new?assignees=&labels=bug&template=bug_report.md&title=Bug%3A+) - Create a bug report to help us improve this website 🐛
+- [Report a bug](https://github.com/FrancesCoronel/apprenticeships/issues/new?template=bug-report.yml) - Create a bug report to help us improve this website 🐛
 - [Edit apprenticeship](https://github.com/FrancesCoronel/apprenticeships/issues/new?template=edit-apprenticeship.yml) - Edit an existing apprenticeship 📝
-- [Feature Request](https://github.com/FrancesCoronel/apprenticeships/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=Feature+Request%3A+) - Suggest an idea for this project 💡
+- [Suggest a feature](https://github.com/FrancesCoronel/apprenticeships/issues/new?template=feature-request.yml) - Suggest an idea for this project 💡
 - [Remove apprenticeship](https://github.com/FrancesCoronel/apprenticeships/issues/new?template=remove-apprenticeship.yml) - Remove an existing apprenticeship 🔻
-- Or just [create a regular issue](https://github.com/FrancesCoronel/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
+- Or just [pick an issue form](https://github.com/FrancesCoronel/apprenticeships/issues/new/choose) - any little bit of help counts! 😊
 
 ## Guidelines
 
 ### Text
 
-- Check your spelling and grammar using a tool like [Grammarly](https://grammarly.com)
+- Proofread your text before opening a PR. Your editor's spell check is plenty.
 - Make sure your text editor is set to remove trailing whitespace
 
 ### Links

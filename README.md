@@ -61,3 +61,4 @@ This project exists thanks to all the people who contributed via pull requests.
 - [Shailendra Kawadkar](https://github.com/shailendrakawadkar)
 - [Tunde Sanusi](https://github.com/tuhamworld)
 - [Febin Bellamy](https://github.com/febinbellamy)
+- [Dr. Shaun Glaze](https://github.com/Doctor-Gee)

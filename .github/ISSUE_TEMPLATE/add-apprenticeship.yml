@@ -50,4 +50,8 @@ body:
       options:
         - label: I searched the list and this apprenticeship hasn't been added yet
           required: true
+        - label: The link is live and goes to the company's own page (no referral or tracking links)
+          required: true
+        - label: This is a structured training program for people new to the field, not a regular job posting, a paid course or a bootcamp
+          required: true
         - label: I've mentioned any affiliation I have with this company in the description

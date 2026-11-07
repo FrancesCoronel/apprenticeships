@@ -1,0 +1,38 @@
+name: Report a bug
+description: Something on apprenticeships.me is broken or looks wrong 🐛
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The URL where you saw the problem.
+      placeholder: https://apprenticeships.me/...
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See ...
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Safari 26 on iPhone, Chrome on Windows 11
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or console errors
+      description: Drag images in here if you have them.

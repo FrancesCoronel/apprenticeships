@@ -2,7 +2,7 @@
 
 ![Screenshot](public/images/readme.png)
 
-[![GitHub Issues](https://img.shields.io/github/issues/francescoronel/apprenticeships.svg)](https://github.com/francescoronel/apprenticeships/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/francescoronel/apprenticeships.svg)](https://github.com/francescoronel/apprenticeships/pulls) [![MIT License](https://img.shields.io/github/license/francescoronel/apprenticeships.svg)](http://badges.mit-license.org)
+[![GitHub Issues](https://img.shields.io/github/issues/francescoronel/apprenticeships.svg)](https://github.com/francescoronel/apprenticeships/issues) [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/francescoronel/apprenticeships.svg)](https://github.com/francescoronel/apprenticeships/pulls) [![MIT License](https://img.shields.io/github/license/francescoronel/apprenticeships.svg)](https://badges.mit-license.org)
 
 Back in the good old days of the Renaissance, [apprenticeships](https://www.wikiwand.com/en/Apprenticeship) were quite common and acted as legal contracts between the apprentice and master. This was a way for apprentices to start learning the necessary skills in their field and eventually become masters themselves.
 
@@ -50,8 +50,8 @@ This project exists thanks to all the people who contributed via pull requests.
 - [Mark Arce](https://github.com/markarce)
 - [Amy Frieson](https://github.com/amyyf)
 - [Kristal Garcia](https://github.com/kgmajor)
-- [Brittani Gongre](http://github.com/bgongre)
-- [Michael Bonner](http://github.com/mdb1710)
+- [Brittani Gongre](https://github.com/bgongre)
+- [Michael Bonner](https://github.com/mdb1710)
 - [Aaron Clark](https://github.com/aaronclarkcodes)
 - [Ken Sparks](https://github.com/KenSparks-Dev)
 - [Larry Urrego](https://github.com/LaUrrego)
@@ -61,3 +61,7 @@ This project exists thanks to all the people who contributed via pull requests.
 - [Shailendra Kawadkar](https://github.com/shailendrakawadkar)
 - [Tunde Sanusi](https://github.com/tuhamworld)
 - [Febin Bellamy](https://github.com/febinbellamy)
+
+## License
+
+[MIT](LICENSE)

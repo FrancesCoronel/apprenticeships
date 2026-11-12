@@ -9,7 +9,7 @@ export default function Navbar() {
       <Link href="/" className="flex items-center shrink-0 md:mr-6">
         <Image
           src="/images/logo.svg"
-          alt="Logo"
+          alt="Apprenticeships.me sun and sprout logo"
           width={40}
           height={40}
           className="mr-4 size-10 shrink-0"
@@ -23,14 +23,14 @@ export default function Navbar() {
           href={GITHUB_REPO}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center bg-white text-black font-bold rounded px-4 py-2 hover:underline transition-all"
+          className="hidden md:inline-flex items-center border-2 border-terrace text-terrace font-bold rounded-sm px-4 py-1.5 hover:border-terrace-hover hover:text-terrace-hover transition-colors"
         >
           <Image
             src="/images/github-black.svg"
             alt="GitHub"
             width={24}
             height={24}
-            className="mr-2"
+            className="mr-2 dark:invert"
           />
           GitHub
         </a>
@@ -38,7 +38,7 @@ export default function Navbar() {
           href={`${GITHUB_REPO}/issues/new/choose`}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center bg-[#3f7d22] text-white font-bold rounded px-4 py-2 hover:bg-[#2f6b19] transition-all"
+          className="inline-flex items-center bg-inti text-on-inti font-bold rounded-sm px-4 py-2 hover:bg-inti-hover transition-colors"
         >
           Contribute
         </a>

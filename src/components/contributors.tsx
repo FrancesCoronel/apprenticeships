@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Contributor } from "@/lib/types";
+import SectionHeading from "./section-heading";
 
 interface Props {
   contributors: Contributor[];
@@ -9,10 +10,8 @@ export default function Contributors({ contributors }: Props) {
   return (
     <section className="p-8 md:p-12 lg:p-16 xl:p-20" id="contributors">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="border-b-2 border-[#77B255] inline-block text-2xl md:text-3xl font-bold">
-          Contributors to Apprenticeships.me
-        </h2>
-        <p className="mt-8 mb-8 text-gray-600">
+        <SectionHeading align="center">Contributors to Apprenticeships.me</SectionHeading>
+        <p className="mt-8 mb-8 text-ink-muted">
           This site was made possible because of contributors like you.
         </p>
         <ul className="flex flex-wrap justify-center gap-4">

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { submitApprenticeship } from "@/actions/submit";
+import SectionHeading from "./section-heading";
 
 export default function SubmitForm() {
   const [status, setStatus] = useState<{
@@ -26,15 +27,13 @@ export default function SubmitForm() {
   }
 
   return (
-    <section className="bg-[#f0fae8] p-8 md:p-12 lg:p-16 xl:p-20" id="contribute">
+    <section className="bg-surface-sunrise p-8 md:p-12 lg:p-16 xl:p-20" id="contribute">
       <div className="w-full max-w-md mx-auto text-center">
-        <h2 className="border-b-2 border-[#77B255] inline-block text-2xl md:text-3xl font-bold">
-          Want to contribute?
-        </h2>
-        <p className="mt-8 mb-4 text-left text-gray-700">
+        <SectionHeading align="center">Want to contribute?</SectionHeading>
+        <p className="mt-8 mb-4 text-left text-ink-muted">
           Submit an apprenticeship below or{" "}
           <a
-            className="font-bold text-[#3f7d22] hover:text-[#2f6b19] no-underline hover:underline transition-all"
+            className="font-bold text-terrace hover:text-terrace-hover no-underline hover:underline transition-all"
             href="https://github.com/FrancesCoronel/apprenticeships/issues/new/choose"
             target="_blank"
             rel="noopener noreferrer"
@@ -43,24 +42,24 @@ export default function SubmitForm() {
           </a>{" "}
           to add one in.
         </p>
-        <p className="mb-8 text-left text-gray-700">
+        <p className="mb-8 text-left text-ink-muted">
           Submitting the form below will automatically create the issue on
           GitHub for you.
         </p>
 
         <form
           onSubmit={handleSubmit}
-          className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 text-left"
+          className="bg-surface-raised border border-hairline shadow-card rounded-md px-8 pt-6 pb-8 mb-4 text-left"
         >
           <div className="mb-4">
             <label
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block text-ink text-sm font-bold mb-2"
               htmlFor="title"
             >
               Name of Apprenticeship
             </label>
             <input
-              className="shadow border border-gray-200 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#77B255]"
+              className="border border-border rounded-sm w-full py-2 px-3 bg-surface-raised text-ink leading-tight placeholder:text-ink-muted"
               id="title"
               name="title"
               type="text"
@@ -70,13 +69,13 @@ export default function SubmitForm() {
 
           <div className="mb-4">
             <label
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block text-ink text-sm font-bold mb-2"
               htmlFor="link"
             >
               Link to Apprenticeship
             </label>
             <input
-              className="shadow border border-gray-200 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#77B255]"
+              className="border border-border rounded-sm w-full py-2 px-3 bg-surface-raised text-ink leading-tight placeholder:text-ink-muted"
               id="link"
               name="link"
               placeholder="https://"
@@ -87,13 +86,13 @@ export default function SubmitForm() {
 
           <div className="mb-4">
             <label
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block text-ink text-sm font-bold mb-2"
               htmlFor="locations"
             >
               Locations of Apprenticeship
             </label>
             <input
-              className="shadow border border-gray-200 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#77B255]"
+              className="border border-border rounded-sm w-full py-2 px-3 bg-surface-raised text-ink leading-tight placeholder:text-ink-muted"
               id="locations"
               name="locations"
               placeholder="Philadelphia, PA; Falls Church, VA"
@@ -103,13 +102,13 @@ export default function SubmitForm() {
 
           <div className="mb-6">
             <label
-              className="block text-gray-700 text-sm font-bold mb-2"
+              className="block text-ink text-sm font-bold mb-2"
               htmlFor="description"
             >
               Description of Apprenticeship
             </label>
             <textarea
-              className="shadow border border-gray-200 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-[#77B255]"
+              className="border border-border rounded-sm w-full py-2 px-3 bg-surface-raised text-ink leading-tight placeholder:text-ink-muted"
               id="description"
               name="description"
               placeholder="Add any other details"
@@ -120,13 +119,13 @@ export default function SubmitForm() {
           <button
             type="submit"
             disabled={status.type === "loading"}
-            className="block mx-auto bg-[#3f7d22] text-white font-bold rounded hover:bg-[#2f6b19] transition-all px-6 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="block mx-auto bg-inti text-on-inti font-bold rounded-sm hover:bg-inti-hover transition-colors px-6 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status.type === "loading" ? "Submitting..." : "Submit"}
           </button>
 
           {status.type === "success" && (
-            <div className="mt-4 p-3 bg-green-50 text-green-800 rounded text-sm text-center">
+            <div className="mt-4 p-3 bg-terrace-tint text-ink rounded-md text-sm text-center">
               {status.message}
               {status.url && (
                 <>
@@ -145,7 +144,7 @@ export default function SubmitForm() {
           )}
 
           {status.type === "error" && (
-            <div className="mt-4 p-3 bg-red-50 text-red-800 rounded text-sm text-center">
+            <div className="mt-4 p-3 bg-danger-tint text-danger rounded-md text-sm text-center">
               {status.message}
             </div>
           )}

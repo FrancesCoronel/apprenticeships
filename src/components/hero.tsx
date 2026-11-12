@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-2 mb-12 md:mb-0">
-            <h1 className="text-center lg:text-left text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            <h1 className="text-center lg:text-left font-display text-4xl md:text-4xl lg:text-6xl font-bold leading-tight tracking-tight">
               Find a new career learning from the industry itself.
             </h1>
             <div className="flex justify-center lg:justify-start mt-8">

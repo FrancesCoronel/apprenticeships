@@ -99,12 +99,12 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
       <div className="max-w-4xl mx-auto">
         <Link
           href="/#search"
-          className="inline-flex items-center text-[#3f7d22] hover:text-[#2f6b19] mb-8 font-bold hover:underline transition-all"
+          className="inline-flex items-center text-terrace hover:text-terrace-hover mb-8 font-bold hover:underline transition-all"
         >
           &larr; Back to all apprenticeships
         </Link>
 
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-surface-raised border border-hairline rounded-md shadow-card overflow-hidden">
           <div className="relative w-full h-64 md:h-80">
             <Image
               src={`/images/apprenticeships/${apprenticeship.image}`}
@@ -117,24 +117,24 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
           </div>
 
           <div className="p-8">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
               {apprenticeship.company}
             </h1>
 
-            <p className="text-gray-600 text-lg mb-6">
+            <p className="text-ink-muted text-lg mb-6">
               {apprenticeship.description}
             </p>
 
             {apprenticeship.location.length > 0 && (
               <div className="mb-6">
-                <h2 className="font-bold text-sm text-gray-500 uppercase tracking-wide mb-2">
+                <h2 className="font-bold text-xs text-ink-muted uppercase tracking-widest mb-2">
                   Locations
                 </h2>
                 <div className="flex flex-wrap gap-2">
                   {apprenticeship.location.map((loc) => (
                     <span
                       key={loc}
-                      className="inline-block bg-gray-100 rounded-full px-4 py-1 text-sm text-gray-700"
+                      className="inline-block bg-surface-stone rounded-full px-4 py-1 text-sm text-ink-muted"
                     >
                       {loc}
                     </span>
@@ -147,14 +147,14 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
               href={apprenticeship.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#3f7d22] text-white font-bold rounded px-6 py-3 hover:bg-[#2f6b19] transition-all"
+              className="inline-block bg-inti text-on-inti font-bold rounded-sm px-6 py-3 hover:bg-inti-hover transition-colors"
             >
               Visit apprenticeship &rarr;
             </a>
 
             {apprenticeship.content && (
               <div
-                className="mt-8 pt-8 border-t border-gray-200 prose prose-green max-w-none"
+                className="mt-8 pt-8 border-t border-hairline prose prose-green max-w-none"
                 dangerouslySetInnerHTML={{ __html: apprenticeship.content }}
               />
             )}

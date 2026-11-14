@@ -1,14 +1,134 @@
 @import "tailwindcss";
 
+/*
+ * Inti design system: sunlight (gold) and terraces (green) for people
+ * early in their careers. Day is the default theme; Night follows the
+ * visitor's system setting. Style through these tokens, never hex values.
+ * Full guidelines: DESIGN.md
+ */
+:root {
+  --surface: #ffffff;
+  --surface-sunrise: #fff3d1;
+  --surface-raised: #ffffff;
+  --surface-stone: #f5f0e6;
+  --ink: #1f1a14;
+  --ink-muted: #5c5246;
+  --inti: #f2b705;
+  --inti-hover: #dba300;
+  --on-inti: #1f1a14;
+  --inti-deep: #8a5d00;
+  --terrace: #2f6b1e;
+  --terrace-hover: #24561a;
+  --terrace-tint: #e6f2dc;
+  --terrace-fill: #2f6b1e;
+  --on-terrace: #ffffff;
+  --border: #8c8173;
+  --hairline: #e6ded0;
+  --focus-ring: #2f6b1e;
+  --danger: #b3261e;
+  --danger-tint: #fbe9e7;
+  /* Night surfaces stay dark in both themes: the footer and the About stat card */
+  --night: #16130f;
+  --on-night: #f6efe3;
+  --on-night-muted: #bdb2a2;
+  --night-accent: #f5c02e;
+  --night-hairline: #3a332a;
+  --elevation-card: 0 1px 2px rgba(31, 26, 20, 0.06), 0 4px 12px rgba(31, 26, 20, 0.08);
+  --elevation-sunlit: 0 2px 4px rgba(31, 26, 20, 0.06), 0 10px 28px rgba(219, 163, 0, 0.28);
+  --elevation-form: 0 2px 4px rgba(31, 26, 20, 0.1), 0 16px 40px rgba(31, 26, 20, 0.18);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #16130f;
+    --surface-sunrise: #2a2112;
+    --surface-raised: #211d17;
+    --surface-stone: #1c1813;
+    --ink: #f6efe3;
+    --ink-muted: #bdb2a2;
+    --inti: #f5c02e;
+    --inti-hover: #ffd25c;
+    --inti-deep: #f5c02e;
+    --terrace: #95cf72;
+    --terrace-hover: #b2e094;
+    --terrace-tint: #1f2c17;
+    --terrace-fill: #24561a;
+    --on-terrace: #f6efe3;
+    --border: #8a7f70;
+    --hairline: #3a332a;
+    --focus-ring: #f5c02e;
+    --danger: #ff8a80;
+    --danger-tint: #3a1a17;
+    --night: #0e0c09;
+    --elevation-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.35);
+    --elevation-sunlit: 0 2px 4px rgba(0, 0, 0, 0.4), 0 10px 28px rgba(245, 192, 46, 0.18);
+    color-scheme: dark;
+  }
+}
+
 @theme inline {
-  --color-brand-green: #77B255;
-  --color-brand-green-dark: #5a9a3a;
-  --color-brand-green-light: #f0fae8;
-  --color-brand-pink: #FF8284;
-  --color-brand-black: #181818;
+  --color-surface: var(--surface);
+  --color-surface-sunrise: var(--surface-sunrise);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-stone: var(--surface-stone);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-inti: var(--inti);
+  --color-inti-hover: var(--inti-hover);
+  --color-on-inti: var(--on-inti);
+  --color-inti-deep: var(--inti-deep);
+  --color-terrace: var(--terrace);
+  --color-terrace-hover: var(--terrace-hover);
+  --color-terrace-tint: var(--terrace-tint);
+  --color-terrace-fill: var(--terrace-fill);
+  --color-on-terrace: var(--on-terrace);
+  --color-border: var(--border);
+  --color-hairline: var(--hairline);
+  --color-focus-ring: var(--focus-ring);
+  --color-danger: var(--danger);
+  --color-danger-tint: var(--danger-tint);
+  --shadow-card: var(--elevation-card);
+  --shadow-sunlit: var(--elevation-sunlit);
+  --shadow-form: var(--elevation-form);
+  --color-night: var(--night);
+  --color-on-night: var(--on-night);
+  --color-on-night-muted: var(--on-night-muted);
+  --color-night-accent: var(--night-accent);
+  --color-night-hairline: var(--night-hairline);
+  --font-sans: var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  --font-display: var(--font-bricolage-grotesque), var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
 }
 
 body {
-  color: #181818;
-  font-family: var(--font-plus-jakarta-sans), system-ui, sans-serif;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+h1,
+h2 {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
 }

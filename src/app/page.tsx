@@ -1,4 +1,3 @@
-import Script from "next/script";
 import { safeJsonLd } from "@/lib/json-ld";
 import { getAllApprenticeships } from "@/lib/apprenticeships";
 import contributorsData from "@/data/contributors.json";
@@ -21,15 +20,6 @@ export default function Home() {
     url: "https://apprenticeships.me",
     description:
       "A curated directory of 90+ tech apprenticeship programs to help you find a new career learning from the industry itself.",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate:
-          "https://apprenticeships.me/#search?q={search_term_string}",
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 
   const itemListSchema = {
@@ -50,15 +40,10 @@ export default function Home() {
 
   return (
     <>
-      <Script
-        id="schema-website"
+      {/* Plain script tags, not next/script, so the data is in the HTML for crawlers that don't run JavaScript */}
+      <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: safeJsonLd(websiteSchema) }}
-      />
-      <Script
-        id="schema-itemlist"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: safeJsonLd(itemListSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd([websiteSchema, itemListSchema]) }}
       />
       <Hero />
       <Intro />

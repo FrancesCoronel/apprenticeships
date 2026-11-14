@@ -62,9 +62,12 @@ describe("home page", () => {
 });
 
 describe("robots and sitemap", () => {
-  it("allows everything and points at the sitemap", () => {
+  it("allows everything, names AI crawlers as welcome and points at the sitemap", () => {
     expect(robots()).toEqual({
-      rules: { userAgent: "*", allow: "/" },
+      rules: [
+        { userAgent: "*", allow: "/" },
+        { userAgent: expect.arrayContaining(["GPTBot", "ClaudeBot", "Google-Extended"]), allow: "/" },
+      ],
       sitemap: "https://apprenticeships.me/sitemap.xml",
     });
   });

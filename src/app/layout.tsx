@@ -44,6 +44,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://apprenticeships.me",
+    // Machine-readable copies of the directory for AI agents and tools
+    types: {
+      "application/json": "/apprenticeships.json",
+      "text/markdown": "/llms.txt",
+    },
   },
   openGraph: {
     title: "Apprenticeships.me",

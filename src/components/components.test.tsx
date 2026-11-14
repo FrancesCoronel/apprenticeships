@@ -54,6 +54,12 @@ describe("static sections", () => {
     );
     expect(screen.getByText("What is an apprenticeship?")).toBeTruthy();
     expect(screen.getByText("Apprentice.at")).toBeTruthy();
+    expect(screen.getByText("Hire Me").closest("a")?.getAttribute("href")).toBe(
+      "https://engjobsearch.com/",
+    );
+    expect(screen.getByText("Latina Dev").closest("a")?.getAttribute("href")).toBe(
+      "https://latina.dev/",
+    );
     expect(screen.getByText(new RegExp(`${new Date().getFullYear()} Apprenticeships.me`))).toBeTruthy();
   });
 

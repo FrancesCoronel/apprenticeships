@@ -32,7 +32,7 @@ export default function GlobalError({
           <button
             type="button"
             onClick={reset}
-            className="inline-block bg-inti text-on-inti font-bold rounded-sm px-6 py-3 hover:bg-inti-hover transition-colors"
+            className="inline-flex items-center min-h-12 bg-inti text-on-inti font-bold rounded-full px-7 py-3 hover:bg-inti-hover transition-colors"
           >
             Try again
           </button>

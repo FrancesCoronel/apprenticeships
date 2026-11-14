@@ -1,12 +1,13 @@
 # Inti design system
 
-Inti is the design system for Apprenticeships.me, a free directory of development and design apprenticeships for people early in their careers. It takes its name and light from Inti, the sun at the centre of Inca religion, and its structure from the andenes, the farming terraces that Andean communities cut into mountainsides so crops could grow at every altitude. Together they carry one idea: growth happens step by step, in good light, on ground that other people built for you. That is what an apprenticeship is.
+Inti is the design system for Apprenticeships.me, a free directory of development and design apprenticeships for people early in their careers. It takes its name and light from Inti, the sun at the centre of Inca religion, and its green from the andenes, the farming terraces that Andean communities cut into mountainsides so crops could grow at every altitude. Together they carry one idea: growth happens in good light, on ground that other people built for you. That is what an apprenticeship is.
 
 ## Principles
 
-- **Sunlight, not spotlight.** Gold (`inti`) is warmth and invitation. Use it for the one action that matters on a screen and for the sun mark. A page with gold everywhere has no sun.
-- **Every step counts.** The terrace rule (three steps, rising left to right) appears under every section heading. Do not use it as decoration anywhere else.
-- **Built by many hands.** Terraces were communal work. The directory is too: contributor avatars, "Contribute" links and credit stay prominent.
+- **A day under the sun.** A page moves through the day: it opens on a sunrise band (`surface-sunrise`) with the sun rising from its edge, works through daylight (`surface`), passes one full-gold band at the call to contribute, and ends on a night footer.
+- **Sunlight, not spotlight.** Gold (`inti`) is warmth and invitation. Use it for the one action that matters in a section, for the sun, and for the single gold band. A page with gold everywhere has no sun.
+- **Big and plain.** Headlines are large and heavy, and say one thing. Sections get room. Nothing decorative that is not the sun.
+- **Built by many hands.** The directory is communal work: contributor avatars, "Add a program" and credit stay prominent.
 - **Plain words for new people.** Readers are often career changers or students. No jargon, no hype.
 
 ## Voice and copy
@@ -15,41 +16,46 @@ Inti is the design system for Apprenticeships.me, a free directory of developmen
 - Sentence case for headings, buttons and labels ("Visit apprenticeship", not "Visit Apprenticeship").
 - Be concrete: name the company, the length, the city. "A 16-week paid program in Seattle" beats "an amazing opportunity".
 - No exclamation marks, no emoji in UI copy. Errors say what happened and what to do: "Couldn't submit. Check the link starts with https:// and try again."
-- Real copy to reuse: hero "Find a new career learning from the industry itself."; search placeholder "Search by company, description, or location"; empty state "No apprenticeships match “{query}”. Try a city or a skill instead."
+- Real copy to reuse: hero "Find a new career learning from the industry itself."; search placeholder "Try “Remote” or “design”"; empty state "No apprenticeships found matching “{query}”"; call to contribute "Know a program we’re missing?"
 
 ## Colour
 
 Two themes: **Day** (`light`, first) and **Night** (`dark`). Always style through tokens, never literals.
 
-- Page ground is `surface`. Alternate full-width sections between `surface` and `surface-sunrise`, starting with `surface` for the hero.
-- Cards and the submit form sit on `surface-raised` with `shadow-card` and a 1px `hairline` edge. On hover a card takes `shadow-sunlit`.
+- The navbar and hero share one `surface-sunrise` band. Listing pages open on the same band.
+- Page ground is `surface`. The About section sits on `surface-stone`.
+- Cards and the submit form sit on `surface-raised` with a 1px `hairline` edge. Cards take `shadow-card` at rest and `shadow-sunlit` on hover; the form takes `shadow-form`.
 - Text is `ink`; secondary text is `ink-muted`. Both pass 4.5:1 on every surface in both themes.
-- The primary button is `inti` with `on-inti` text, hover `inti-hover`. One primary button per view.
-- Links and secondary buttons are `terrace`, hover `terrace-hover`. Links are bold and underline on hover.
-- `inti` is never text and never a 1px line on Day surfaces. Where gold must be text or a stroke, use `inti-deep`.
-- The footer is `terrace-fill` with `on-terrace` text.
-- Success: `terrace-tint` ground, `ink` text, the word "Submitted" or a check. Error: `danger-tint` ground, `danger` text, the word "Couldn't". Never colour alone.
+- The primary button is `inti` with `on-inti` text, hover `inti-hover`. One per section.
+- The dark button is `ink` with `surface-sunrise` text. Use it on gold (the submit button) and for "Add a program" in the navbar. Selected filter pills take the same colours.
+- Links are `terrace`, hover `terrace-hover`, and bold. `terrace-tint` with `terrace` text marks remote locations.
+- `inti` is never text and never a 1px line on Day surfaces. Where gold must be text or a stroke (eyebrow labels), use `inti-deep`.
+- The gold band is `inti` ground with `on-inti` text. Use it once per page, for the call to contribute.
+- Night surfaces stay dark in both themes: the footer and the About stat card are `night` with `on-night` text, `on-night-muted` secondary text, `night-accent` for gold text and `night-hairline` rules.
+- Success: `terrace-tint` ground, `ink` text. Error: `danger-tint` ground, `danger` text. Never colour alone; the message says what happened.
 - Keyboard focus everywhere: `outline: 2px solid var(--focus-ring); outline-offset: 2px`.
 
 ## Type
 
-- Headlines use the `display` family (Bricolage Grotesque), loaded from Google Fonts at weights 600 and 700. Use it for `display-xl`, `display-lg` and `heading` only.
-- Everything else uses the `sans` family (Plus Jakarta Sans, the face the site already uses), weights 400, 500 and 700.
+- Headlines use the `display` family (Bricolage Grotesque): weight 800 for the hero, listing titles, the gold band and big numbers, 700 for section titles and card titles. Set them tight (line height near 1, letter spacing around -0.03em at the largest sizes).
+- The hero headline is 88px on wide screens and 46px on phones. Section titles are 48px and 30px.
+- Everything else uses the `sans` family (Plus Jakarta Sans), weights 400, 500 and 700.
+- Eyebrow labels are 13px, bold, uppercase and widely tracked.
 - Keep running text near 65 characters a line. Headings take `text-wrap: balance`.
-- Counts and dates use `font-variant-numeric: tabular-nums`.
+- Counts use `font-variant-numeric: tabular-nums`.
 
 ## Shape, space and depth
 
-- Spacing follows a 4px base: `space-1` to `space-20`. Sections pad `space-8` on phones, `space-12` at md, `space-16` at lg, `space-20` at xl, as the site does today.
-- Buttons and inputs take `radius-sm`; cards, the form and messages `radius-md`; chips and terrace steps `radius-pill`.
-- Two shadows only: `shadow-card` at rest and `shadow-sunlit` on hover.
+- Content sits in a 1280px column with 48px side padding (20px on phones). Sections pad 96px top and bottom (56px on phones).
+- Buttons, filter pills, the search field and chips are fully round (`rounded-full`). Form fields and messages take `radius-md` (12px), cards `radius-lg` (20px), the submit form and the stat card `radius-xl` (28px).
+- Buttons and pills are at least 44px tall.
+- Three shadows only: `shadow-card` at rest, `shadow-sunlit` on hover and under the hero search, `shadow-form` under the submit form.
 
 ## Motifs
 
-- **Sun mark** (`public/images/logo.svg` (also `src/app/icon.svg`)): the original Apprenticeships.me sprout inside a gold sun disc with 24 alternating rays. Use the Night variant in the design system reference on Night surfaces. Minimum size 24px. Keep clear space of half the disc's radius. Never add a face, eyes or a mouth to the sun.
-- **Terrace rule** (`src/components/section-heading.tsx`): two `terrace` steps and a top `inti` step, 96 × 12px, under every section heading. It reads as a career rising toward the light.
-- **Sunrise rays** (in the design system reference): a half sun on the horizon. Use once per page at most, behind the hero illustration or on the 404 page.
-- Illustrations stay flat and geometric. Show people learning and working together. No stock photos of faces.
+- **Sun mark** (`public/images/logo.svg`, also `src/app/icon.svg`): a gold disc with an inner ring and 24 alternating rays. Nothing sits inside it. It is the logo at small sizes and the page's main image at large ones: cropped by the bottom edge of the sunrise band on the home and listing pages, and by the corner of the About stat card. Minimum size 24px. Never add a face, eyes or a mouth to the sun.
+- **Rising sun eyebrow** (`Eyebrow` and `SectionHeading` in `src/components/section-heading.tsx`): a small half sun on the horizon beside a caps label ("The directory", "About", "Community"), above every section title. Use `SectionHeading` for section titles rather than a bare `h2`.
+- No other illustration. Company logos on cards are the only other imagery; no stock photos of faces.
 
 ## Motion
 
@@ -62,7 +68,7 @@ Two themes: **Day** (`light`, first) and **Night** (`dark`). Always style throug
 Inti is not a mascot. Inca religion and its symbols still matter to Andean communities today, many of them Quechua speakers, and Inti Raymi, the festival of the sun at the June solstice, is still celebrated in Cusco every 24 June. The sun with a face appears on the flags of Argentina and Uruguay as the Sol de Mayo. So:
 
 - Draw the sun as an abstract disc with rays. Never give it a face, a costume or a personality, and never animate it as a character.
-- Do not use the chakana (the stepped Andean cross) or copy specific textile (tocapu) designs. They carry meanings that are not ours to borrow. The terrace step is an architectural and agricultural form and is used here for that reason.
+- Do not use the chakana (the stepped Andean cross) or copy specific textile (tocapu) designs. They carry meanings that are not ours to borrow. The system uses no stepped motif at all; "terrace" survives only as the name of the green, after the farming terraces.
 - Say "Inca", not "Aztec" or "Mayan"; those are different peoples and regions. In Quechua, *inti* means sun and *quri* means gold.
 - If the site explains the name, keep it short and factual, and credit the Andean peoples whose sun and terraces inspired it. Invite feedback from Quechua and Andean readers, and change course if they ask.
 
@@ -74,9 +80,9 @@ Inti is not a mascot. Inca religion and its symbols still matter to Andean commu
 
 ## Not covered yet
 
-- The hero (`header.svg`) and About (`section-one.svg`) illustrations still use the old `#77b255` green. Recolour them to `terrace` and `inti` in a follow-up.
+- `apple-icon.png` and the social preview image (`public/images/readme.jpg`) still show the old brand.
 - Fonts are hosted by Google Fonts; no font files are stored here.
 
 ## Tokens in code
 
-Every colour token is a CSS variable in `src/app/globals.css`, with Night values under `prefers-color-scheme: dark`, and a Tailwind colour of the same name: `bg-surface-sunrise`, `text-ink-muted`, `bg-inti`, `text-on-inti`, `text-terrace`, `border-hairline` and so on. Shadows are `shadow-card` and `shadow-sunlit`; radii `rounded-sm` (6px) and `rounded-md` (12px); the headline face is `font-display`. Don't write hex values or Tailwind's stock greys in components.
+Every colour token is a CSS variable in `src/app/globals.css`, with Night values under `prefers-color-scheme: dark`, and a Tailwind colour of the same name: `bg-surface-sunrise`, `text-ink-muted`, `bg-inti`, `text-on-inti`, `text-terrace`, `border-hairline` and so on. The night tokens are `bg-night`, `text-on-night`, `text-on-night-muted`, `text-night-accent` and `border-night-hairline`. Shadows are `shadow-card`, `shadow-sunlit` and `shadow-form`; radii `rounded-md` (12px), `rounded-lg` (20px), `rounded-xl` (28px) and `rounded-full`; the headline face is `font-display`. Don't write hex values or Tailwind's stock greys in components.

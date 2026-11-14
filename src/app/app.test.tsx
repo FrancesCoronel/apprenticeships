@@ -51,7 +51,7 @@ describe("home page", () => {
   it("lists every apprenticeship", () => {
     const html = renderToStaticMarkup(<Home />);
     expect(html).toContain(`Showing ${getAllSlugs().length} of ${getAllSlugs().length} apprenticeships`);
-    expect(html).toContain("Want to contribute?");
+    expect(html).toContain("Know a program we’re missing?");
   });
 
   it("renders a 404 with a way home", () => {

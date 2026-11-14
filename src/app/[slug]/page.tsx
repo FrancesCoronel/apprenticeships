@@ -3,10 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { safeJsonLd } from "@/lib/json-ld";
+import { Eyebrow } from "@/components/section-heading";
 import {
   getAllSlugs,
   getApprenticeshipBySlug,
 } from "@/lib/apprenticeships";
+
+const factLabel = "text-xs leading-4 font-bold uppercase tracking-wider text-ink-muted";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -102,73 +105,115 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: safeJsonLd([schema, breadcrumbs]) }}
       />
-      <section className="p-8 md:p-12 lg:p-16 xl:p-20">
-      <div className="max-w-4xl mx-auto">
-        <Link
-          href="/#search"
-          className="inline-flex items-center text-terrace hover:text-terrace-hover mb-8 font-bold hover:underline transition-all"
-        >
-          &larr; Back to all apprenticeships
-        </Link>
+      <section className="relative overflow-hidden bg-surface-sunrise">
+        <Image
+          src="/images/logo.svg"
+          alt=""
+          aria-hidden="true"
+          width={560}
+          height={560}
+          className="pointer-events-none absolute max-w-none size-[320px] -right-24 -bottom-[190px] md:size-[560px] md:-right-[60px] md:-bottom-[330px]"
+        />
+        <div className="relative max-w-7xl mx-auto px-5 pt-2 pb-36 md:px-12 md:pt-6 md:pb-[72px] flex flex-col items-start gap-5">
+          <Link
+            href="/#search"
+            className="inline-flex items-center min-h-11 font-bold text-terrace hover:text-terrace-hover hover:underline"
+          >
+            &larr; Back to all apprenticeships
+          </Link>
+          {apprenticeship.location.length > 0 && (
+            <ul className="flex flex-wrap gap-2 max-w-[760px]" aria-label="Locations">
+              {apprenticeship.location.map((loc) => (
+                <li
+                  key={loc}
+                  className="rounded-full bg-surface-raised border border-hairline px-3 py-1 text-sm font-medium text-ink-muted"
+                >
+                  {loc}
+                </li>
+              ))}
+            </ul>
+          )}
+          <h1 className="max-w-[760px] font-display font-extrabold text-5xl md:text-[80px] md:leading-none tracking-[-0.03em]">
+            {apprenticeship.company}
+          </h1>
+        </div>
+      </section>
 
-        <div className="bg-surface-raised border border-hairline rounded-md shadow-card overflow-hidden">
-          <div className="relative w-full h-64 md:h-80">
+      <div className="max-w-7xl mx-auto px-5 py-12 md:px-12 md:pt-16 md:pb-24 flex flex-wrap items-start gap-10 md:gap-12">
+        <div className="flex-[2_1_480px] min-w-0 flex flex-col items-start gap-8">
+          <h2>
+            <Eyebrow>About the program</Eyebrow>
+          </h2>
+          <p className="max-w-[640px] text-xl leading-8 md:text-[22px] md:leading-9">
+            {apprenticeship.description}
+          </p>
+          <a
+            href={apprenticeship.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center min-h-14 rounded-full bg-inti text-on-inti text-lg font-bold px-8 py-3.5 shadow-sunlit hover:bg-inti-hover transition-colors"
+          >
+            Visit apprenticeship &rarr;
+          </a>
+          {apprenticeship.content && (
+            <div
+              className="pt-8 border-t border-hairline prose max-w-none"
+              dangerouslySetInnerHTML={{ __html: apprenticeship.content }}
+            />
+          )}
+        </div>
+        <aside className="flex-[1_1_320px] min-w-0 rounded-lg overflow-hidden border border-hairline bg-surface-raised shadow-card">
+          <div className="relative h-48 bg-white border-b border-hairline">
             <Image
               src={`/images/apprenticeships/${apprenticeship.image}`}
               alt={`${apprenticeship.company} apprenticeship program`}
               fill
-              className="object-contain p-8 bg-white"
-              sizes="(max-width: 768px) 100vw, 896px"
+              className="object-contain p-8"
+              sizes="(max-width: 768px) 100vw, 420px"
               priority
             />
           </div>
-
-          <div className="p-8">
-            <h1 className="font-display text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              {apprenticeship.company}
-            </h1>
-
-            <p className="text-ink-muted text-lg mb-6">
-              {apprenticeship.description}
-            </p>
-
+          <dl className="px-6 py-6 md:px-8 flex flex-col gap-4">
+            <div className="flex flex-col gap-1">
+              <dt className={factLabel}>Company</dt>
+              <dd className="font-bold">{apprenticeship.company}</dd>
+            </div>
             {apprenticeship.location.length > 0 && (
-              <div className="mb-6">
-                <h2 className="font-bold text-xs text-ink-muted uppercase tracking-widest mb-2">
-                  Locations
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                  {apprenticeship.location.map((loc) => (
-                    <span
-                      key={loc}
-                      className="inline-block bg-surface-stone rounded-full px-4 py-1 text-sm text-ink-muted"
-                    >
-                      {loc}
-                    </span>
-                  ))}
-                </div>
+              <div className="flex flex-col gap-1">
+                <dt className={factLabel}>Locations</dt>
+                <dd className="font-bold">{apprenticeship.location.join(" · ")}</dd>
               </div>
             )}
-
-            <a
-              href={apprenticeship.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-inti text-on-inti font-bold rounded-sm px-6 py-3 hover:bg-inti-hover transition-colors"
-            >
-              Visit apprenticeship &rarr;
-            </a>
-
-            {apprenticeship.content && (
-              <div
-                className="mt-8 pt-8 border-t border-hairline prose prose-green max-w-none"
-                dangerouslySetInnerHTML={{ __html: apprenticeship.content }}
-              />
-            )}
-          </div>
-        </div>
+            <div className="flex flex-col gap-1">
+              <dt className={factLabel}>Website</dt>
+              <dd>
+                <a
+                  href={apprenticeship.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold text-terrace hover:text-terrace-hover underline underline-offset-4 [overflow-wrap:anywhere]"
+                >
+                  {new URL(apprenticeship.link).hostname.replace(/^www\./, "")}
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </aside>
       </div>
-    </section>
+
+      <section className="bg-inti text-on-inti">
+        <div className="max-w-7xl mx-auto px-5 py-12 md:px-12 md:py-14 flex flex-wrap items-center justify-between gap-6">
+          <h2 className="flex-[1_1_380px] min-w-0 font-display font-extrabold text-3xl md:text-[40px] md:leading-[44px] tracking-tight">
+            Know a program we&rsquo;re missing?
+          </h2>
+          <Link
+            href="/#contribute"
+            className="inline-flex items-center min-h-13 rounded-full bg-ink text-surface-sunrise font-bold px-7 py-3 hover:opacity-90 transition-opacity"
+          >
+            Submit an apprenticeship
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

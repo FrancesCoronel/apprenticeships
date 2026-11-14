@@ -8,37 +8,40 @@ interface Props {
 
 export default function Contributors({ contributors }: Props) {
   return (
-    <section className="p-8 md:p-12 lg:p-16 xl:p-20" id="contributors">
-      <div className="max-w-6xl mx-auto text-center">
-        <SectionHeading align="center">Contributors to Apprenticeships.me</SectionHeading>
-        <p className="mt-8 mb-8 text-ink-muted">
+    <section
+      className="max-w-7xl mx-auto px-5 py-14 md:px-12 md:py-24 flex flex-wrap items-center justify-between gap-8 md:gap-12"
+      id="contributors"
+    >
+      <div className="flex-[1_1_380px] min-w-0 flex flex-col gap-3">
+        <SectionHeading eyebrow="Community">
+          Built by {contributors.length} contributors
+        </SectionHeading>
+        <p className="text-lg leading-7 text-ink-muted">
           This site was made possible because of contributors like you.
         </p>
-        <ul className="flex flex-wrap justify-center gap-4">
-          {contributors.map((c) => (
-            <li
-              key={c.user}
-              className="rounded-full shadow hover:shadow-lg transition-shadow"
-            >
-              <a
-                href={c.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                title={c.user}
-              >
-                <Image
-                  src={c.avatar}
-                  alt={c.user}
-                  width={96}
-                  height={96}
-                  className="w-24 h-24 rounded-full"
-                  unoptimized
-                />
-              </a>
-            </li>
-          ))}
-        </ul>
       </div>
+      <ul className="flex-[1_1_420px] min-w-0 flex flex-wrap gap-3">
+        {contributors.map((c) => (
+          <li key={c.user}>
+            <a
+              href={c.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={c.user}
+              className="block rounded-full border-[3px] border-inti hover:border-inti-hover transition-colors"
+            >
+              <Image
+                src={c.avatar}
+                alt={c.user}
+                width={80}
+                height={80}
+                className="size-[74px] rounded-full"
+                unoptimized
+              />
+            </a>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 }

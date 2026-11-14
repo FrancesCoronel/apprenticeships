@@ -4,6 +4,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { safeJsonLd } from "@/lib/json-ld";
 import { Eyebrow } from "@/components/section-heading";
+import { ButtonLink } from "@/components/button";
+import { Card, LogoPanel } from "@/components/card";
+import { Chip } from "@/components/chip";
 import {
   getAllSlugs,
   getApprenticeshipBySlug,
@@ -124,12 +127,9 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
           {apprenticeship.location.length > 0 && (
             <ul className="flex flex-wrap gap-2 max-w-[760px]" aria-label="Locations">
               {apprenticeship.location.map((loc) => (
-                <li
-                  key={loc}
-                  className="rounded-full bg-surface-raised border border-hairline px-3 py-1 text-sm font-medium text-ink-muted"
-                >
+                <Chip as="li" key={loc} tone="outline">
                   {loc}
-                </li>
+                </Chip>
               ))}
             </ul>
           )}
@@ -147,14 +147,9 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
           <p className="max-w-[640px] text-xl leading-8 md:text-[22px] md:leading-9">
             {apprenticeship.description}
           </p>
-          <a
-            href={apprenticeship.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center min-h-14 rounded-full bg-inti text-on-inti text-lg font-bold px-8 py-3.5 shadow-sunlit hover:bg-inti-hover transition-colors"
-          >
+          <ButtonLink href={apprenticeship.link} target="_blank" rel="noopener noreferrer" size="lg">
             Visit apprenticeship &rarr;
-          </a>
+          </ButtonLink>
           {apprenticeship.content && (
             <div
               className="pt-8 border-t border-hairline prose max-w-none"
@@ -162,8 +157,8 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
             />
           )}
         </div>
-        <aside className="flex-[1_1_320px] min-w-0 rounded-lg overflow-hidden border border-hairline bg-surface-raised shadow-card">
-          <div className="relative h-48 bg-white border-b border-hairline">
+        <Card as="aside" className="flex-[1_1_320px] min-w-0">
+          <LogoPanel className="h-48">
             <Image
               src={`/images/apprenticeships/${apprenticeship.image}`}
               alt={`${apprenticeship.company} apprenticeship program`}
@@ -172,7 +167,7 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
               sizes="(max-width: 768px) 100vw, 420px"
               priority
             />
-          </div>
+          </LogoPanel>
           <dl className="px-6 py-6 md:px-8 flex flex-col gap-4">
             <div className="flex flex-col gap-1">
               <dt className={factLabel}>Company</dt>
@@ -198,20 +193,17 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
               </dd>
             </div>
           </dl>
-        </aside>
+        </Card>
       </div>
 
-      <section className="bg-inti text-on-inti">
+      <section className="band-inti bg-inti text-on-inti">
         <div className="max-w-7xl mx-auto px-5 py-12 md:px-12 md:py-14 flex flex-wrap items-center justify-between gap-6">
           <h2 className="flex-[1_1_380px] min-w-0 font-display font-extrabold text-3xl md:text-[40px] md:leading-[44px] tracking-tight">
             Know a program we&rsquo;re missing?
           </h2>
-          <Link
-            href="/#contribute"
-            className="inline-flex items-center min-h-13 rounded-full bg-ink text-surface-sunrise font-bold px-7 py-3 hover:opacity-90 transition-opacity"
-          >
+          <ButtonLink href="/#contribute" variant="dark">
             Submit an apprenticeship
-          </Link>
+          </ButtonLink>
         </div>
       </section>
     </>

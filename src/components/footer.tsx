@@ -30,7 +30,7 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="bg-night text-on-night" id="resources">
+    <footer className="band-night bg-night text-on-night" id="resources">
       <div className="max-w-7xl mx-auto px-5 pt-12 pb-8 md:px-12 md:pt-16 md:pb-10 flex flex-col gap-10">
         <div className="flex flex-wrap justify-between gap-10 md:gap-12">
           <div className="flex-[1_1_300px] min-w-0 flex flex-col items-start gap-4">

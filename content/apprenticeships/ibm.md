@@ -2,7 +2,7 @@
 company: "IBM"
 description: "The IBM Apprenticeship Program creates new pathways to employment for candidates without an advanced degree."
 image: "ibm.jpg"
-link: "https://www.ibm.com/careers/us-en/"
+link: "https://www.ibm.com/careers/blog/the-ibm-apprenticeship-program-no-degree-no-problem"
 location:
   - "Multiple Locations"
 ---

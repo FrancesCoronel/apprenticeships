@@ -1,10 +1,5 @@
 const resources = [
   {
-    name: "Apprentice.at",
-    href: "https://apprentice.at/",
-    description: "A directory of apprenticeships",
-  },
-  {
     name: "Hire Me",
     href: "https://engjobsearch.com/",
     description:

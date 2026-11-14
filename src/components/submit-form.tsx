@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { submitApprenticeship } from "@/actions/submit";
+import { Button } from "./button";
 
 export default function SubmitForm() {
   const [status, setStatus] = useState<{
@@ -76,13 +77,14 @@ export default function SubmitForm() {
             <textarea className="border border-border rounded-md w-full py-3 px-4 bg-surface-raised text-ink leading-6 placeholder:text-ink-muted" id="description" name="description" placeholder="Add any other details" rows={3} />
           </div>
 
-          <button
+          <Button
             type="submit"
+            variant="dark"
             disabled={status.type === "loading"}
-            className="min-h-13 rounded-full bg-ink text-surface-sunrise font-bold px-8 py-3 hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+            className="disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status.type === "loading" ? "Submitting..." : "Submit apprenticeship"}
-          </button>
+          </Button>
 
           {status.type === "success" && (
             <div role="status" className="p-3 bg-terrace-tint text-ink rounded-md text-sm text-center">

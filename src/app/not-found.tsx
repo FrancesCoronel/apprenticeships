@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { ButtonLink } from "@/components/button";
 
 export default function NotFound() {
   return (
@@ -9,12 +9,7 @@ export default function NotFound() {
         <p className="text-ink-muted mb-8">
           Sorry, the page you&apos;re looking for doesn&apos;t exist.
         </p>
-        <Link
-          href="/"
-          className="inline-flex items-center min-h-12 bg-inti text-on-inti font-bold rounded-full px-7 py-3 hover:bg-inti-hover transition-colors"
-        >
-          Back to home
-        </Link>
+        <ButtonLink href="/">Back to home</ButtonLink>
       </div>
     </section>
   );

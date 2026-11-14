@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ButtonLink } from "./button";
 
 const GITHUB_REPO = "https://github.com/FrancesCoronel/apprenticeships";
 
@@ -39,13 +40,9 @@ export default function Navbar() {
             />
             GitHub
           </a>
-          <Link
-            href="/#contribute"
-            aria-label="Add a program"
-            className="inline-flex items-center min-h-11 rounded-full bg-ink text-surface-sunrise font-bold text-sm md:text-base px-4 md:px-5 hover:opacity-90 transition-opacity"
-          >
+          <ButtonLink href="/#contribute" aria-label="Add a program" variant="dark" size="sm">
             Add<span className="hidden sm:inline">&nbsp;a program</span>
-          </Link>
+          </ButtonLink>
         </div>
       </nav>
     </div>

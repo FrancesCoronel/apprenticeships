@@ -11,6 +11,8 @@
   --surface-sunrise: #fff3d1;
   --surface-raised: #ffffff;
   --surface-stone: #f5f0e6;
+  /* Behind company logos: white in both themes, since logos are drawn for white */
+  --surface-logo: #ffffff;
   --ink: #1f1a14;
   --ink-muted: #5c5246;
   --inti: #f2b705;
@@ -71,6 +73,7 @@
   --color-surface-sunrise: var(--surface-sunrise);
   --color-surface-raised: var(--surface-raised);
   --color-surface-stone: var(--surface-stone);
+  --color-surface-logo: var(--surface-logo);
   --color-ink: var(--ink);
   --color-ink-muted: var(--ink-muted);
   --color-inti: var(--inti);

@@ -54,7 +54,7 @@ describe("static sections", () => {
       </>,
     );
     expect(screen.getByText("What is an apprenticeship?")).toBeTruthy();
-    expect(screen.getByText("Apprentice.at")).toBeTruthy();
+    expect(screen.queryByText("Apprentice.at")).toBeNull();
     expect(screen.getByText("Hire Me").closest("a")?.getAttribute("href")).toBe(
       "https://engjobsearch.com/",
     );

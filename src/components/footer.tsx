@@ -7,7 +7,6 @@ const columns = [
   {
     title: "Related resources",
     links: [
-      { name: "Apprentice.at", href: "https://apprentice.at/", description: "A directory of apprenticeships" },
       {
         name: "Hire Me",
         href: "https://engjobsearch.com/",

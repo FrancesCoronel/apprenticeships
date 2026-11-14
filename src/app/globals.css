@@ -117,6 +117,19 @@ body {
   outline-offset: 2px;
 }
 
+/*
+ * Focus rings on fixed-colour bands. On gold, a gold ring would vanish in Night,
+ * so it turns ink. On night surfaces, the Day terrace ring is under 3:1, so it
+ * turns gold.
+ */
+.band-inti {
+  --focus-ring: var(--on-inti);
+}
+
+.band-night {
+  --focus-ring: var(--night-accent);
+}
+
 h1,
 h2 {
   text-wrap: balance;

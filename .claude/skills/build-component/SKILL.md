@@ -19,7 +19,8 @@ Inti is the site's brand: sunlight gold and terrace green, "a day under the sun"
    - Gold is for the one action that matters per section, the sun, and the single gold band. `inti` is never text or a 1px line on Day surfaces; use `inti-deep`.
    - Headlines in `font-display` (800 hero, 700 section and card titles), body in sans. Sentence case everywhere, no exclamation marks or emoji, speak to "you".
    - Buttons and pills are `rounded-full` and at least 44px tall (`min-h-11`).
-   - Keyboard focus stays visible (the global `:focus-visible` ring); don't remove outlines.
+   - Keyboard focus stays visible (the global `:focus-visible` ring); don't remove outlines. Any gold (`bg-inti`) band also takes `band-inti`, and any `bg-night` surface takes `band-night`, so the focus ring keeps 3:1 contrast. Tab through the new UI in both themes to check.
+   - Run axe (for example axe-core injected with Playwright) on the pages you changed, in both themes and at phone width, and fix every WCAG 2.2 AA violation.
    - Hover transitions are colour and shadow only; nothing moves under `prefers-reduced-motion`.
    - No new illustration or icons beyond the sun mark; never give the sun a face; no chakana or stepped motifs.
 5. **Check both themes.** Run `npm run dev`, then look at the change with the system set to light and to dark (Playwright `colorScheme: "light"` and `"dark"` works), on a 1280px and a 390px wide viewport. Text must stay readable on every surface.

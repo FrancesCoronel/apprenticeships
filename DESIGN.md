@@ -31,8 +31,8 @@ Two themes: **Day** (`light`, first) and **Night** (`dark`). Always style throug
 - The dark button is `ink` with `surface-sunrise` text. Use it on gold (the submit button) and for "Add a program" in the navbar. Selected filter pills take the same colours.
 - Links are `terrace`, hover `terrace-hover`, and bold. `terrace-tint` with `terrace` text marks remote locations.
 - `inti` is never text and never a 1px line on Day surfaces. Where gold must be text or a stroke (eyebrow labels), use `inti-deep`.
-- The gold band is `inti` ground with `on-inti` text. Use it once per page, for the call to contribute.
-- Night surfaces stay dark in both themes: the footer and the About stat card are `night` with `on-night` text, `on-night-muted` secondary text, `night-accent` for gold text and `night-hairline` rules.
+- The gold band is `inti` ground with `on-inti` text, plus the `band-inti` class, which turns the focus ring to `on-inti` (a gold ring would vanish on gold in Night). Use it once per page, for the call to contribute.
+- Night surfaces stay dark in both themes: the footer and the About stat card are `night`, plus the `band-night` class (it turns the focus ring to `night-accent`, since terrace is under 3:1 on night), with `on-night` text, `on-night-muted` secondary text, `night-accent` for gold text and `night-hairline` rules.
 - Success: `terrace-tint` ground, `ink` text. Error: `danger-tint` ground, `danger` text. Never colour alone; the message says what happened.
 - Keyboard focus everywhere: `outline: 2px solid var(--focus-ring); outline-offset: 2px`.
 

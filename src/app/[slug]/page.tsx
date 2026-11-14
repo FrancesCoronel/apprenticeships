@@ -196,7 +196,7 @@ export default async function ApprenticeshipPage({ params }: PageProps) {
         </Card>
       </div>
 
-      <section className="bg-inti text-on-inti">
+      <section className="band-inti bg-inti text-on-inti">
         <div className="max-w-7xl mx-auto px-5 py-12 md:px-12 md:py-14 flex flex-wrap items-center justify-between gap-6">
           <h2 className="flex-[1_1_380px] min-w-0 font-display font-extrabold text-3xl md:text-[40px] md:leading-[44px] tracking-tight">
             Know a program we&rsquo;re missing?

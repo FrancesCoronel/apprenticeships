@@ -20,7 +20,7 @@ export default function Intro() {
             information technology, cybersecurity, and software development.
           </p>
         </div>
-        <div className="relative overflow-hidden flex-[1_1_380px] min-w-0 rounded-xl bg-night text-on-night p-8 md:p-12 flex flex-col gap-4">
+        <div className="relative overflow-hidden flex-[1_1_380px] min-w-0 rounded-xl band-night bg-night text-on-night p-8 md:p-12 flex flex-col gap-4">
           <Image
             src="/images/logo.svg"
             alt=""

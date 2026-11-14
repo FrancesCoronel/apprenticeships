@@ -27,7 +27,7 @@ export default function SubmitForm() {
   }
 
   return (
-    <section className="bg-inti text-on-inti scroll-mt-4" id="contribute">
+    <section className="band-inti bg-inti text-on-inti scroll-mt-4" id="contribute">
       <div className="max-w-7xl mx-auto px-5 py-14 md:px-12 md:py-24 flex flex-wrap items-start gap-10 md:gap-16">
         <div className="flex-[1_1_380px] min-w-0 flex flex-col gap-5">
           <p className="text-[13px] leading-4 font-bold uppercase tracking-widest">Pass it on</p>

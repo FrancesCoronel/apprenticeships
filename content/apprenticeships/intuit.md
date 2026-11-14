@@ -1,8 +1,8 @@
 ---
 company: "Intuit"
-description: "Intuit's Apprenticeship program was launched to help diversify talent and create a pathway for those with untraditional backgrounds."
+description: "Intuit Career Pathways is a paid, 10-month software development apprenticeship for people entering tech through alternative routes. No computer science degree or prior technical experience is required."
 image: "intuit.jpg"
-link: "https://www.intuit.com/careers/"
+link: "https://www.intuit.com/careers/programs/career-pathways"
 location:
   - "San Diego, CA"
 ---

@@ -3,6 +3,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 
 vi.mock("next/font/google", () => ({
   Plus_Jakarta_Sans: () => ({ variable: "font-jakarta" }),
+  Bricolage_Grotesque: () => ({ variable: "font-bricolage" }),
 }));
 // next/script only renders inside a Next request, so stand in a plain tag
 vi.mock("next/script", () => ({
@@ -29,6 +30,7 @@ describe("root layout", () => {
     const html = renderToStaticMarkup(<RootLayout><p>hello</p></RootLayout>);
     expect(html).toContain('<html lang="en">');
     expect(html).toContain("font-jakarta");
+    expect(html).toContain("font-bricolage");
     expect(html).toContain("<main><p>hello</p></main>");
     expect(html).not.toContain("analytics");
     expect(html).not.toContain("googletagmanager");
@@ -49,7 +51,7 @@ describe("home page", () => {
   it("lists every apprenticeship", () => {
     const html = renderToStaticMarkup(<Home />);
     expect(html).toContain(`Showing ${getAllSlugs().length} of ${getAllSlugs().length} apprenticeships`);
-    expect(html).toContain("Want to contribute?");
+    expect(html).toContain("Know a program we’re missing?");
   });
 
   it("renders a 404 with a way home", () => {

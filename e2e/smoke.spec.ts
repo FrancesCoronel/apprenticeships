@@ -42,7 +42,7 @@ test("search filters the list", async ({ page }) => {
   const total = Number((await count.textContent())?.match(/of (\d+)/)?.[1]);
   expect(total).toBeGreaterThan(0);
 
-  const search = page.getByPlaceholder(/Search by company/);
+  const search = page.getByRole("searchbox", { name: "Search apprenticeships" });
   await search.fill("7Factor");
   await expect(count).not.toHaveText(`Showing ${total} of ${total} apprenticeships`);
   await expect(page.getByText("7Factor Software").first()).toBeVisible();

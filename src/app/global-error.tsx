@@ -25,14 +25,14 @@ export default function GlobalError({
     <html lang="en">
       <body className="min-h-screen flex items-center justify-center p-8 font-sans">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-[#3f7d22] mb-4">Something went wrong</h1>
-          <p className="text-gray-600 mb-8">
+          <h1 className="font-display text-4xl font-bold text-terrace mb-4">Something went wrong</h1>
+          <p className="text-ink-muted mb-8">
             An error occurred while loading this page. Please try again.
           </p>
           <button
             type="button"
             onClick={reset}
-            className="inline-block bg-[#3f7d22] text-white font-bold rounded px-6 py-3 hover:bg-[#2f6b19] transition-all"
+            className="inline-flex items-center min-h-12 bg-inti text-on-inti font-bold rounded-full px-7 py-3 hover:bg-inti-hover transition-colors"
           >
             Try again
           </button>

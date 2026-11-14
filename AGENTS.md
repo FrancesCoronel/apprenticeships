@@ -51,6 +51,8 @@ Next.js App Router with a `src/` directory, deployed on Vercel.
 | `src/actions/` | Server actions (the submit form opens a GitHub issue) |
 | `src/data/` | Static data such as `contributors.json` |
 
+Styles follow the Inti design system in [DESIGN.md](DESIGN.md): use its tokens (`bg-inti`, `text-terrace`, `bg-surface-sunrise`…) rather than hex values, and `SectionHeading` for section titles.
+
 Imports use the `@/` alias for `src/`. Environment variables are listed in `.env.example`. Never read or edit `.env` / `.env.local` (they hold a GitHub token); a hook blocks it.
 
 ## Checks

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { Button } from "@/components/button";
 import { reportError } from "@/lib/report-error";
 // This replaces the root layout, so it has to load the site styles itself
 import "./globals.css";
@@ -29,13 +30,7 @@ export default function GlobalError({
           <p className="text-ink-muted mb-8">
             An error occurred while loading this page. Please try again.
           </p>
-          <button
-            type="button"
-            onClick={reset}
-            className="inline-flex items-center min-h-12 bg-inti text-on-inti font-bold rounded-full px-7 py-3 hover:bg-inti-hover transition-colors"
-          >
-            Try again
-          </button>
+          <Button onClick={reset}>Try again</Button>
         </div>
       </body>
     </html>

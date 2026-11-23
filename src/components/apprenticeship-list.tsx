@@ -5,6 +5,7 @@ import { hasRemote } from "@/lib/locations";
 import { useSearchQuery } from "@/lib/search-query";
 import type { Apprenticeship } from "@/lib/types";
 import ApprenticeshipCard from "./apprenticeship-card";
+import { Button } from "./button";
 import SectionHeading from "./section-heading";
 
 interface Props {
@@ -84,13 +85,9 @@ export default function ApprenticeshipList({ apprenticeships }: Props) {
         </p>
       )}
       {visible.length < filtered.length && (
-        <button
-          type="button"
-          onClick={() => setExpanded(true)}
-          className="self-center inline-flex items-center min-h-12 rounded-full border-2 border-ink px-7 font-bold hover:bg-ink hover:text-surface-sunrise transition-colors"
-        >
+        <Button variant="outline" onClick={() => setExpanded(true)} className="self-center">
           Show all {apprenticeships.length} programs
-        </button>
+        </Button>
       )}
     </section>
   );

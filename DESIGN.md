@@ -79,6 +79,16 @@ Inti is not a mascot. Inca religion and its symbols still matter to Andean commu
 - Where an icon is needed (the GitHub link), use the brand's own SVG at 24px in `ink`.
 - Arrows in links are text characters (← →), not icons.
 
+## Storybook
+
+`npm run storybook` opens the living version of this document at http://localhost:6006 (`npm run build-storybook` builds it to `storybook-static/`).
+
+- **Inti** pages show the tokens, read live from `globals.css`: colour with a contrast check of every text and ground pair, type, space, shape and depth, and the motifs.
+- **Primitives** and **Sections** hold a story for every component in `src/components`, with the submit form's server action mocked so nothing is sent.
+- The **Theme** toolbar switches Day, Night and the system setting; the Accessibility panel runs axe on each story.
+
+Add a story beside any new shared component (`src/components/<name>.stories.tsx`), and add new tokens to `src/design-system/tokens.ts` so they appear on the token pages.
+
 ## Not covered yet
 
 - `apple-icon.png` and the social preview image (`public/images/readme.jpg`) still show the old brand.

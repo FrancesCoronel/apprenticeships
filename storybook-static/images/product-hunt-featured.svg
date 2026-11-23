@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="54" viewBox="0 0 250 54" role="img" aria-label="Featured on Product Hunt">
+  <rect x="0.5" y="0.5" width="249" height="53" rx="10" fill="#fff" stroke="#e0e0e0"/>
+  <circle cx="34" cy="27" r="20" fill="#ff6154"/>
+  <path fill="#fff" d="M29 17h8.5a6.5 6.5 0 0 1 0 13H33v7h-4zm4 4v5h4.5a2.5 2.5 0 0 0 0-5z"/>
+  <text x="64" y="22" fill="#4b587c" font-family="Helvetica, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing=".5">FEATURED ON</text>
+  <text x="63" y="42" fill="#4b587c" font-family="Helvetica, Arial, sans-serif" font-size="21" font-weight="700">Product Hunt</text>
+</svg>

@@ -53,6 +53,14 @@ Next.js App Router with a `src/` directory, deployed on Vercel.
 
 Imports use the `@/` alias for `src/`. Environment variables are listed in `.env.example`. Never read or edit `.env` / `.env.local` (they hold a GitHub token); a hook blocks it.
 
+## Building UI
+
+Every component and page follows the Inti design system in [DESIGN.md](DESIGN.md). The `build-component` skill (`.claude/skills/build-component/`) walks through it; read it before changing markup or styles.
+
+- Reuse the shared components: `Button` / `ButtonLink`, `Card` / `LogoPanel`, `Chip`, and `SectionHeading` / `Eyebrow` for section titles.
+- Style only with Inti tokens (`bg-inti`, `text-terrace`, `bg-surface-sunrise`…). ESLint rejects hex values, `rgb()` and Tailwind's stock colours in `src/`; add a token to `src/app/globals.css` instead.
+- Check new UI in both the Day (light) and Night (dark) themes, and update `DESIGN.md` when you add a token or a shared component.
+
 ## Checks
 
 CI comes from the shared workflows in [FrancesCoronel/workflows](https://github.com/FrancesCoronel/workflows). Before opening any PR (listing or code), run:

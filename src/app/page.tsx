@@ -1,12 +1,11 @@
-import Script from "next/script";
 import { safeJsonLd } from "@/lib/json-ld";
 import { getAllApprenticeships } from "@/lib/apprenticeships";
 import contributorsData from "@/data/contributors.json";
+import { hasRemote } from "@/lib/locations";
 import type { Contributor } from "@/lib/types";
 import Hero from "@/components/hero";
 import Intro from "@/components/intro";
 import ApprenticeshipList from "@/components/apprenticeship-list";
-import Resources from "@/components/resources";
 import Contributors from "@/components/contributors";
 import SubmitForm from "@/components/submit-form";
 
@@ -21,15 +20,6 @@ export default function Home() {
     url: "https://apprenticeships.me",
     description:
       "A curated directory of 90+ tech apprenticeship programs to help you find a new career learning from the industry itself.",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate:
-          "https://apprenticeships.me/#search?q={search_term_string}",
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 
   const itemListSchema = {
@@ -50,20 +40,18 @@ export default function Home() {
 
   return (
     <>
-      <Script
-        id="schema-website"
+      {/* Plain script tags, not next/script, so the data is in the HTML for crawlers that don't run JavaScript */}
+      <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: safeJsonLd(websiteSchema) }}
+        dangerouslySetInnerHTML={{ __html: safeJsonLd([websiteSchema, itemListSchema]) }}
       />
-      <Script
-        id="schema-itemlist"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: safeJsonLd(itemListSchema) }}
+      <Hero
+        programs={apprenticeships.length}
+        remote={apprenticeships.filter(hasRemote).length}
+        contributors={contributors.length}
       />
-      <Hero />
-      <Intro />
       <ApprenticeshipList apprenticeships={apprenticeships} />
-      <Resources />
+      <Intro />
       <Contributors contributors={contributors} />
       <SubmitForm />
     </>

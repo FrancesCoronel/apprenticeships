@@ -60,6 +60,20 @@ describe("listing page", () => {
     expect(html).toContain('href="https://acme.example"');
   });
 
+  it("puts the program and breadcrumbs in the HTML as JSON-LD", async () => {
+    vi.mocked(getApprenticeshipBySlug).mockResolvedValue(acme);
+    const html = renderToStaticMarkup(await ApprenticeshipPage(params("acme")));
+    const json = html.match(/<script type="application\/ld\+json">(.*?)<\/script>/)?.[1];
+    const [program, breadcrumbs] = JSON.parse(json ?? "[]");
+    expect(program).toMatchObject({
+      "@type": "EducationalOccupationalProgram",
+      name: "Acme Apprenticeship",
+      sameAs: "https://acme.example",
+      provider: { name: "Acme", areaServed: ["Denver, CO", "Remote"] },
+    });
+    expect(breadcrumbs.itemListElement[1]).toMatchObject({ name: "Acme", item: "https://apprenticeships.me/acme" });
+  });
+
   it("leaves out locations and the body when a listing has none", async () => {
     vi.mocked(getApprenticeshipBySlug).mockResolvedValue({ ...acme, location: [], content: "" });
     const html = renderToStaticMarkup(await ApprenticeshipPage(params("acme")));

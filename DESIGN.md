@@ -87,7 +87,7 @@ Inti is not a mascot. Inca religion and its symbols still matter to Andean commu
 - **Primitives** and **Sections** hold a story for every component in `src/components`, with the submit form's server action mocked so nothing is sent.
 - The **Theme** toolbar switches Day, Night and the system setting; the Accessibility panel runs axe on each story.
 
-The Chromatic workflow (`.github/workflows/chromatic.yml`) publishes Storybook to Chromatic on every pull request and push to `main`, and snapshots every story for visual review. Visual changes don't fail CI; accept or reject them in Chromatic. A second Vercel project, `apprenticeships-storybook`, builds the same Storybook with `npm run build-storybook` and serves `storybook-static/`.
+The Chromatic workflow (`.github/workflows/chromatic.yml`) publishes Storybook to Chromatic on every pull request and push to `main`, and snapshots every story for visual review. Visual changes don't fail CI; accept or reject them in Chromatic. Vercel also builds Storybook into `public/storybook` before the site (`vercel.json`), so it's live at [apprenticeships.me/storybook](https://apprenticeships.me/storybook) and on every preview deployment.
 
 Add a story beside any new shared component (`src/components/<name>.stories.tsx`), and add new tokens to `src/design-system/tokens.ts` so they appear on the token pages.
 

@@ -49,4 +49,5 @@ next-env.d.ts
 
 # Storybook
 /storybook-static/
+/public/storybook/
 *storybook.log

@@ -19,6 +19,9 @@ export default defineConfig({
         "src/**/*.test.*",
         "src/**/*.d.ts",
         "src/lib/types.ts",
+        // Storybook-only files: stories and the Inti token pages (npm run storybook)
+        "src/**/*.stories.tsx",
+        "src/design-system/**",
         // Next.js runtime hooks that only load the Sentry SDK
         "src/instrumentation*.ts",
       ],

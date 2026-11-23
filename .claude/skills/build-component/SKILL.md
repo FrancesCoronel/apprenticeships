@@ -25,4 +25,5 @@ Inti is the site's brand: sunlight gold and terrace green, "a day under the sun"
    - No new illustration or icons beyond the sun mark; never give the sun a face; no chakana or stepped motifs.
 5. **Check both themes.** Run `npm run dev`, then look at the change with the system set to light and to dark (Playwright `colorScheme: "light"` and `"dark"` works), on a 1280px and a 390px wide viewport. Text must stay readable on every surface.
 6. **Test and check.** Add or extend tests in the matching `*.test.tsx` (CI needs 100% coverage of `src/`), then run `npm run lint`, `npm run typecheck`, `npm run test:coverage` and `npm run build`.
-7. **Update `DESIGN.md`** in the same PR when you add a token, a shared component or a rule, so the next component can find it.
+7. **Add a story.** Put `<name>.stories.tsx` beside the component with its variants and states, then check it in `npm run storybook` in Day and Night with the Accessibility panel clean.
+8. **Update `DESIGN.md`** in the same PR when you add a token, a shared component or a rule, so the next component can find it.

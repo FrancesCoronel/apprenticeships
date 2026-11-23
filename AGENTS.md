@@ -50,6 +50,8 @@ Next.js App Router with a `src/` directory, deployed on Vercel.
 | `src/lib/` | Listing loading (`apprenticeships.ts`), GitHub API, JSON-LD, shared types |
 | `src/actions/` | Server actions (the submit form opens a GitHub issue) |
 | `src/data/` | Static data such as `contributors.json` |
+| `src/design-system/` | Storybook token pages for Inti; stories sit beside their components |
+| `.storybook/` | Storybook config, the Day/Night theme switch and the server action mock |
 
 Imports use the `@/` alias for `src/`. Environment variables are listed in `.env.example`. Never read or edit `.env` / `.env.local` (they hold a GitHub token); a hook blocks it.
 
@@ -60,6 +62,7 @@ Every component and page follows the Inti design system in [DESIGN.md](DESIGN.md
 - Reuse the shared components: `Button` / `ButtonLink`, `Card` / `LogoPanel`, `Chip`, and `SectionHeading` / `Eyebrow` for section titles.
 - Style only with Inti tokens (`bg-inti`, `text-terrace`, `bg-surface-sunrise`…). ESLint rejects hex values, `rgb()` and Tailwind's stock colours in `src/`; add a token to `src/app/globals.css` instead.
 - Check new UI in both the Day (light) and Night (dark) themes, and update `DESIGN.md` when you add a token or a shared component.
+- Storybook (`npm run storybook`) documents the tokens and every component. Add a `<name>.stories.tsx` beside a new component, and add new tokens to `src/design-system/tokens.ts`.
 
 ## Checks
 

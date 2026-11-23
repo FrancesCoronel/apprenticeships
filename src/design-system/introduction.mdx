@@ -1,0 +1,29 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Inti/Introduction" />
+
+# Inti
+
+Inti is the design system for Apprenticeships.me, a free directory of development and design apprenticeships for people early in their careers. It takes its light from Inti, the sun at the centre of Inca religion, and its green from the andenes, the farming terraces that Andean communities cut into mountainsides. Growth happens in good light, on ground that other people built for you. That is what an apprenticeship is.
+
+[DESIGN.md](https://github.com/FrancesCoronel/apprenticeships/blob/main/DESIGN.md) is the source of truth. This Storybook shows it working: the tokens read live from `src/app/globals.css`, and every story renders the real components from `src/components`.
+
+## Principles
+
+- **A day under the sun.** A page opens on a sunrise band, works through daylight, passes one full-gold band at the call to contribute, and ends on a night footer.
+- **Sunlight, not spotlight.** Gold is for the one action that matters in a section, for the sun, and for the single gold band.
+- **Big and plain.** Large, heavy headlines that say one thing. Nothing decorative that is not the sun.
+- **Built by many hands.** Contributors and "Add a program" stay prominent.
+- **Plain words for new people.** Speak to "you", in sentence case, with no jargon or hype.
+
+## Using this Storybook
+
+- **Theme** in the toolbar switches between Day, Night and your system setting.
+- **Accessibility** in the addons panel runs axe on each story. Fix every WCAG 2.2 AA violation before shipping.
+- **Inti** holds the tokens: colour and contrast, type, space, shape and depth, and the motifs.
+- **Primitives** are the shared building blocks: `Button`, `Card`, `Chip` and `SectionHeading`. Reach for these before writing classes.
+- **Sections** are the pieces of the site built from them.
+
+## Adding to Inti
+
+Add a story next to any new shared component (`src/components/<name>.stories.tsx`). When you add a token, put it in `globals.css` with a Night value, add it to `src/design-system/tokens.ts`, and document it in `DESIGN.md`.

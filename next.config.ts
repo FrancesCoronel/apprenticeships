@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 import { withSentryConfig } from "@sentry/nextjs/config";
 
 const nextConfig: NextConfig = {
+  // On Vercel, Storybook is built into public/storybook (see vercel.json)
+  async redirects() {
+    return [{ source: "/storybook", destination: "/storybook/index.html", permanent: false }];
+  },
   images: {
     remotePatterns: [
       {

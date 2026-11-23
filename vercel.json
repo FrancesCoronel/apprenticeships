@@ -1,0 +1,4 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build-storybook && rm -rf public/storybook && cp -r storybook-static public/storybook && npm run build"
+}

@@ -1,0 +1,41 @@
+name: Chromatic
+
+# Publishes Storybook to Chromatic and runs visual tests on every story.
+# Needs the CHROMATIC_PROJECT_TOKEN repository secret. Without it (for
+# example on pull requests from forks) the publish step is skipped.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: chromatic-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  chromatic:
+    name: Publish Storybook
+    runs-on: ubuntu-24.04
+    env:
+      CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Chromatic compares against earlier builds, so it needs the git history
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - run: npm ci
+        if: env.CHROMATIC_PROJECT_TOKEN != ''
+
+      # Visual changes don't fail the job; review and accept them in Chromatic
+      - run: npm run chromatic
+        if: env.CHROMATIC_PROJECT_TOKEN != ''
